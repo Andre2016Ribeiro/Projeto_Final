@@ -1,0 +1,10 @@
+C:\Galileu\projeto_final\ClassBackendBotanica\obj\Debug\net7.0\ClassBackendBotanica.csproj.AssemblyReference.cache
+C:\Galileu\projeto_final\ClassBackendBotanica\obj\Debug\net7.0\ClassBackendBotanica.GeneratedMSBuildEditorConfig.editorconfig
+C:\Galileu\projeto_final\ClassBackendBotanica\obj\Debug\net7.0\ClassBackendBotanica.AssemblyInfoInputs.cache
+C:\Galileu\projeto_final\ClassBackendBotanica\obj\Debug\net7.0\ClassBackendBotanica.AssemblyInfo.cs
+C:\Galileu\projeto_final\ClassBackendBotanica\obj\Debug\net7.0\ClassBackendBotanica.csproj.CoreCompileInputs.cache
+C:\Galileu\projeto_final\Projeto_Final\ClassBackendBotanica\obj\Debug\net7.0\ClassBackendBotanica.csproj.AssemblyReference.cache
+C:\Galileu\projeto_final\Projeto_Final\ClassBackendBotanica\obj\Debug\net7.0\ClassBackendBotanica.GeneratedMSBuildEditorConfig.editorconfig
+C:\Galileu\projeto_final\Projeto_Final\ClassBackendBotanica\obj\Debug\net7.0\ClassBackendBotanica.AssemblyInfoInputs.cache
+C:\Galileu\projeto_final\Projeto_Final\ClassBackendBotanica\obj\Debug\net7.0\ClassBackendBotanica.AssemblyInfo.cs
+C:\Galileu\projeto_final\Projeto_Final\ClassBackendBotanica\obj\Debug\net7.0\ClassBackendBotanica.csproj.CoreCompileInputs.cache
