@@ -8,3 +8,12 @@ C:\Galileu\projeto_final\Projeto_Final\ClassBackendBotanica\obj\Debug\net7.0\Cla
 C:\Galileu\projeto_final\Projeto_Final\ClassBackendBotanica\obj\Debug\net7.0\ClassBackendBotanica.AssemblyInfoInputs.cache
 C:\Galileu\projeto_final\Projeto_Final\ClassBackendBotanica\obj\Debug\net7.0\ClassBackendBotanica.AssemblyInfo.cs
 C:\Galileu\projeto_final\Projeto_Final\ClassBackendBotanica\obj\Debug\net7.0\ClassBackendBotanica.csproj.CoreCompileInputs.cache
+C:\Galileu\projeto_final\Projeto_Final\ClassBackendBotanica\bin\Debug\net7.0\ClassBackendBotanica.deps.json
+C:\Galileu\projeto_final\Projeto_Final\ClassBackendBotanica\bin\Debug\net7.0\ClassBackendBotanica.runtimeconfig.json
+C:\Galileu\projeto_final\Projeto_Final\ClassBackendBotanica\bin\Debug\net7.0\ClassBackendBotanica.dll
+C:\Galileu\projeto_final\Projeto_Final\ClassBackendBotanica\bin\Debug\net7.0\ClassBackendBotanica.pdb
+C:\Galileu\projeto_final\Projeto_Final\ClassBackendBotanica\obj\Debug\net7.0\ClassBackendBotanica.dll
+C:\Galileu\projeto_final\Projeto_Final\ClassBackendBotanica\obj\Debug\net7.0\refint\ClassBackendBotanica.dll
+C:\Galileu\projeto_final\Projeto_Final\ClassBackendBotanica\obj\Debug\net7.0\ClassBackendBotanica.pdb
+C:\Galileu\projeto_final\Projeto_Final\ClassBackendBotanica\obj\Debug\net7.0\ClassBackendBotanica.genruntimeconfig.cache
+C:\Galileu\projeto_final\Projeto_Final\ClassBackendBotanica\obj\Debug\net7.0\ref\ClassBackendBotanica.dll

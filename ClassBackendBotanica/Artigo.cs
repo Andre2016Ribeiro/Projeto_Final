@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassBackendBotanica
 {
-    internal class Artigo
+    public class Artigo
     {
         public int Id { get; set; }
         
