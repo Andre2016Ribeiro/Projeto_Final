@@ -17,3 +17,17 @@ C:\Galileu\projeto_final\Projeto_Final\ClassBackendBotanica\obj\Debug\net7.0\ref
 C:\Galileu\projeto_final\Projeto_Final\ClassBackendBotanica\obj\Debug\net7.0\ClassBackendBotanica.pdb
 C:\Galileu\projeto_final\Projeto_Final\ClassBackendBotanica\obj\Debug\net7.0\ClassBackendBotanica.genruntimeconfig.cache
 C:\Galileu\projeto_final\Projeto_Final\ClassBackendBotanica\obj\Debug\net7.0\ref\ClassBackendBotanica.dll
+C:\Users\andre.ribeiro\Source\Repos\Projeto_Final\ClassBackendBotanica\bin\Debug\net7.0\ClassBackendBotanica.deps.json
+C:\Users\andre.ribeiro\Source\Repos\Projeto_Final\ClassBackendBotanica\bin\Debug\net7.0\ClassBackendBotanica.runtimeconfig.json
+C:\Users\andre.ribeiro\Source\Repos\Projeto_Final\ClassBackendBotanica\bin\Debug\net7.0\ClassBackendBotanica.dll
+C:\Users\andre.ribeiro\Source\Repos\Projeto_Final\ClassBackendBotanica\bin\Debug\net7.0\ClassBackendBotanica.pdb
+C:\Users\andre.ribeiro\Source\Repos\Projeto_Final\ClassBackendBotanica\obj\Debug\net7.0\ClassBackendBotanica.csproj.AssemblyReference.cache
+C:\Users\andre.ribeiro\Source\Repos\Projeto_Final\ClassBackendBotanica\obj\Debug\net7.0\ClassBackendBotanica.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\andre.ribeiro\Source\Repos\Projeto_Final\ClassBackendBotanica\obj\Debug\net7.0\ClassBackendBotanica.AssemblyInfoInputs.cache
+C:\Users\andre.ribeiro\Source\Repos\Projeto_Final\ClassBackendBotanica\obj\Debug\net7.0\ClassBackendBotanica.AssemblyInfo.cs
+C:\Users\andre.ribeiro\Source\Repos\Projeto_Final\ClassBackendBotanica\obj\Debug\net7.0\ClassBackendBotanica.csproj.CoreCompileInputs.cache
+C:\Users\andre.ribeiro\Source\Repos\Projeto_Final\ClassBackendBotanica\obj\Debug\net7.0\ClassBackendBotanica.dll
+C:\Users\andre.ribeiro\Source\Repos\Projeto_Final\ClassBackendBotanica\obj\Debug\net7.0\refint\ClassBackendBotanica.dll
+C:\Users\andre.ribeiro\Source\Repos\Projeto_Final\ClassBackendBotanica\obj\Debug\net7.0\ClassBackendBotanica.pdb
+C:\Users\andre.ribeiro\Source\Repos\Projeto_Final\ClassBackendBotanica\obj\Debug\net7.0\ClassBackendBotanica.genruntimeconfig.cache
+C:\Users\andre.ribeiro\Source\Repos\Projeto_Final\ClassBackendBotanica\obj\Debug\net7.0\ref\ClassBackendBotanica.dll
