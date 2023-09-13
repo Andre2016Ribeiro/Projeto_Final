@@ -5,14 +5,11 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using ClassBackendBotanica;
 
-namespace WebApplicationBackendBotanicaContext.Data
+namespace WebApplicationBackendBotanica.Data
 {
     public class WebApplicationBackendBotanicaContext : DbContext
     {
-        public WebApplicationBackendBotanicaContext(DbContextOptions<WebApplicationBackendBotanicaContext> options)
-            : base(options)
-        {
-        }
+        
 
         public DbSet<ClassBackendBotanica.Utilizador> Utilizador { get; set; }
 
