@@ -23,7 +23,7 @@ namespace WebApplicationBackendBotanicaContext.Data
         public DbSet<ClassBackendBotanica.Encomenda> Encomenda { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"SERVER=(localdb)\mssqllocaldb; DATABASE=CompraBilhetes; TRUSTED_CONNECTION=TRUE;");
+            optionsBuilder.UseSqlServer(@"SERVER=(localdb)\mssqllocaldb; DATABASE=BDAppBotanica; TRUSTED_CONNECTION=TRUE;");
             base.OnConfiguring(optionsBuilder);
         }
 
