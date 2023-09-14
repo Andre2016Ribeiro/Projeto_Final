@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace WebApplicationBackendBotanica.Migrations
 {
     /// <inheritdoc />
-    public partial class dbapp2 : Migration
+    public partial class v07 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -124,10 +124,10 @@ namespace WebApplicationBackendBotanica.Migrations
                 columns: new[] { "Id", "ArtigoId", "DataEncomenda", "Quantidade", "UtilizadorId" },
                 values: new object[,]
                 {
-                    { 1, 4, new DateTime(2023, 9, 13, 13, 3, 58, 310, DateTimeKind.Local).AddTicks(2978), 50, 1 },
-                    { 2, 1, new DateTime(2023, 9, 13, 13, 3, 58, 310, DateTimeKind.Local).AddTicks(3024), 40, 1 },
-                    { 3, 2, new DateTime(2023, 9, 13, 13, 3, 58, 310, DateTimeKind.Local).AddTicks(3026), 50, 3 },
-                    { 4, 3, new DateTime(2023, 9, 13, 13, 3, 58, 310, DateTimeKind.Local).AddTicks(3029), 30, 2 }
+                    { 1, 4, new DateTime(2023, 9, 14, 15, 34, 52, 191, DateTimeKind.Local).AddTicks(6405), 50, 1 },
+                    { 2, 1, new DateTime(2023, 9, 14, 15, 34, 52, 191, DateTimeKind.Local).AddTicks(6450), 40, 1 },
+                    { 3, 2, new DateTime(2023, 9, 14, 15, 34, 52, 191, DateTimeKind.Local).AddTicks(6453), 50, 3 },
+                    { 4, 3, new DateTime(2023, 9, 14, 15, 34, 52, 191, DateTimeKind.Local).AddTicks(6456), 30, 2 }
                 });
 
             migrationBuilder.CreateIndex(

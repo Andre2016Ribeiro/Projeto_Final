@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using ClassBackendBotanica;
 using WebApplicationBackendBotanica.Data;
 
-namespace WebApplicationBackendBotanica.Views
+namespace WebApplicationBackendBotanica.Controllers
 {
     public class CategoriasController : Controller
     {
@@ -22,9 +22,9 @@ namespace WebApplicationBackendBotanica.Views
         // GET: Categorias
         public async Task<IActionResult> Index()
         {
-              return _context.Categorias != null ? 
-                          View(await _context.Categorias.ToListAsync()) :
-                          Problem("Entity set 'WebApplicationBackendBotanicaContext.Categorias'  is null.");
+            return _context.Categorias != null ?
+                        View(await _context.Categorias.ToListAsync()) :
+                        Problem("Entity set 'WebApplicationBackendBotanicaContext.Categorias'  is null.");
         }
 
         // GET: Categorias/Details/5
@@ -150,14 +150,14 @@ namespace WebApplicationBackendBotanica.Views
             {
                 _context.Categorias.Remove(categoria);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool CategoriaExists(int id)
         {
-          return (_context.Categorias?.Any(e => e.Id == id)).GetValueOrDefault();
+            return (_context.Categorias?.Any(e => e.Id == id)).GetValueOrDefault();
         }
     }
 }

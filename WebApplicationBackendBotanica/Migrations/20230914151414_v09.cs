@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace WebApplicationBackendBotanica.Migrations
 {
     /// <inheritdoc />
-    public partial class dbapp5 : Migration
+    public partial class v09 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -16,28 +16,28 @@ namespace WebApplicationBackendBotanica.Migrations
                 keyColumn: "Id",
                 keyValue: 1,
                 column: "DataEncomenda",
-                value: new DateTime(2023, 9, 13, 15, 55, 55, 474, DateTimeKind.Local).AddTicks(5344));
+                value: new DateTime(2023, 9, 14, 16, 14, 14, 697, DateTimeKind.Local).AddTicks(2723));
 
             migrationBuilder.UpdateData(
                 table: "Encomenda",
                 keyColumn: "Id",
                 keyValue: 2,
                 column: "DataEncomenda",
-                value: new DateTime(2023, 9, 13, 15, 55, 55, 474, DateTimeKind.Local).AddTicks(5389));
+                value: new DateTime(2023, 9, 14, 16, 14, 14, 697, DateTimeKind.Local).AddTicks(2765));
 
             migrationBuilder.UpdateData(
                 table: "Encomenda",
                 keyColumn: "Id",
                 keyValue: 3,
                 column: "DataEncomenda",
-                value: new DateTime(2023, 9, 13, 15, 55, 55, 474, DateTimeKind.Local).AddTicks(5391));
+                value: new DateTime(2023, 9, 14, 16, 14, 14, 697, DateTimeKind.Local).AddTicks(2767));
 
             migrationBuilder.UpdateData(
                 table: "Encomenda",
                 keyColumn: "Id",
                 keyValue: 4,
                 column: "DataEncomenda",
-                value: new DateTime(2023, 9, 13, 15, 55, 55, 474, DateTimeKind.Local).AddTicks(5394));
+                value: new DateTime(2023, 9, 14, 16, 14, 14, 697, DateTimeKind.Local).AddTicks(2770));
         }
 
         /// <inheritdoc />
@@ -48,28 +48,28 @@ namespace WebApplicationBackendBotanica.Migrations
                 keyColumn: "Id",
                 keyValue: 1,
                 column: "DataEncomenda",
-                value: new DateTime(2023, 9, 13, 13, 3, 58, 310, DateTimeKind.Local).AddTicks(2978));
+                value: new DateTime(2023, 9, 14, 15, 34, 52, 191, DateTimeKind.Local).AddTicks(6405));
 
             migrationBuilder.UpdateData(
                 table: "Encomenda",
                 keyColumn: "Id",
                 keyValue: 2,
                 column: "DataEncomenda",
-                value: new DateTime(2023, 9, 13, 13, 3, 58, 310, DateTimeKind.Local).AddTicks(3024));
+                value: new DateTime(2023, 9, 14, 15, 34, 52, 191, DateTimeKind.Local).AddTicks(6450));
 
             migrationBuilder.UpdateData(
                 table: "Encomenda",
                 keyColumn: "Id",
                 keyValue: 3,
                 column: "DataEncomenda",
-                value: new DateTime(2023, 9, 13, 13, 3, 58, 310, DateTimeKind.Local).AddTicks(3026));
+                value: new DateTime(2023, 9, 14, 15, 34, 52, 191, DateTimeKind.Local).AddTicks(6453));
 
             migrationBuilder.UpdateData(
                 table: "Encomenda",
                 keyColumn: "Id",
                 keyValue: 4,
                 column: "DataEncomenda",
-                value: new DateTime(2023, 9, 13, 13, 3, 58, 310, DateTimeKind.Local).AddTicks(3029));
+                value: new DateTime(2023, 9, 14, 15, 34, 52, 191, DateTimeKind.Local).AddTicks(6456));
         }
     }
 }

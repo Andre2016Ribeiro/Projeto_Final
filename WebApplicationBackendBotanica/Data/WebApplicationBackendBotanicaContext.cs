@@ -9,7 +9,10 @@ namespace WebApplicationBackendBotanica.Data
 {
     public class WebApplicationBackendBotanicaContext : DbContext
     {
-        
+        public WebApplicationBackendBotanicaContext(DbContextOptions<WebApplicationBackendBotanicaContext> options)
+           : base(options)
+        {
+        }
 
         public DbSet<ClassBackendBotanica.Utilizador> Utilizador { get; set; }
 
@@ -18,11 +21,7 @@ namespace WebApplicationBackendBotanica.Data
         public DbSet<ClassBackendBotanica.Categoria> Categorias { get; set; }
 
         public DbSet<ClassBackendBotanica.Encomenda> Encomenda { get; set; }
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer(@"SERVER=(localdb)\mssqllocaldb; DATABASE=BDAppBotanica; TRUSTED_CONNECTION=TRUE;");
-            base.OnConfiguring(optionsBuilder);
-        }
+        
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

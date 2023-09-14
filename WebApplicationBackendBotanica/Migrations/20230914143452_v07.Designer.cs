@@ -12,8 +12,8 @@ using WebApplicationBackendBotanica.Data;
 namespace WebApplicationBackendBotanica.Migrations
 {
     [DbContext(typeof(WebApplicationBackendBotanicaContext))]
-    [Migration("20230913120358_dbapp 2")]
-    partial class dbapp2
+    [Migration("20230914143452_v07")]
+    partial class v07
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -142,7 +142,7 @@ namespace WebApplicationBackendBotanica.Migrations
                         {
                             Id = 1,
                             ArtigoId = 4,
-                            DataEncomenda = new DateTime(2023, 9, 13, 13, 3, 58, 310, DateTimeKind.Local).AddTicks(2978),
+                            DataEncomenda = new DateTime(2023, 9, 14, 15, 34, 52, 191, DateTimeKind.Local).AddTicks(6405),
                             Quantidade = 50,
                             UtilizadorId = 1
                         },
@@ -150,7 +150,7 @@ namespace WebApplicationBackendBotanica.Migrations
                         {
                             Id = 2,
                             ArtigoId = 1,
-                            DataEncomenda = new DateTime(2023, 9, 13, 13, 3, 58, 310, DateTimeKind.Local).AddTicks(3024),
+                            DataEncomenda = new DateTime(2023, 9, 14, 15, 34, 52, 191, DateTimeKind.Local).AddTicks(6450),
                             Quantidade = 40,
                             UtilizadorId = 1
                         },
@@ -158,7 +158,7 @@ namespace WebApplicationBackendBotanica.Migrations
                         {
                             Id = 3,
                             ArtigoId = 2,
-                            DataEncomenda = new DateTime(2023, 9, 13, 13, 3, 58, 310, DateTimeKind.Local).AddTicks(3026),
+                            DataEncomenda = new DateTime(2023, 9, 14, 15, 34, 52, 191, DateTimeKind.Local).AddTicks(6453),
                             Quantidade = 50,
                             UtilizadorId = 3
                         },
@@ -166,7 +166,7 @@ namespace WebApplicationBackendBotanica.Migrations
                         {
                             Id = 4,
                             ArtigoId = 3,
-                            DataEncomenda = new DateTime(2023, 9, 13, 13, 3, 58, 310, DateTimeKind.Local).AddTicks(3029),
+                            DataEncomenda = new DateTime(2023, 9, 14, 15, 34, 52, 191, DateTimeKind.Local).AddTicks(6456),
                             Quantidade = 30,
                             UtilizadorId = 2
                         });
