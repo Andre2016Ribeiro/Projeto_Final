@@ -50,7 +50,7 @@ namespace WebApplicationBackendBotanica.Controllers
         public IActionResult Create()
         {
             ViewData["ArtigoId"] = new SelectList(_context.Artigo, "Id", "Nome");
-            ViewData["UtilizadorId"] = new SelectList(_context.Utilizador, "Id", "Morada");
+            ViewData["UtilizadorId"] = new SelectList(_context.Utilizador, "Id", "Nome");
             return View();
         }
 
@@ -61,6 +61,8 @@ namespace WebApplicationBackendBotanica.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Quantidade,DataEncomenda,UtilizadorId,ArtigoId")] Encomenda encomenda)
         {
+            ModelState.Remove("Utilizador");
+            ModelState.Remove("Artigo");
             if (ModelState.IsValid)
             {
                 _context.Add(encomenda);
@@ -68,7 +70,7 @@ namespace WebApplicationBackendBotanica.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["ArtigoId"] = new SelectList(_context.Artigo, "Id", "Nome", encomenda.ArtigoId);
-            ViewData["UtilizadorId"] = new SelectList(_context.Utilizador, "Id", "Morada", encomenda.UtilizadorId);
+            ViewData["UtilizadorId"] = new SelectList(_context.Utilizador, "Id", "Nome", encomenda.UtilizadorId);
             return View(encomenda);
         }
 
@@ -86,7 +88,7 @@ namespace WebApplicationBackendBotanica.Controllers
                 return NotFound();
             }
             ViewData["ArtigoId"] = new SelectList(_context.Artigo, "Id", "Nome", encomenda.ArtigoId);
-            ViewData["UtilizadorId"] = new SelectList(_context.Utilizador, "Id", "Morada", encomenda.UtilizadorId);
+            ViewData["UtilizadorId"] = new SelectList(_context.Utilizador, "Id", "Nome", encomenda.UtilizadorId);
             return View(encomenda);
         }
 
@@ -101,7 +103,8 @@ namespace WebApplicationBackendBotanica.Controllers
             {
                 return NotFound();
             }
-
+            ModelState.Remove("Utilizador");
+            ModelState.Remove("Artigo");
             if (ModelState.IsValid)
             {
                 try
@@ -123,7 +126,7 @@ namespace WebApplicationBackendBotanica.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["ArtigoId"] = new SelectList(_context.Artigo, "Id", "Nome", encomenda.ArtigoId);
-            ViewData["UtilizadorId"] = new SelectList(_context.Utilizador, "Id", "Morada", encomenda.UtilizadorId);
+            ViewData["UtilizadorId"] = new SelectList(_context.Utilizador, "Id", "Nome", encomenda.UtilizadorId);
             return View(encomenda);
         }
 
