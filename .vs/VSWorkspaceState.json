@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\ClassBackendBotanica"
+    "\\ClassBackendBotanica",
+    "\\WebApplicationBackendBotanica"
   ],
-  "SelectedNode": "\\ClassBackendBotanica\\ClassBackendBotanica.sln",
+  "SelectedNode": "\\WebApplicationBackendBotanica\\appsettings.json",
   "PreviewInSolutionExplorer": false
 }
