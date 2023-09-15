@@ -19,10 +19,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<WebApplicationBackendBotanicaContext>(options =>
-{
-    options.UseSqlServer(builder.Configuration.GetConnectionString("WebApplicationBackendBotanicaContext"));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("WebApplicationBackendBotanicaContext")));
 
-});
+
+
 
 
 var app = builder.Build();
