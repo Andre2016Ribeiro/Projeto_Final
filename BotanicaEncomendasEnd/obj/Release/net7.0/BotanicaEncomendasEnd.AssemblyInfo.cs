@@ -11,6 +11,7 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap5")]
 [assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aspnet-BotanicaEncomendasEnd-5ed754dc-3472-44af-9ec4-b44144398046")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("BotanicaEncomendasEnd")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
