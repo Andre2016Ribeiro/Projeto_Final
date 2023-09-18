@@ -1,0 +1,9 @@
+C:\Galileu\Projeto_Final\Projeto_Final\BotanicaEncomendasEnd\obj\Debug\net7.0\BotanicaEncomendasEnd.csproj.AssemblyReference.cache
+C:\Galileu\Projeto_Final\Projeto_Final\BotanicaEncomendasEnd\obj\Debug\net7.0\BotanicaEncomendasEnd.GeneratedMSBuildEditorConfig.editorconfig
+C:\Galileu\Projeto_Final\Projeto_Final\BotanicaEncomendasEnd\obj\Debug\net7.0\BotanicaEncomendasEnd.AssemblyInfoInputs.cache
+C:\Galileu\Projeto_Final\Projeto_Final\BotanicaEncomendasEnd\obj\Debug\net7.0\BotanicaEncomendasEnd.AssemblyInfo.cs
+C:\Galileu\Projeto_Final\Projeto_Final\BotanicaEncomendasEnd\obj\Debug\net7.0\BotanicaEncomendasEnd.csproj.CoreCompileInputs.cache
+C:\Galileu\Projeto_Final\Projeto_Final\BotanicaEncomendasEnd\obj\Debug\net7.0\BotanicaEncomendasEnd.MvcApplicationPartsAssemblyInfo.cs
+C:\Galileu\Projeto_Final\Projeto_Final\BotanicaEncomendasEnd\obj\Debug\net7.0\BotanicaEncomendasEnd.MvcApplicationPartsAssemblyInfo.cache
+C:\Galileu\Projeto_Final\Projeto_Final\BotanicaEncomendasEnd\obj\Debug\net7.0\BotanicaEncomendasEnd.RazorAssemblyInfo.cache
+C:\Galileu\Projeto_Final\Projeto_Final\BotanicaEncomendasEnd\obj\Debug\net7.0\BotanicaEncomendasEnd.RazorAssemblyInfo.cs

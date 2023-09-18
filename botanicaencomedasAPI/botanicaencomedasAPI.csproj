@@ -12,8 +12,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BotanicaContext\BotanicaContext.csproj" />
     <ProjectReference Include="..\ClassBackendBotanica\ClassBackendBotanica.csproj" />
-    <ProjectReference Include="..\WebApplicationBackendBotanica\WebApplicationBackendBotanica.csproj" />
   </ItemGroup>
 
 </Project>

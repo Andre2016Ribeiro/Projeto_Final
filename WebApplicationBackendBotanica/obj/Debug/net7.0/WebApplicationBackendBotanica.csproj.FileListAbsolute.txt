@@ -526,3 +526,5 @@ C:\Galileu\projeto_final\Projeto_Final\WebApplicationBackendBotanica\obj\Debug\n
 C:\Galileu\projeto_final\Projeto_Final\WebApplicationBackendBotanica\obj\Debug\net7.0\WebApplicationBackendBotanica.pdb
 C:\Galileu\projeto_final\Projeto_Final\WebApplicationBackendBotanica\obj\Debug\net7.0\WebApplicationBackendBotanica.genruntimeconfig.cache
 C:\Galileu\projeto_final\Projeto_Final\WebApplicationBackendBotanica\obj\Debug\net7.0\ref\WebApplicationBackendBotanica.dll
+C:\Galileu\Projeto_Final\Projeto_Final\WebApplicationBackendBotanica\bin\Debug\net7.0\BotanicaContext.dll
+C:\Galileu\Projeto_Final\Projeto_Final\WebApplicationBackendBotanica\bin\Debug\net7.0\BotanicaContext.pdb

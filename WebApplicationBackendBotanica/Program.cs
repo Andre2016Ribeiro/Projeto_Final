@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using System.Configuration;
-using WebApplicationBackendBotanica.Data;
+using BotanicaContext;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;

@@ -1,0 +1,17 @@
+C:\Galileu\Projeto_Final\Projeto_Final\BotanicaContext\bin\Debug\net7.0\BotanicaContext.deps.json
+C:\Galileu\Projeto_Final\Projeto_Final\BotanicaContext\bin\Debug\net7.0\BotanicaContext.runtimeconfig.json
+C:\Galileu\Projeto_Final\Projeto_Final\BotanicaContext\bin\Debug\net7.0\BotanicaContext.dll
+C:\Galileu\Projeto_Final\Projeto_Final\BotanicaContext\bin\Debug\net7.0\BotanicaContext.pdb
+C:\Galileu\Projeto_Final\Projeto_Final\BotanicaContext\bin\Debug\net7.0\ClassBackendBotanica.dll
+C:\Galileu\Projeto_Final\Projeto_Final\BotanicaContext\bin\Debug\net7.0\ClassBackendBotanica.pdb
+C:\Galileu\Projeto_Final\Projeto_Final\BotanicaContext\obj\Debug\net7.0\BotanicaContext.csproj.AssemblyReference.cache
+C:\Galileu\Projeto_Final\Projeto_Final\BotanicaContext\obj\Debug\net7.0\BotanicaContext.GeneratedMSBuildEditorConfig.editorconfig
+C:\Galileu\Projeto_Final\Projeto_Final\BotanicaContext\obj\Debug\net7.0\BotanicaContext.AssemblyInfoInputs.cache
+C:\Galileu\Projeto_Final\Projeto_Final\BotanicaContext\obj\Debug\net7.0\BotanicaContext.AssemblyInfo.cs
+C:\Galileu\Projeto_Final\Projeto_Final\BotanicaContext\obj\Debug\net7.0\BotanicaContext.csproj.CoreCompileInputs.cache
+C:\Galileu\Projeto_Final\Projeto_Final\BotanicaContext\obj\Debug\net7.0\BotanicaContext.csproj.CopyComplete
+C:\Galileu\Projeto_Final\Projeto_Final\BotanicaContext\obj\Debug\net7.0\BotanicaContext.dll
+C:\Galileu\Projeto_Final\Projeto_Final\BotanicaContext\obj\Debug\net7.0\refint\BotanicaContext.dll
+C:\Galileu\Projeto_Final\Projeto_Final\BotanicaContext\obj\Debug\net7.0\BotanicaContext.pdb
+C:\Galileu\Projeto_Final\Projeto_Final\BotanicaContext\obj\Debug\net7.0\BotanicaContext.genruntimeconfig.cache
+C:\Galileu\Projeto_Final\Projeto_Final\BotanicaContext\obj\Debug\net7.0\ref\BotanicaContext.dll

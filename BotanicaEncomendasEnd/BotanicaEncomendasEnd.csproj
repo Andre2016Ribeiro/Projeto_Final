@@ -8,21 +8,27 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="7.0.10" />
-    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.10" />
-    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="7.0.10" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.10" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.10" />
+    <Compile Remove="Views\Encomendas\**" />
+    <Content Remove="Views\Encomendas\**" />
+    <EmbeddedResource Remove="Views\Encomendas\**" />
+    <None Remove="Views\Encomendas\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="7.0.11" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.11" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="7.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.11">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\botanicaencomedasAPI\botanicaencomedasAPI.csproj" />
     <ProjectReference Include="..\ClassBackendBotanica\ClassBackendBotanica.csproj" />
     <ProjectReference Include="..\WebApplicationBackendBotanica\WebApplicationBackendBotanica.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Views\Encomendas\" />
   </ItemGroup>
 
 </Project>

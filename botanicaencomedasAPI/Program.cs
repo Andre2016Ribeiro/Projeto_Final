@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using WebApplicationBackendBotanica.Data;
+using BotanicaContext;
 
 
 var builder = WebApplication.CreateBuilder(args);

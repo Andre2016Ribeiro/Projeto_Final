@@ -4025,6 +4025,21 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
+      "BotanicaContext/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "ClassBackendBotanica": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "7.0.11",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.11"
+        },
+        "compile": {
+          "bin/placeholder/BotanicaContext.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BotanicaContext.dll": {}
+        }
+      },
       "ClassBackendBotanica/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -11789,6 +11804,11 @@
         "system.xml.xdocument.nuspec"
       ]
     },
+    "BotanicaContext/1.0.0": {
+      "type": "project",
+      "path": "../BotanicaContext/BotanicaContext.csproj",
+      "msbuildProject": "../BotanicaContext/BotanicaContext.csproj"
+    },
     "ClassBackendBotanica/1.0.0": {
       "type": "project",
       "path": "../ClassBackendBotanica/ClassBackendBotanica.csproj",
@@ -11797,6 +11817,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "BotanicaContext >= 1.0.0",
       "ClassBackendBotanica >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.11",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.11",
@@ -11838,6 +11859,9 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
+            "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaContext\\BotanicaContext.csproj": {
+              "projectPath": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaContext\\BotanicaContext.csproj"
+            },
             "C:\\Galileu\\Projeto_Final\\Projeto_Final\\ClassBackendBotanica\\ClassBackendBotanica.csproj": {
               "projectPath": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\ClassBackendBotanica\\ClassBackendBotanica.csproj"
             }
