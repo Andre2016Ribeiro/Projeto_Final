@@ -58,6 +58,8 @@ namespace WebApplicationBackendBotanica.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Nome")] Categoria categoria)
         {
+            ModelState.Remove("Artigos");
+          
             if (ModelState.IsValid)
             {
                 _context.Add(categoria);
@@ -94,7 +96,7 @@ namespace WebApplicationBackendBotanica.Controllers
             {
                 return NotFound();
             }
-
+            ModelState.Remove("Artigos");
             if (ModelState.IsValid)
             {
                 try

@@ -58,6 +58,7 @@ namespace WebApplicationBackendBotanica.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Nome,Morada,UserName,Pass")] Utilizador utilizador)
         {
+            ModelState.Remove("Encomendas");
             if (ModelState.IsValid)
             {
                 _context.Add(utilizador);
@@ -94,7 +95,7 @@ namespace WebApplicationBackendBotanica.Controllers
             {
                 return NotFound();
             }
-
+            ModelState.Remove("Encomendas");
             if (ModelState.IsValid)
             {
                 try
