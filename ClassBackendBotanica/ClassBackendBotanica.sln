@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassBackendBotanica", "Cla
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplicationBackendBotanica", "..\WebApplicationBackendBotanica\WebApplicationBackendBotanica.csproj", "{2337311E-2C24-492C-8573-5235D35E93DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "botanicaencomedasAPI", "..\botanicaencomedasAPI\botanicaencomedasAPI.csproj", "{8F7BAA17-0329-458E-B216-5018F55B3BF5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "botanicaencomedasAPI", "..\botanicaencomedasAPI\botanicaencomedasAPI.csproj", "{8F7BAA17-0329-458E-B216-5018F55B3BF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotanicaEncomendasEnd", "..\BotanicaEncomendasEnd\BotanicaEncomendasEnd.csproj", "{087ACCC4-18A2-48B9-B28D-11C79084E68B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{8F7BAA17-0329-458E-B216-5018F55B3BF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F7BAA17-0329-458E-B216-5018F55B3BF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F7BAA17-0329-458E-B216-5018F55B3BF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{087ACCC4-18A2-48B9-B28D-11C79084E68B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{087ACCC4-18A2-48B9-B28D-11C79084E68B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{087ACCC4-18A2-48B9-B28D-11C79084E68B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{087ACCC4-18A2-48B9-B28D-11C79084E68B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
