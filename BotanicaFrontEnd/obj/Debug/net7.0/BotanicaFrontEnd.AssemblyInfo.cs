@@ -11,6 +11,7 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap5")]
 [assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aspnet-BotanicaFrontEnd-ff7eb160-7317-4dfc-ae6c-c060728bbb0f")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("BotanicaFrontEnd")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
