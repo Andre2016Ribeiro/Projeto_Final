@@ -17,6 +17,7 @@ namespace ClassBackendBotanica
 
         public string UserName { get; set; }
         public string Pass { get; set; }
+        
         public ICollection<Encomenda> Encomendas { get; set; }
 
 

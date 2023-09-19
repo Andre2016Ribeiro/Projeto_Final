@@ -1,7 +1,7 @@
 ﻿using BotanicaFrontEnd.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-
+using Microsoft.AspNetCore.Authorization;
 namespace BotanicaFrontEnd.Controllers
 {
     public class HomeController : Controller
@@ -12,12 +12,13 @@ namespace BotanicaFrontEnd.Controllers
         {
             _logger = logger;
         }
-
+        [AllowAnonymous]
         public IActionResult Index()
         {
             return View();
         }
 
+        [Authorize]
         public IActionResult Privacy()
         {
             return View();
