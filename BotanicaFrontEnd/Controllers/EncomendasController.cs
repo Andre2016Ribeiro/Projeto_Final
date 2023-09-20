@@ -30,7 +30,7 @@ namespace BotanicaEncomendasEnd.Controllers
         public async Task<IActionResult> Details(int id)
         {
             HttpClient client = new HttpClient();
-            client.BaseAddress = new Uri("http://localhost:5223/api/Encomendas");
+            client.BaseAddress = new Uri("http://localhost:5223/api/Encomendas/");
             //client.BaseAddress = new Uri("https://populacaoapi.azurewebsites.net/api/encomendas");
 
             var result = await client.GetFromJsonAsync<Encomenda>(id.ToString());
@@ -53,7 +53,7 @@ namespace BotanicaEncomendasEnd.Controllers
             try
             {
                 HttpClient client = new HttpClient();
-                client.BaseAddress = new Uri("http://localhost:5223/api/Encomendas");
+                client.BaseAddress = new Uri("http://localhost:5223/api/Encomendas/");
                 //client.BaseAddress = new Uri("https://populacaoapi.azurewebsites.net/api/encomendas");
 
                 await client.PostAsJsonAsync<Encomenda>("", collection);
@@ -70,7 +70,7 @@ namespace BotanicaEncomendasEnd.Controllers
         public async Task<IActionResult> Edit(int id)
         {
             HttpClient client = new HttpClient();
-            client.BaseAddress = new Uri("http://localhost:5223/api/Encomendas");
+            client.BaseAddress = new Uri("http://localhost:5223/api/Encomendas/");
             //client.BaseAddress = new Uri("https://populacaoapi.azurewebsites.net/api/encomendas");
 
 
@@ -86,7 +86,7 @@ namespace BotanicaEncomendasEnd.Controllers
             try
             {
                 HttpClient client = new HttpClient();
-                client.BaseAddress = new Uri("http://localhost:5223/api/Encomendas");
+                client.BaseAddress = new Uri("http://localhost:5223/api/Encomendas/" + id.ToString());
                 //client.BaseAddress = new Uri("https://populacaoapi.azurewebsites.net/api/encomendas");
 
                 await client.PutAsJsonAsync<Encomenda>(id.ToString(), collection);
@@ -102,7 +102,7 @@ namespace BotanicaEncomendasEnd.Controllers
         public async Task<IActionResult> Delete(int id)
         {
             HttpClient client = new HttpClient();
-            client.BaseAddress = new Uri("http://localhost:5223/api/Encomendas");
+            client.BaseAddress = new Uri("http://localhost:5223/api/Encomendas/");
             //client.BaseAddress = new Uri("https://populacaoapi.azurewebsites.net/api/encomendas");
 
 
@@ -119,7 +119,7 @@ namespace BotanicaEncomendasEnd.Controllers
             {
                 HttpClient client = new HttpClient();
 
-                client.BaseAddress = new Uri("http://localhost:5223/api/Encomendas");
+                client.BaseAddress = new Uri("http://localhost:5223/api/Encomendas/");
                 //client.BaseAddress = new Uri("https://populacaoapi.azurewebsites.net/api/encomendas");
                 await client.DeleteAsync(id.ToString());
                 return RedirectToAction(nameof(Index));

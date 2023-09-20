@@ -53,7 +53,7 @@ namespace botanicaencomedasAPI.Controllers
 
         // POST api/<EncomendasController>
         [HttpPost]
-        public async Task<ActionResult<Encomenda>> PostCity(Encomenda encomenda)
+        public async Task<ActionResult<Encomenda>> Post(Encomenda encomenda)
         {
             if (_context.Encomenda == null)
             {
@@ -66,7 +66,7 @@ namespace botanicaencomedasAPI.Controllers
         }
 
         // PUT api/<EncomendasController>/5
-        [HttpPut("{id}")]
+        [HttpPut]
         public async Task<IActionResult> Put(int id, Encomenda encomenda)
         {
             if (id != encomenda.Id)
