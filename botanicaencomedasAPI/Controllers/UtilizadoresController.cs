@@ -53,7 +53,7 @@ namespace botanicaencomedasAPI.Controllers
 
             // POST api/<UtilizadoresController>
             [HttpPost]
-            public async Task<ActionResult<Utilizador>> PostCity(Utilizador Utilizador)
+            public async Task<ActionResult<Utilizador>> Post(Utilizador Utilizador)
             {
                 if (_context.Utilizador == null)
                 {
