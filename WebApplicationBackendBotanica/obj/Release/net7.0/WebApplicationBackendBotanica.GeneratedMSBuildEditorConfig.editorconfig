@@ -9,11 +9,11 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WebApplicationBackendBotanica
 build_property.RootNamespace = WebApplicationBackendBotanica
-build_property.ProjectDir = C:\Galileu\Projeto_Final\Projeto_Final\WebApplicationBackendBotanica\
+build_property.ProjectDir = C:\Galileu\projeto_final\Projeto_Final\WebApplicationBackendBotanica\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Galileu\Projeto_Final\Projeto_Final\WebApplicationBackendBotanica
+build_property.MSBuildProjectDirectory = C:\Galileu\projeto_final\Projeto_Final\WebApplicationBackendBotanica
 build_property._RazorSourceGeneratorDebug = 
 
 [C:/Galileu/projeto_final/Projeto_Final/WebApplicationBackendBotanica/Views/Artigos/Create.cshtml]

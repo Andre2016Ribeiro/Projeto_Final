@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using System.Net.Http.Json;
 
-namespace BotanicaEncomendasEnd.Controllers
+namespace BotanicaFrontEnd.Controllers
 {
     public class EncomendasController : Controller
     {
