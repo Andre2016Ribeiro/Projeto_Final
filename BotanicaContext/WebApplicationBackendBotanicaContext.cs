@@ -18,6 +18,7 @@ namespace BotanicaContext
                 optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=BDAppBotanica1;Trusted_Connection=True;MultipleActiveResultSets=true");
             }
         }
+
         public DbSet<ClassBackendBotanica.Utilizador> Utilizador { get; set; }
 
         public DbSet<ClassBackendBotanica.Artigo> Artigo { get; set; }

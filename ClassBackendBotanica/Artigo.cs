@@ -16,9 +16,9 @@ namespace ClassBackendBotanica
         public int? CategoriaId { get; set; }
         
         [ValidateNever]
-        public Categoria Categoria { get; set; }
+        public Categoria? Categoria { get; set; }
 
         [ValidateNever]
-        public ICollection<Encomenda> Encomendas { get; set; }
+        public ICollection<Encomenda>? Encomendas { get; set; }
     }
 }

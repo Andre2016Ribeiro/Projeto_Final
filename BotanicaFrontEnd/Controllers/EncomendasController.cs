@@ -9,34 +9,43 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using System.Net.Http.Json;
+using System.Data.Entity;
 
 namespace BotanicaFrontEnd.Controllers
 {
     public class EncomendasController : Controller
     {
+        private readonly HttpClient _context;
+        public EncomendasController()
+        {
+            HttpClient client = new HttpClient();
+
+            client.BaseAddress = new Uri("http://localhost:5223/api/Encomendas/");
+            _context = client;
+        }
         // GET: EncomendasController
         public async Task<IActionResult> Index()
         {
-            HttpClient client = new HttpClient();
-            client.BaseAddress = new Uri("http://localhost:5223/api/Encomendas");
-            //client.BaseAddress = new Uri("https://populacaoapi.azurewebsites.net/api/encomendas");
-
-            var result = await client.GetFromJsonAsync<List<Encomenda>>("");
-
-            return View(result);
+            return View(await _context.GetFromJsonAsync<List<Encomenda>>(""));
         }
 
         // GET: EncomendasController/Details/5
         public async Task<IActionResult> Details(int id)
         {
-            HttpClient client = new HttpClient();
-            client.BaseAddress = new Uri("http://localhost:5223/api/Encomendas/");
-            //client.BaseAddress = new Uri("https://populacaoapi.azurewebsites.net/api/encomendas");
+            var encomenda = await _context.GetFromJsonAsync<Artigo>(id.ToString());
+            if (id == null || encomenda == null)
+            {
+                return NotFound();
+            }
 
-            var result = await client.GetFromJsonAsync<Encomenda>(id.ToString());
 
 
-            return View(result);
+            if (encomenda == null)
+            {
+                return NotFound();
+            }
+
+            return View(encomenda);
         }
 
         // GET: EncomendasController/Create
@@ -48,21 +57,14 @@ namespace BotanicaFrontEnd.Controllers
         // POST: EncomendasController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(Encomenda collection)
+        public async Task<IActionResult> Create([Bind("Id,Quantidade,DataEncomenda,UtilizadorId,ArtigoId")] Encomenda encomenda)
         {
-            try
+            if (ModelState.IsValid)
             {
-                HttpClient client = new HttpClient();
-                client.BaseAddress = new Uri("http://localhost:5223/api/Encomendas/");
-                //client.BaseAddress = new Uri("https://populacaoapi.azurewebsites.net/api/encomendas");
-
-                await client.PostAsJsonAsync<Encomenda>("", collection);
+                await _context.PostAsJsonAsync<Encomenda>("", encomenda);
                 return RedirectToAction(nameof(Index));
             }
-            catch
-            {
-                return View(collection);
-            }
+            return View(encomenda);
         }
 
 
