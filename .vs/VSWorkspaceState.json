@@ -2,8 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\botanicaencomedasAPI",
+    "\\BotanicaFrontEnd",
+    "\\BotanicaFrontEnd\\Data",
     "\\ClassBackendBotanica",
     "\\WebApplicationBackendBotanica"
   ],
+  "SelectedNode": "\\BotanicaFrontEnd\\Data\\ApplicationDbContext.cs",
   "PreviewInSolutionExplorer": false
 }
