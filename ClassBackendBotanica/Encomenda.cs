@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 
 namespace ClassBackendBotanica
 {
@@ -17,7 +18,9 @@ namespace ClassBackendBotanica
         public DateTime DataEncomenda { get; set; }
         public int? UtilizadorId { get; set; }
         public int? ArtigoId { get; set; }
+        [ValidateNever]
         public Utilizador Utilizador { get; set; }
+        [ValidateNever]
         public Artigo Artigo { get; set; }
         
     }

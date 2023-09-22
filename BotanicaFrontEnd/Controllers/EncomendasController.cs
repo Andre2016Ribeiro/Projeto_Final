@@ -1,9 +1,16 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ClassBackendBotanica;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
+using System.Net.Http.Json;
 
-namespace BotanicaEncomendasEnd.Controllers
+namespace BotanicaFrontEnd.Controllers
 {
     public class EncomendasController : Controller
     {
@@ -23,7 +30,7 @@ namespace BotanicaEncomendasEnd.Controllers
         public async Task<IActionResult> Details(int id)
         {
             HttpClient client = new HttpClient();
-            client.BaseAddress = new Uri("http://localhost:5223/api/Encomendas");
+            client.BaseAddress = new Uri("http://localhost:5223/api/Encomendas/");
             //client.BaseAddress = new Uri("https://populacaoapi.azurewebsites.net/api/encomendas");
 
             var result = await client.GetFromJsonAsync<Encomenda>(id.ToString());
@@ -46,7 +53,7 @@ namespace BotanicaEncomendasEnd.Controllers
             try
             {
                 HttpClient client = new HttpClient();
-                client.BaseAddress = new Uri("http://localhost:5223/api/Encomendas");
+                client.BaseAddress = new Uri("http://localhost:5223/api/Encomendas/");
                 //client.BaseAddress = new Uri("https://populacaoapi.azurewebsites.net/api/encomendas");
 
                 await client.PostAsJsonAsync<Encomenda>("", collection);
@@ -63,7 +70,7 @@ namespace BotanicaEncomendasEnd.Controllers
         public async Task<IActionResult> Edit(int id)
         {
             HttpClient client = new HttpClient();
-            client.BaseAddress = new Uri("http://localhost:5223/api/Encomendas");
+            client.BaseAddress = new Uri("http://localhost:5223/api/Encomendas/");
             //client.BaseAddress = new Uri("https://populacaoapi.azurewebsites.net/api/encomendas");
 
 
@@ -79,7 +86,7 @@ namespace BotanicaEncomendasEnd.Controllers
             try
             {
                 HttpClient client = new HttpClient();
-                client.BaseAddress = new Uri("http://localhost:5223/api/Encomendas");
+                client.BaseAddress = new Uri("http://localhost:5223/api/Encomendas/" + id.ToString());
                 //client.BaseAddress = new Uri("https://populacaoapi.azurewebsites.net/api/encomendas");
 
                 await client.PutAsJsonAsync<Encomenda>(id.ToString(), collection);
@@ -95,7 +102,7 @@ namespace BotanicaEncomendasEnd.Controllers
         public async Task<IActionResult> Delete(int id)
         {
             HttpClient client = new HttpClient();
-            client.BaseAddress = new Uri("http://localhost:5223/api/Encomendas");
+            client.BaseAddress = new Uri("http://localhost:5223/api/Encomendas/");
             //client.BaseAddress = new Uri("https://populacaoapi.azurewebsites.net/api/encomendas");
 
 
@@ -112,7 +119,7 @@ namespace BotanicaEncomendasEnd.Controllers
             {
                 HttpClient client = new HttpClient();
 
-                client.BaseAddress = new Uri("http://localhost:5223/api/Encomendas");
+                client.BaseAddress = new Uri("http://localhost:5223/api/Encomendas/");
                 //client.BaseAddress = new Uri("https://populacaoapi.azurewebsites.net/api/encomendas");
                 await client.DeleteAsync(id.ToString());
                 return RedirectToAction(nameof(Index));

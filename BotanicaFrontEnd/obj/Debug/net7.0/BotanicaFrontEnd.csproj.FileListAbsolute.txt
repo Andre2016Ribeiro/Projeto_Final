@@ -1,10 +1,5 @@
-C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\botanicaencomedasAPI.deps.json
-C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\botanicaencomedasAPI.runtimeconfig.json
-C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\botanicaencomedasAPI.staticwebassets.runtime.json
-C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\botanicaencomedasAPI.exe
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\appsettings.Development.json
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\appsettings.json
-C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\BotanicaFrontEnd.staticwebassets.runtime.json
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\BotanicaFrontEnd.exe
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\BotanicaFrontEnd.deps.json
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\BotanicaFrontEnd.runtimeconfig.json
@@ -20,7 +15,6 @@ C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\Microso
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.UI.dll
-C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\Microsoft.Build.dll
@@ -58,7 +52,6 @@ C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\Microso
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\Microsoft.NET.StringTools.dll
-C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\Microsoft.OpenApi.dll
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
@@ -79,9 +72,6 @@ C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\NuGet.P
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\NuGet.ProjectModel.dll
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\NuGet.Protocol.dll
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\NuGet.Versioning.dll
-C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\System.CodeDom.dll
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\System.Composition.AttributedModel.dll
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\System.Composition.Convention.dll
@@ -254,9 +244,7 @@ C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\runtime
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
-C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\botanicaencomedasAPI.dll
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\ClassBackendBotanica.dll
-C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\botanicaencomedasAPI.pdb
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\ClassBackendBotanica.pdb
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\obj\Debug\net7.0\BotanicaFrontEnd.csproj.AssemblyReference.cache
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\obj\Debug\net7.0\BotanicaFrontEnd.GeneratedMSBuildEditorConfig.editorconfig
@@ -267,6 +255,14 @@ C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\obj\Debug\net7.0\Botanic
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\obj\Debug\net7.0\BotanicaFrontEnd.MvcApplicationPartsAssemblyInfo.cache
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\obj\Debug\net7.0\BotanicaFrontEnd.RazorAssemblyInfo.cache
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\obj\Debug\net7.0\BotanicaFrontEnd.RazorAssemblyInfo.cs
+C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\obj\Debug\net7.0\BotanicaFrontEnd.csproj.CopyComplete
+C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\obj\Debug\net7.0\BotanicaFrontEnd.dll
+C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\obj\Debug\net7.0\refint\BotanicaFrontEnd.dll
+C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\obj\Debug\net7.0\BotanicaFrontEnd.pdb
+C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\obj\Debug\net7.0\BotanicaFrontEnd.genruntimeconfig.cache
+C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\obj\Debug\net7.0\ref\BotanicaFrontEnd.dll
+C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\BotanicaFrontEnd.staticwebassets.runtime.json
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\obj\Debug\net7.0\staticwebassets\msbuild.BotanicaFrontEnd.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\obj\Debug\net7.0\staticwebassets\msbuild.build.BotanicaFrontEnd.props
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.BotanicaFrontEnd.props
@@ -274,14 +270,7 @@ C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\obj\Debug\net7.0\staticw
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\obj\Debug\net7.0\staticwebassets.pack.json
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\obj\Debug\net7.0\staticwebassets.build.json
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\obj\Debug\net7.0\staticwebassets.development.json
+C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout-copia.cshtml.rz.scp.css
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\obj\Debug\net7.0\scopedcss\bundle\BotanicaFrontEnd.styles.css
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\obj\Debug\net7.0\scopedcss\projectbundle\BotanicaFrontEnd.bundle.scp.css
-C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\obj\Debug\net7.0\BotanicaFrontEnd.csproj.CopyComplete
-C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\obj\Debug\net7.0\BotanicaFrontEnd.dll
-C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\obj\Debug\net7.0\refint\BotanicaFrontEnd.dll
-C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\obj\Debug\net7.0\BotanicaFrontEnd.pdb
-C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\obj\Debug\net7.0\BotanicaFrontEnd.genruntimeconfig.cache
-C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\obj\Debug\net7.0\ref\BotanicaFrontEnd.dll
-C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\BotanicaContext.dll
-C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\BotanicaContext.pdb

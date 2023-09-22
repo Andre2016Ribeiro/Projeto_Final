@@ -1,176 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\andre.ribeiro\\Source\\Repos\\Projeto_Final\\BotanicaFrontEnd\\BotanicaFrontEnd.csproj": {}
+    "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaFrontEnd\\BotanicaFrontEnd.csproj": {}
   },
   "projects": {
-    "C:\\Users\\andre.ribeiro\\Source\\Repos\\Projeto_Final\\BotanicaContext\\BotanicaContext.csproj": {
+    "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaFrontEnd\\BotanicaFrontEnd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\andre.ribeiro\\Source\\Repos\\Projeto_Final\\BotanicaContext\\BotanicaContext.csproj",
-        "projectName": "BotanicaContext",
-        "projectPath": "C:\\Users\\andre.ribeiro\\Source\\Repos\\Projeto_Final\\BotanicaContext\\BotanicaContext.csproj",
-        "packagesPath": "C:\\Users\\andre.ribeiro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\andre.ribeiro\\Source\\Repos\\Projeto_Final\\BotanicaContext\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\andre.ribeiro\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net7.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
-            "projectReferences": {
-              "C:\\Users\\andre.ribeiro\\Source\\Repos\\Projeto_Final\\ClassBackendBotanica\\ClassBackendBotanica.csproj": {
-                "projectPath": "C:\\Users\\andre.ribeiro\\Source\\Repos\\Projeto_Final\\ClassBackendBotanica\\ClassBackendBotanica.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[7.0.11, )"
-            },
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[7.0.11, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[7.0.11, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[7.0.11, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\andre.ribeiro\\Source\\Repos\\Projeto_Final\\botanicaencomedasAPI\\botanicaencomedasAPI.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\andre.ribeiro\\Source\\Repos\\Projeto_Final\\botanicaencomedasAPI\\botanicaencomedasAPI.csproj",
-        "projectName": "botanicaencomedasAPI",
-        "projectPath": "C:\\Users\\andre.ribeiro\\Source\\Repos\\Projeto_Final\\botanicaencomedasAPI\\botanicaencomedasAPI.csproj",
-        "packagesPath": "C:\\Users\\andre.ribeiro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\andre.ribeiro\\Source\\Repos\\Projeto_Final\\botanicaencomedasAPI\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\andre.ribeiro\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net7.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
-            "projectReferences": {
-              "C:\\Users\\andre.ribeiro\\Source\\Repos\\Projeto_Final\\BotanicaContext\\BotanicaContext.csproj": {
-                "projectPath": "C:\\Users\\andre.ribeiro\\Source\\Repos\\Projeto_Final\\BotanicaContext\\BotanicaContext.csproj"
-              },
-              "C:\\Users\\andre.ribeiro\\Source\\Repos\\Projeto_Final\\ClassBackendBotanica\\ClassBackendBotanica.csproj": {
-                "projectPath": "C:\\Users\\andre.ribeiro\\Source\\Repos\\Projeto_Final\\ClassBackendBotanica\\ClassBackendBotanica.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
-          "dependencies": {
-            "Microsoft.AspNetCore.OpenApi": {
-              "target": "Package",
-              "version": "[7.0.5, )"
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[6.4.0, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\andre.ribeiro\\Source\\Repos\\Projeto_Final\\BotanicaFrontEnd\\BotanicaFrontEnd.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\andre.ribeiro\\Source\\Repos\\Projeto_Final\\BotanicaFrontEnd\\BotanicaFrontEnd.csproj",
+        "projectUniqueName": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaFrontEnd\\BotanicaFrontEnd.csproj",
         "projectName": "BotanicaFrontEnd",
-        "projectPath": "C:\\Users\\andre.ribeiro\\Source\\Repos\\Projeto_Final\\BotanicaFrontEnd\\BotanicaFrontEnd.csproj",
-        "packagesPath": "C:\\Users\\andre.ribeiro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\andre.ribeiro\\Source\\Repos\\Projeto_Final\\BotanicaFrontEnd\\obj\\",
+        "projectPath": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaFrontEnd\\BotanicaFrontEnd.csproj",
+        "packagesPath": "C:\\Users\\Claudia\\.nuget\\packages\\",
+        "outputPath": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaFrontEnd\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\andre.ribeiro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Claudia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -178,17 +26,16 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/vitorandreribeiro0439/_packaging/EShopOnWebShared/nuget/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\andre.ribeiro\\Source\\Repos\\Projeto_Final\\botanicaencomedasAPI\\botanicaencomedasAPI.csproj": {
-                "projectPath": "C:\\Users\\andre.ribeiro\\Source\\Repos\\Projeto_Final\\botanicaencomedasAPI\\botanicaencomedasAPI.csproj"
-              },
-              "C:\\Users\\andre.ribeiro\\Source\\Repos\\Projeto_Final\\ClassBackendBotanica\\ClassBackendBotanica.csproj": {
-                "projectPath": "C:\\Users\\andre.ribeiro\\Source\\Repos\\Projeto_Final\\ClassBackendBotanica\\ClassBackendBotanica.csproj"
+              "C:\\Galileu\\Projeto_Final\\Projeto_Final\\ClassBackendBotanica\\ClassBackendBotanica.csproj": {
+                "projectPath": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\ClassBackendBotanica\\ClassBackendBotanica.csproj"
               }
             }
           }
@@ -222,6 +69,10 @@
             "Microsoft.EntityFrameworkCore.Tools": {
               "target": "Package",
               "version": "[7.0.5, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[7.0.10, )"
             }
           },
           "imports": [
@@ -243,21 +94,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\andre.ribeiro\\Source\\Repos\\Projeto_Final\\ClassBackendBotanica\\ClassBackendBotanica.csproj": {
+    "C:\\Galileu\\Projeto_Final\\Projeto_Final\\ClassBackendBotanica\\ClassBackendBotanica.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\andre.ribeiro\\Source\\Repos\\Projeto_Final\\ClassBackendBotanica\\ClassBackendBotanica.csproj",
+        "projectUniqueName": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\ClassBackendBotanica\\ClassBackendBotanica.csproj",
         "projectName": "ClassBackendBotanica",
-        "projectPath": "C:\\Users\\andre.ribeiro\\Source\\Repos\\Projeto_Final\\ClassBackendBotanica\\ClassBackendBotanica.csproj",
-        "packagesPath": "C:\\Users\\andre.ribeiro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\andre.ribeiro\\Source\\Repos\\Projeto_Final\\ClassBackendBotanica\\obj\\",
+        "projectPath": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\ClassBackendBotanica\\ClassBackendBotanica.csproj",
+        "packagesPath": "C:\\Users\\Claudia\\.nuget\\packages\\",
+        "outputPath": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\ClassBackendBotanica\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\andre.ribeiro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Claudia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -265,7 +120,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/vitorandreribeiro0439/_packaging/EShopOnWebShared/nuget/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
@@ -286,6 +142,18 @@
             "EntityFramework": {
               "target": "Package",
               "version": "[6.4.4, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Formatters.Json": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -340,7 +208,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

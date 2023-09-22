@@ -532,3 +532,6 @@ C:\Users\andre.ribeiro\Source\Repos\Projeto_Final\botanicaencomedasAPI\obj\Debug
 C:\Users\andre.ribeiro\Source\Repos\Projeto_Final\botanicaencomedasAPI\obj\Debug\net7.0\ref\botanicaencomedasAPI.dll
 C:\Galileu\Projeto_Final\Projeto_Final\botanicaencomedasAPI\bin\Debug\net7.0\BotanicaContext.dll
 C:\Galileu\Projeto_Final\Projeto_Final\botanicaencomedasAPI\bin\Debug\net7.0\BotanicaContext.pdb
+C:\Galileu\Projeto_Final\Projeto_Final\botanicaencomedasAPI\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Galileu\Projeto_Final\Projeto_Final\botanicaencomedasAPI\bin\Debug\net7.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Galileu\Projeto_Final\Projeto_Final\botanicaencomedasAPI\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll

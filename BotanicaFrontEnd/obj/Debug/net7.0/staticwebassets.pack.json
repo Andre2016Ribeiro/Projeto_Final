@@ -245,6 +245,94 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaFrontEnd\\wwwroot\\metro\\css\\metro-all.css",
+      "PackagePath": "staticwebassets\\metro\\css\\metro-all.css"
+    },
+    {
+      "Id": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaFrontEnd\\wwwroot\\metro\\css\\metro-all.min.css",
+      "PackagePath": "staticwebassets\\metro\\css\\metro-all.min.css"
+    },
+    {
+      "Id": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaFrontEnd\\wwwroot\\metro\\css\\metro-colors.css",
+      "PackagePath": "staticwebassets\\metro\\css\\metro-colors.css"
+    },
+    {
+      "Id": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaFrontEnd\\wwwroot\\metro\\css\\metro-colors.min.css",
+      "PackagePath": "staticwebassets\\metro\\css\\metro-colors.min.css"
+    },
+    {
+      "Id": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaFrontEnd\\wwwroot\\metro\\css\\metro-common.css",
+      "PackagePath": "staticwebassets\\metro\\css\\metro-common.css"
+    },
+    {
+      "Id": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaFrontEnd\\wwwroot\\metro\\css\\metro-common.min.css",
+      "PackagePath": "staticwebassets\\metro\\css\\metro-common.min.css"
+    },
+    {
+      "Id": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaFrontEnd\\wwwroot\\metro\\css\\metro-components.css",
+      "PackagePath": "staticwebassets\\metro\\css\\metro-components.css"
+    },
+    {
+      "Id": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaFrontEnd\\wwwroot\\metro\\css\\metro-components.min.css",
+      "PackagePath": "staticwebassets\\metro\\css\\metro-components.min.css"
+    },
+    {
+      "Id": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaFrontEnd\\wwwroot\\metro\\css\\metro-icons.css",
+      "PackagePath": "staticwebassets\\metro\\css\\metro-icons.css"
+    },
+    {
+      "Id": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaFrontEnd\\wwwroot\\metro\\css\\metro-icons.min.css",
+      "PackagePath": "staticwebassets\\metro\\css\\metro-icons.min.css"
+    },
+    {
+      "Id": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaFrontEnd\\wwwroot\\metro\\css\\metro-reset.css",
+      "PackagePath": "staticwebassets\\metro\\css\\metro-reset.css"
+    },
+    {
+      "Id": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaFrontEnd\\wwwroot\\metro\\css\\metro-reset.min.css",
+      "PackagePath": "staticwebassets\\metro\\css\\metro-reset.min.css"
+    },
+    {
+      "Id": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaFrontEnd\\wwwroot\\metro\\css\\metro.css",
+      "PackagePath": "staticwebassets\\metro\\css\\metro.css"
+    },
+    {
+      "Id": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaFrontEnd\\wwwroot\\metro\\css\\metro.min.css",
+      "PackagePath": "staticwebassets\\metro\\css\\metro.min.css"
+    },
+    {
+      "Id": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaFrontEnd\\wwwroot\\metro\\js\\metro.js",
+      "PackagePath": "staticwebassets\\metro\\js\\metro.js"
+    },
+    {
+      "Id": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaFrontEnd\\wwwroot\\metro\\js\\metro.min.js",
+      "PackagePath": "staticwebassets\\metro\\js\\metro.min.js"
+    },
+    {
+      "Id": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaFrontEnd\\wwwroot\\metro\\js\\metro.min.js.map",
+      "PackagePath": "staticwebassets\\metro\\js\\metro.min.js.map"
+    },
+    {
+      "Id": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaFrontEnd\\wwwroot\\metro\\mif\\metro.svg",
+      "PackagePath": "staticwebassets\\metro\\mif\\metro.svg"
+    },
+    {
+      "Id": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaFrontEnd\\wwwroot\\metro\\mif\\metro.ttf",
+      "PackagePath": "staticwebassets\\metro\\mif\\metro.ttf"
+    },
+    {
+      "Id": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaFrontEnd\\wwwroot\\metro\\mif\\metro.woff",
+      "PackagePath": "staticwebassets\\metro\\mif\\metro.woff"
+    },
+    {
+      "Id": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaFrontEnd\\wwwroot\\skeleton\\skeleton.css",
+      "PackagePath": "staticwebassets\\skeleton\\skeleton.css"
+    },
+    {
+      "Id": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaFrontEnd\\wwwroot\\skeleton\\skeleton.min.css",
+      "PackagePath": "staticwebassets\\skeleton\\skeleton.min.css"
+    },
+    {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.BotanicaFrontEnd.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
