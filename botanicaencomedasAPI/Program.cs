@@ -22,8 +22,11 @@ var app = builder.Build();
     app.UseSwagger();
     app.UseSwaggerUI();
 //}
-
+app.UseAuthentication();
 app.UseAuthorization();
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.MapControllers();
 app.UseCors(options =>

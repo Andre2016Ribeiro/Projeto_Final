@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaContext\\BotanicaContext.csproj": {}
+    "C:\\Galileu\\projeto_final\\Projeto_Final\\BotanicaContext\\BotanicaContext.csproj": {}
   },
   "projects": {
-    "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaContext\\BotanicaContext.csproj": {
+    "C:\\Galileu\\projeto_final\\Projeto_Final\\BotanicaContext\\BotanicaContext.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaContext\\BotanicaContext.csproj",
+        "projectUniqueName": "C:\\Galileu\\projeto_final\\Projeto_Final\\BotanicaContext\\BotanicaContext.csproj",
         "projectName": "BotanicaContext",
-        "projectPath": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaContext\\BotanicaContext.csproj",
+        "projectPath": "C:\\Galileu\\projeto_final\\Projeto_Final\\BotanicaContext\\BotanicaContext.csproj",
         "packagesPath": "C:\\Users\\Claudia\\.nuget\\packages\\",
         "outputPath": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaContext\\obj\\",
         "projectStyle": "PackageReference",
@@ -33,8 +33,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Galileu\\Projeto_Final\\Projeto_Final\\ClassBackendBotanica\\ClassBackendBotanica.csproj": {
-                "projectPath": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\ClassBackendBotanica\\ClassBackendBotanica.csproj"
+              "C:\\Galileu\\projeto_final\\Projeto_Final\\ClassBackendBotanica\\ClassBackendBotanica.csproj": {
+                "projectPath": "C:\\Galileu\\projeto_final\\Projeto_Final\\ClassBackendBotanica\\ClassBackendBotanica.csproj"
               }
             }
           }
@@ -90,12 +90,12 @@
         }
       }
     },
-    "C:\\Galileu\\Projeto_Final\\Projeto_Final\\ClassBackendBotanica\\ClassBackendBotanica.csproj": {
+    "C:\\Galileu\\projeto_final\\Projeto_Final\\ClassBackendBotanica\\ClassBackendBotanica.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\ClassBackendBotanica\\ClassBackendBotanica.csproj",
+        "projectUniqueName": "C:\\Galileu\\projeto_final\\Projeto_Final\\ClassBackendBotanica\\ClassBackendBotanica.csproj",
         "projectName": "ClassBackendBotanica",
-        "projectPath": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\ClassBackendBotanica\\ClassBackendBotanica.csproj",
+        "projectPath": "C:\\Galileu\\projeto_final\\Projeto_Final\\ClassBackendBotanica\\ClassBackendBotanica.csproj",
         "packagesPath": "C:\\Users\\Claudia\\.nuget\\packages\\",
         "outputPath": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\ClassBackendBotanica\\obj\\",
         "projectStyle": "PackageReference",

@@ -12979,11 +12979,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\botanicaencomedasAPI\\botanicaencomedasAPI.csproj",
+      "projectUniqueName": "C:\\Galileu\\projeto_final\\Projeto_Final\\botanicaencomedasAPI\\botanicaencomedasAPI.csproj",
       "projectName": "botanicaencomedasAPI",
-      "projectPath": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\botanicaencomedasAPI\\botanicaencomedasAPI.csproj",
+      "projectPath": "C:\\Galileu\\projeto_final\\Projeto_Final\\botanicaencomedasAPI\\botanicaencomedasAPI.csproj",
       "packagesPath": "C:\\Users\\Claudia\\.nuget\\packages\\",
-      "outputPath": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\botanicaencomedasAPI\\obj\\",
+      "outputPath": "C:\\Galileu\\projeto_final\\Projeto_Final\\botanicaencomedasAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -13006,11 +13006,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaContext\\BotanicaContext.csproj": {
-              "projectPath": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaContext\\BotanicaContext.csproj"
+            "C:\\Galileu\\projeto_final\\Projeto_Final\\BotanicaContext\\BotanicaContext.csproj": {
+              "projectPath": "C:\\Galileu\\projeto_final\\Projeto_Final\\BotanicaContext\\BotanicaContext.csproj"
             },
-            "C:\\Galileu\\Projeto_Final\\Projeto_Final\\ClassBackendBotanica\\ClassBackendBotanica.csproj": {
-              "projectPath": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\ClassBackendBotanica\\ClassBackendBotanica.csproj"
+            "C:\\Galileu\\projeto_final\\Projeto_Final\\ClassBackendBotanica\\ClassBackendBotanica.csproj": {
+              "projectPath": "C:\\Galileu\\projeto_final\\Projeto_Final\\ClassBackendBotanica\\ClassBackendBotanica.csproj"
             }
           }
         }

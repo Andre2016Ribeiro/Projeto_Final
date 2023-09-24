@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KfarFidXpxtfx5K9xTABDZ7UhhycKbRa1gWmyGRvxMJnB59VOmziVftAWf+c3F4X8nzVNe1CrkUF/aBOrpBhUA==",
+  "dgSpecHash": "dh0c/NFfhztC7y6VkFr3HWny1O0ui5eQyxdGiwF3H0Xf9SovbHQi+kuOpA7QSy4McmDn8pFCcxZDl//hJVtegA==",
   "success": true,
-  "projectFilePath": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaContext\\BotanicaContext.csproj",
+  "projectFilePath": "C:\\Galileu\\projeto_final\\Projeto_Final\\BotanicaContext\\BotanicaContext.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Claudia\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Claudia\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
