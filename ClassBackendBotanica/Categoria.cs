@@ -15,6 +15,6 @@ namespace ClassBackendBotanica
 
 
         [ValidateNever]
-        public ICollection<Artigo> Artigos { get; set; }
+        public ICollection<Artigo>? Artigos { get; set; }
     }
 }

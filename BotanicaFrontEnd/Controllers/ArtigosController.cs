@@ -5,29 +5,42 @@ using Microsoft.AspNetCore.Mvc;
 namespace BotanicaFrontEnd.Controllers
 {
     public class ArtigosController : Controller
-    {// GET: ArtigosController
-        public async Task<IActionResult> Index()
+    {
+        private readonly HttpClient _context;
+
+        public ArtigosController()
         {
             HttpClient client = new HttpClient();
+
             client.BaseAddress = new Uri("http://localhost:5223/api/Artigos/");
-            //client.BaseAddress = new Uri("https://populacaoapi.azurewebsites.net/api/Artigos");
+            _context = client;
+        }
 
-            var result = await client.GetFromJsonAsync<List<Artigo>>("");
+        // GET: ArtigosController
+        public async Task<IActionResult> Index()
+        {
+            
 
-            return View(result);
+            return View(await _context.GetFromJsonAsync<List<Artigo>>(""));
         }
 
         // GET: ArtigosController/Details/5
         public async Task<IActionResult> Details(int id)
         {
-            HttpClient client = new HttpClient();
-            client.BaseAddress = new Uri("http://localhost:5223/api/Artigos/");
-            //client.BaseAddress = new Uri("https://populacaoapi.azurewebsites.net/api/Artigos");
+            var artigo = await _context.GetFromJsonAsync<Artigo>(id.ToString());
+            if (id == null || artigo == null)
+            {
+                return NotFound();
+            }
 
-            var result = await client.GetFromJsonAsync<Artigo>(id.ToString());
 
 
-            return View(result);
+            if (artigo == null)
+            {
+                return NotFound();
+            }
+
+            return View(artigo);
         }
 
         // GET: ArtigosController/Create

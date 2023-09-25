@@ -66,7 +66,7 @@ namespace botanicaencomedasAPI.Controllers
         }
 
         // PUT api/<EncomendasController>/5
-        [HttpPut]
+        [HttpPut("{id}")]
         public async Task<IActionResult> Put(int id, Encomenda encomenda)
         {
             if (id != encomenda.Id)
