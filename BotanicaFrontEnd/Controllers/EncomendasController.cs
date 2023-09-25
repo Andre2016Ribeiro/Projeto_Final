@@ -10,9 +10,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using System.Net.Http.Json;
 using System.Data.Entity;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BotanicaFrontEnd.Controllers
 {
+    [Authorize]
     public class EncomendasController : Controller
     {
         private readonly HttpClient _context;

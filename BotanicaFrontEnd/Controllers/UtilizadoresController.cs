@@ -1,11 +1,14 @@
 ﻿using ClassBackendBotanica;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BotanicaFrontEnd.Controllers
 {
+    [Authorize]
     public class UtilizadoresController : Controller
     {
+        
         // GET: UtilizadoresController
         public async Task<IActionResult> Index()
         {
