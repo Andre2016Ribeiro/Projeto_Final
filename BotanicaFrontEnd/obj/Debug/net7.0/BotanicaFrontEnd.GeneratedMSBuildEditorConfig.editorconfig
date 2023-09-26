@@ -9,11 +9,11 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BotanicaFrontEnd
 build_property.RootNamespace = BotanicaFrontEnd
-build_property.ProjectDir = C:\Galileu\projeto_final\Projeto_Final\BotanicaFrontEnd\
+build_property.ProjectDir = C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Galileu\projeto_final\Projeto_Final\BotanicaFrontEnd
+build_property.MSBuildProjectDirectory = C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd
 build_property._RazorSourceGeneratorDebug = 
 
 [C:/Galileu/Projeto_Final/Projeto_Final/BotanicaFrontEnd/Areas/Identity/Pages/_ViewStart.cshtml]
@@ -84,10 +84,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Galileu/Projeto_Final/Projeto_Final/BotanicaFrontEnd/Views/Shared/_Layout-copia.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQtY29waWEuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-rd3x058eil
-
 [C:/Galileu/Projeto_Final/Projeto_Final/BotanicaFrontEnd/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-qdrjl042d4
+
+[C:/Galileu/Projeto_Final/Projeto_Final/BotanicaFrontEnd/Views/Shared/_Layoutcopia.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRjb3BpYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-22x9la4iz9
