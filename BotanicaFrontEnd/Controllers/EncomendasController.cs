@@ -11,6 +11,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Net.Http.Json;
 using System.Data.Entity;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 
 namespace BotanicaFrontEnd.Controllers
 {
@@ -25,10 +26,15 @@ namespace BotanicaFrontEnd.Controllers
             client.BaseAddress = new Uri("http://localhost:5223/api/Encomendas/");
             _context = client;
         }
+        //string? name = User.Identity.Name;
+        //User.Identity.GetUserId();
         // GET: EncomendasController
         public async Task<IActionResult> Index()
         {
-            return View(await _context.GetFromJsonAsync<List<Encomenda>>(""));
+            string? name = User.Identity.Name;
+
+
+            return View(await _context.GetFromJsonAsync<List<Encomenda>>("GetByName/" + name));
         }
 
         // GET: EncomendasController/Details/5

@@ -548,5 +548,5 @@ C:\Users\andre.ribeiro\Source\Repos\Projeto_Final\BotanicaFrontEnd\obj\Debug\net
 C:\Users\andre.ribeiro\Source\Repos\Projeto_Final\BotanicaFrontEnd\obj\Debug\net7.0\BotanicaFrontEnd.pdb
 C:\Users\andre.ribeiro\Source\Repos\Projeto_Final\BotanicaFrontEnd\obj\Debug\net7.0\BotanicaFrontEnd.genruntimeconfig.cache
 C:\Users\andre.ribeiro\Source\Repos\Projeto_Final\BotanicaFrontEnd\obj\Debug\net7.0\ref\BotanicaFrontEnd.dll
-C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\obj\Debug\net7.0\scopedcss\Views\Shared\_Layoutcopia.cshtml.rz.scp.css
 C:\Users\andre.ribeiro\Source\Repos\Projeto_Final\BotanicaFrontEnd\obj\Debug\net7.0\scopedcss\Views\Shared\_Layoutcopia.cshtml.rz.scp.css
+C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout_copia.cshtml.rz.scp.css
