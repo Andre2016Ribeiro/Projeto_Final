@@ -9,117 +9,117 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WebApplicationBackendBotanica
 build_property.RootNamespace = WebApplicationBackendBotanica
-build_property.ProjectDir = C:\Galileu\Projeto_Final\Projeto_Final\WebApplicationBackendBotanica\
+build_property.ProjectDir = C:\Users\andre.ribeiro\Source\Repos\Projeto_Final\WebApplicationBackendBotanica\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Galileu\Projeto_Final\Projeto_Final\WebApplicationBackendBotanica
+build_property.MSBuildProjectDirectory = C:\Users\andre.ribeiro\Source\Repos\Projeto_Final\WebApplicationBackendBotanica
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Galileu/Projeto_Final/Projeto_Final/WebApplicationBackendBotanica/Views/Artigos/Create.cshtml]
+[C:/Users/andre.ribeiro/Source/Repos/Projeto_Final/WebApplicationBackendBotanica/Views/Artigos/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aWdvc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Galileu/Projeto_Final/Projeto_Final/WebApplicationBackendBotanica/Views/Artigos/Delete.cshtml]
+[C:/Users/andre.ribeiro/Source/Repos/Projeto_Final/WebApplicationBackendBotanica/Views/Artigos/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aWdvc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Galileu/Projeto_Final/Projeto_Final/WebApplicationBackendBotanica/Views/Artigos/Details.cshtml]
+[C:/Users/andre.ribeiro/Source/Repos/Projeto_Final/WebApplicationBackendBotanica/Views/Artigos/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aWdvc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Galileu/Projeto_Final/Projeto_Final/WebApplicationBackendBotanica/Views/Artigos/Edit.cshtml]
+[C:/Users/andre.ribeiro/Source/Repos/Projeto_Final/WebApplicationBackendBotanica/Views/Artigos/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aWdvc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Galileu/Projeto_Final/Projeto_Final/WebApplicationBackendBotanica/Views/Artigos/Index.cshtml]
+[C:/Users/andre.ribeiro/Source/Repos/Projeto_Final/WebApplicationBackendBotanica/Views/Artigos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aWdvc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Galileu/Projeto_Final/Projeto_Final/WebApplicationBackendBotanica/Views/Categorias/Create.cshtml]
+[C:/Users/andre.ribeiro/Source/Repos/Projeto_Final/WebApplicationBackendBotanica/Views/Categorias/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Galileu/Projeto_Final/Projeto_Final/WebApplicationBackendBotanica/Views/Categorias/Delete.cshtml]
+[C:/Users/andre.ribeiro/Source/Repos/Projeto_Final/WebApplicationBackendBotanica/Views/Categorias/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Galileu/Projeto_Final/Projeto_Final/WebApplicationBackendBotanica/Views/Categorias/Details.cshtml]
+[C:/Users/andre.ribeiro/Source/Repos/Projeto_Final/WebApplicationBackendBotanica/Views/Categorias/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Galileu/Projeto_Final/Projeto_Final/WebApplicationBackendBotanica/Views/Categorias/Edit.cshtml]
+[C:/Users/andre.ribeiro/Source/Repos/Projeto_Final/WebApplicationBackendBotanica/Views/Categorias/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Galileu/Projeto_Final/Projeto_Final/WebApplicationBackendBotanica/Views/Categorias/Index.cshtml]
+[C:/Users/andre.ribeiro/Source/Repos/Projeto_Final/WebApplicationBackendBotanica/Views/Categorias/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Galileu/Projeto_Final/Projeto_Final/WebApplicationBackendBotanica/Views/Encomendas/Create.cshtml]
+[C:/Users/andre.ribeiro/Source/Repos/Projeto_Final/WebApplicationBackendBotanica/Views/Encomendas/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5jb21lbmRhc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Galileu/Projeto_Final/Projeto_Final/WebApplicationBackendBotanica/Views/Encomendas/Delete.cshtml]
+[C:/Users/andre.ribeiro/Source/Repos/Projeto_Final/WebApplicationBackendBotanica/Views/Encomendas/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5jb21lbmRhc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Galileu/Projeto_Final/Projeto_Final/WebApplicationBackendBotanica/Views/Encomendas/Details.cshtml]
+[C:/Users/andre.ribeiro/Source/Repos/Projeto_Final/WebApplicationBackendBotanica/Views/Encomendas/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5jb21lbmRhc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Galileu/Projeto_Final/Projeto_Final/WebApplicationBackendBotanica/Views/Encomendas/Edit.cshtml]
+[C:/Users/andre.ribeiro/Source/Repos/Projeto_Final/WebApplicationBackendBotanica/Views/Encomendas/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5jb21lbmRhc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Galileu/Projeto_Final/Projeto_Final/WebApplicationBackendBotanica/Views/Encomendas/Index.cshtml]
+[C:/Users/andre.ribeiro/Source/Repos/Projeto_Final/WebApplicationBackendBotanica/Views/Encomendas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5jb21lbmRhc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Galileu/Projeto_Final/Projeto_Final/WebApplicationBackendBotanica/Views/Home/Index.cshtml]
+[C:/Users/andre.ribeiro/Source/Repos/Projeto_Final/WebApplicationBackendBotanica/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Galileu/Projeto_Final/Projeto_Final/WebApplicationBackendBotanica/Views/Home/Privacy.cshtml]
+[C:/Users/andre.ribeiro/Source/Repos/Projeto_Final/WebApplicationBackendBotanica/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Galileu/Projeto_Final/Projeto_Final/WebApplicationBackendBotanica/Views/Shared/Error.cshtml]
+[C:/Users/andre.ribeiro/Source/Repos/Projeto_Final/WebApplicationBackendBotanica/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Galileu/Projeto_Final/Projeto_Final/WebApplicationBackendBotanica/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/andre.ribeiro/Source/Repos/Projeto_Final/WebApplicationBackendBotanica/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Galileu/Projeto_Final/Projeto_Final/WebApplicationBackendBotanica/Views/Utilizadores/Create.cshtml]
+[C:/Users/andre.ribeiro/Source/Repos/Projeto_Final/WebApplicationBackendBotanica/Views/Utilizadores/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGl6YWRvcmVzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Galileu/Projeto_Final/Projeto_Final/WebApplicationBackendBotanica/Views/Utilizadores/Delete.cshtml]
+[C:/Users/andre.ribeiro/Source/Repos/Projeto_Final/WebApplicationBackendBotanica/Views/Utilizadores/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGl6YWRvcmVzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Galileu/Projeto_Final/Projeto_Final/WebApplicationBackendBotanica/Views/Utilizadores/Details.cshtml]
+[C:/Users/andre.ribeiro/Source/Repos/Projeto_Final/WebApplicationBackendBotanica/Views/Utilizadores/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGl6YWRvcmVzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Galileu/Projeto_Final/Projeto_Final/WebApplicationBackendBotanica/Views/Utilizadores/Edit.cshtml]
+[C:/Users/andre.ribeiro/Source/Repos/Projeto_Final/WebApplicationBackendBotanica/Views/Utilizadores/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGl6YWRvcmVzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Galileu/Projeto_Final/Projeto_Final/WebApplicationBackendBotanica/Views/Utilizadores/Index.cshtml]
+[C:/Users/andre.ribeiro/Source/Repos/Projeto_Final/WebApplicationBackendBotanica/Views/Utilizadores/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGl6YWRvcmVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Galileu/Projeto_Final/Projeto_Final/WebApplicationBackendBotanica/Views/_ViewImports.cshtml]
+[C:/Users/andre.ribeiro/Source/Repos/Projeto_Final/WebApplicationBackendBotanica/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Galileu/Projeto_Final/Projeto_Final/WebApplicationBackendBotanica/Views/_ViewStart.cshtml]
+[C:/Users/andre.ribeiro/Source/Repos/Projeto_Final/WebApplicationBackendBotanica/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Galileu/Projeto_Final/Projeto_Final/WebApplicationBackendBotanica/Views/Shared/_Layout.cshtml]
+[C:/Users/andre.ribeiro/Source/Repos/Projeto_Final/WebApplicationBackendBotanica/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-f908e5h9kp
