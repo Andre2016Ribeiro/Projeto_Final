@@ -270,7 +270,6 @@ C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\obj\Debug\net7.0\staticw
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\obj\Debug\net7.0\staticwebassets.pack.json
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\obj\Debug\net7.0\staticwebassets.build.json
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\obj\Debug\net7.0\staticwebassets.development.json
-C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout-copia.cshtml.rz.scp.css
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\obj\Debug\net7.0\scopedcss\bundle\BotanicaFrontEnd.styles.css
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\obj\Debug\net7.0\scopedcss\projectbundle\BotanicaFrontEnd.bundle.scp.css
@@ -550,3 +549,4 @@ C:\Users\andre.ribeiro\Source\Repos\Projeto_Final\BotanicaFrontEnd\obj\Debug\net
 C:\Users\andre.ribeiro\Source\Repos\Projeto_Final\BotanicaFrontEnd\obj\Debug\net7.0\BotanicaFrontEnd.pdb
 C:\Users\andre.ribeiro\Source\Repos\Projeto_Final\BotanicaFrontEnd\obj\Debug\net7.0\BotanicaFrontEnd.genruntimeconfig.cache
 C:\Users\andre.ribeiro\Source\Repos\Projeto_Final\BotanicaFrontEnd\obj\Debug\net7.0\ref\BotanicaFrontEnd.dll
+C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\obj\Debug\net7.0\scopedcss\Views\Shared\_Layoutcopia.cshtml.rz.scp.css

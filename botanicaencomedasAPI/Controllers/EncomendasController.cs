@@ -41,6 +41,7 @@ namespace botanicaencomedasAPI.Controllers
             {
                 return NotFound();
             }
+            
             var encomenda = await _context.Encomenda.FindAsync(id);
 
             if (encomenda == null)
