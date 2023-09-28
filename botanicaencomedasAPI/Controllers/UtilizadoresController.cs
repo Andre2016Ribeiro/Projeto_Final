@@ -5,32 +5,34 @@ using BotanicaContext;
 
 namespace botanicaencomedasAPI.Controllers
 {
-    
-        [Route("api/[controller]")]
-        [ApiController]
-        public class UtilizadoresController : ControllerBase
+
+    [Route("api/[controller]")]
+    [ApiController]
+    public class UtilizadoresController : ControllerBase
+    {
+        private readonly WebApplicationBackendBotanicaContext _context;
+
+        public UtilizadoresController(WebApplicationBackendBotanicaContext context)
         {
-            private readonly WebApplicationBackendBotanicaContext _context;
-
-            public UtilizadoresController(WebApplicationBackendBotanicaContext context)
-            {
-                _context = context;
-            }
+            _context = context;
+        }
 
 
 
 
 
 
-            // GET: api/<UtilizadoresController>
-            [HttpGet]
-            public async Task<ActionResult<IEnumerable<Utilizador>>> Get()
+        // GET: api/<UtilizadoresController>
+        [HttpGet("GetByName/{name}")]
+            public async Task<ActionResult<IEnumerable<Utilizador>>> GetByName(string name)
             {
                 if (_context.Utilizador == null)
                 {
                     return NotFound();
                 }
-                return await _context.Utilizador.ToListAsync();
+            var usertolist = _context.Utilizador.Where(x => x.UserName == name)
+                 .ToList();
+            return usertolist;
             }
 
             // GET api/<UtilizadoresController>/5

@@ -9,14 +9,16 @@ namespace BotanicaFrontEnd.Controllers
     public class UtilizadoresController : Controller
     {
         
+
         // GET: UtilizadoresController
         public async Task<IActionResult> Index()
         {
+            string? name = User.Identity.Name;
             HttpClient client = new HttpClient();
             client.BaseAddress = new Uri("http://localhost:5223/api/Utilizadores/");
             //client.BaseAddress = new Uri("https://populacaoapi.azurewebsites.net/api/Utilizadores");
 
-            var result = await client.GetFromJsonAsync<List<Utilizador>>("");
+            var result = await client.GetFromJsonAsync<List<Utilizador>>("GetByName/" + name);
 
             return View(result);
         }
