@@ -40,7 +40,7 @@ namespace BotanicaFrontEnd.Controllers
         // GET: EncomendasController/Details/5
         public async Task<IActionResult> Details(int id)
         {
-            var encomenda = await _context.GetFromJsonAsync<Artigo>(id.ToString());
+            var encomenda = await _context.GetFromJsonAsync<Encomenda>("GetBydetail/" + id.ToString());
             if (id == null || encomenda == null)
             {
                 return NotFound();
@@ -57,9 +57,13 @@ namespace BotanicaFrontEnd.Controllers
         }
 
         // GET: EncomendasController/Create
-        public ActionResult Create()
+        public async Task<IActionResult> Create()
         {
-            return View();
+            string? name = User.Identity.Name;
+
+
+            
+            return View( await _context.GetFromJsonAsync<Encomenda>("GetByNameCreate/" + name));
         }
 
         // POST: EncomendasController/Create

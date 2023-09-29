@@ -42,17 +42,36 @@ namespace botanicaencomedasAPI.Controllers
 
             return listaencomendas;
         }
+        [HttpGet("GetByNameCreate/{name}")]
+        public async Task<ActionResult<Encomenda>> GetByNameCreate(string name)
+        {
+            if (_context.Encomenda == null)
+            {
+                return NotFound();
+            }
+            var userid = _context.Utilizador.Where(x => x.UserName == name)
+                     .Select(x => x.Id).First();
 
+            var listaencomendas = _context.Encomenda.Where(x => x.UtilizadorId == userid)
+                     .First();
+
+
+
+
+
+            return listaencomendas;
+        }
         // GET api/<EncomendasController>/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Encomenda>> Getid(int id)
+        [HttpGet("GetBydetail/{id}")]
+        public async Task<ActionResult<Encomenda>> GetBydetail(int id)
         {
             if (_context.Encomenda == null)
             {
                 return NotFound();
             }
             
-            var encomenda = await _context.Encomenda.FindAsync(id);
+            var encomenda = await _context.Encomenda
+                .FirstOrDefaultAsync(m => m.Id == id);
 
             if (encomenda == null)
             {
