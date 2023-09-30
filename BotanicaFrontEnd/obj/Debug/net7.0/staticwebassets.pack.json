@@ -5,12 +5,40 @@
       "PackagePath": "staticwebassets\\BotanicaFrontEnd.bundle.scp.css"
     },
     {
+      "Id": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaFrontEnd\\wwwroot\\css\\plantas-ornamentais-1045623595.jpg",
+      "PackagePath": "staticwebassets\\css\\plantas-ornamentais-1045623595.jpg"
+    },
+    {
       "Id": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaFrontEnd\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaFrontEnd\\wwwroot\\css\\transferir (1).jpg",
+      "PackagePath": "staticwebassets\\css\\transferir (1).jpg"
+    },
+    {
+      "Id": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaFrontEnd\\wwwroot\\css\\transferir.jpg",
+      "PackagePath": "staticwebassets\\css\\transferir.jpg"
+    },
+    {
       "Id": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaFrontEnd\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaFrontEnd\\wwwroot\\imagens\\a.jpg",
+      "PackagePath": "staticwebassets\\imagens\\a.jpg"
+    },
+    {
+      "Id": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaFrontEnd\\wwwroot\\imagens\\b.jpg",
+      "PackagePath": "staticwebassets\\imagens\\b.jpg"
+    },
+    {
+      "Id": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaFrontEnd\\wwwroot\\imagens\\c.jpg",
+      "PackagePath": "staticwebassets\\imagens\\c.jpg"
+    },
+    {
+      "Id": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaFrontEnd\\wwwroot\\imagens\\plantas-ornamentais-1045623595.jpg",
+      "PackagePath": "staticwebassets\\imagens\\plantas-ornamentais-1045623595.jpg"
     },
     {
       "Id": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaFrontEnd\\wwwroot\\js\\site.js",

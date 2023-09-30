@@ -15,7 +15,7 @@ namespace BotanicaFrontEnd.Controllers
             client.BaseAddress = new Uri("http://localhost:5223/api/Artigos/");
             _context = client;
         }
-
+        
         // GET: ArtigosController
         public async Task<IActionResult> Index()
         {
@@ -25,6 +25,7 @@ namespace BotanicaFrontEnd.Controllers
         }
 
         // GET: ArtigosController/Details/5
+        
         public async Task<IActionResult> Details(int id)
         {
             var artigo = await _context.GetFromJsonAsync<Artigo>(id.ToString());

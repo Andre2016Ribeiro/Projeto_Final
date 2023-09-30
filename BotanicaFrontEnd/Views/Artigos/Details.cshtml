@@ -2,9 +2,10 @@
 
 @{
     ViewData["Title"] = "Details";
+    
 }
 
-<h1>Details</h1>
+<h1>Detalhes</h1>
 
 <div>
     <h4>Artigo</h4>
@@ -38,6 +39,6 @@
 </div>
 <div>
     
-    <a asp-controller="Encomendas" asp-action="Create" asp-route-id=@Model.Id>Encomendas</a>|
-    <a asp-action="Index">Back to List</a>
+    <a asp-controller="Encomendas" asp-action="Create">Encomendar Produto</a>
+    <a asp-action="Index">Voltar a Lista</a>
 </div>
