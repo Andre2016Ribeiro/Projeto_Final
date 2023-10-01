@@ -12,6 +12,7 @@ using System.Net.Http.Json;
 using System.Data.Entity;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
+using System.Dynamic;
 
 namespace BotanicaFrontEnd.Controllers
 {
@@ -60,10 +61,13 @@ namespace BotanicaFrontEnd.Controllers
         public async Task<IActionResult> Create()
         {
             string? name = User.Identity.Name;
+            HttpClient clien = new HttpClient();
 
+            clien.BaseAddress = new Uri("http://localhost:5223/api/Utilizadores/");
 
+            ViewData["Utilizador"] = await clien.GetFromJsonAsync<Utilizador>("GetByNames/" + name);
             
-            return View( await _context.GetFromJsonAsync<Encomenda>("GetByNameCreate/" + name));
+            return View();
         }
 
         // POST: EncomendasController/Create
@@ -88,7 +92,7 @@ namespace BotanicaFrontEnd.Controllers
             //client.BaseAddress = new Uri("https://populacaoapi.azurewebsites.net/api/encomendas");
 
 
-            var result = await client.GetFromJsonAsync<Encomenda>(id.ToString());
+            var result = await client.GetFromJsonAsync<Encomenda>("GetBydetail/" + id.ToString());
             return View(result);
         }
 
@@ -120,7 +124,7 @@ namespace BotanicaFrontEnd.Controllers
             //client.BaseAddress = new Uri("https://populacaoapi.azurewebsites.net/api/encomendas");
 
 
-            var result = await client.GetFromJsonAsync<Encomenda>(id.ToString());
+            var result = await client.GetFromJsonAsync<Encomenda>("GetBydetail/" + id.ToString());
             return View(result);
         }
 

@@ -39,6 +39,7 @@ namespace BotanicaFrontEnd.Controllers
         // GET: UtilizadoresController/Create
         public ActionResult Create()
         {
+            ViewBag.UserName = User.Identity.Name;
             return View();
         }
 
@@ -71,7 +72,7 @@ namespace BotanicaFrontEnd.Controllers
             //client.BaseAddress = new Uri("https://populacaoapi.azurewebsites.net/api/Utilizadores");
 
 
-            var result = await client.GetFromJsonAsync<Utilizador>(id.ToString());
+            var result = await client.GetFromJsonAsync<Utilizador>("GetBydetail/" + id.ToString());
             return View(result);
         }
 
@@ -103,7 +104,7 @@ namespace BotanicaFrontEnd.Controllers
             //client.BaseAddress = new Uri("https://populacaoapi.azurewebsites.net/api/Utilizadores");
 
 
-            var result = await client.GetFromJsonAsync<Utilizador>(id.ToString());
+            var result = await client.GetFromJsonAsync<Utilizador>("GetBydetail/" + id.ToString()); 
             return View(result);
         }
 

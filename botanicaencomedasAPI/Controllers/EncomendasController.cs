@@ -70,8 +70,7 @@ namespace botanicaencomedasAPI.Controllers
                 return NotFound();
             }
             
-            var encomenda = await _context.Encomenda
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var encomenda = _context.Encomenda.Where(m => m.Id == id).First();
 
             if (encomenda == null)
             {
