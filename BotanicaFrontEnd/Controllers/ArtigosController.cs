@@ -6,42 +6,58 @@ namespace BotanicaFrontEnd.Controllers
 {
     public class ArtigosController : Controller
     {
-        private readonly HttpClient _context;
+        private IConfiguration _config;
 
-        public ArtigosController()
+        public ArtigosController(ILogger<ArtigosController> logger, IConfiguration config)
         {
-            HttpClient client = new HttpClient();
 
-            client.BaseAddress = new Uri("http://localhost:5223/api/Artigos/");
-            _context = client;
+            _config = config;
+
+
+
         }
-        
+
         // GET: ArtigosController
         public async Task<IActionResult> Index()
         {
             
 
-            return View(await _context.GetFromJsonAsync<List<Artigo>>(""));
+            HttpClient artigo = new HttpClient();
+
+            artigo.BaseAddress = new Uri(_config.GetValue<string>("con") + "/Artigos/");
+            HttpClient categoria = new HttpClient();
+
+            categoria.BaseAddress = new Uri(_config.GetValue<string>("con") + "/Categorias/");
+            ViewData["categoria"] = await categoria.GetFromJsonAsync<List<Categoria>>("");
+            return View(await artigo.GetFromJsonAsync<List<Artigo>>(""));
         }
 
         // GET: ArtigosController/Details/5
         
         public async Task<IActionResult> Details(int id)
         {
-            var artigo = await _context.GetFromJsonAsync<Artigo>(id.ToString());
-            if (id == null || artigo == null)
+            HttpClient artigo = new HttpClient();
+
+            artigo.BaseAddress = new Uri(_config.GetValue<string>("con") + "/Artigos/");
+
+            var artigos = await artigo.GetFromJsonAsync<Artigo>(id.ToString());
+            HttpClient categoria = new HttpClient();
+
+            categoria.BaseAddress = new Uri(_config.GetValue<string>("con") + "/Categorias/");
+            ViewData["categoria"] = await categoria.GetFromJsonAsync<Categoria>(artigos.CategoriaId.ToString());
+            if (id == null || artigos == null)
             {
                 return NotFound();
             }
 
 
 
-            if (artigo == null)
+            if (artigos == null)
             {
                 return NotFound();
             }
 
-            return View(artigo);
+            return View(artigos);
         }
 
         

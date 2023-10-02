@@ -19,53 +19,70 @@ namespace BotanicaFrontEnd.Controllers
     [Authorize]
     public class EncomendasController : Controller
     {
-        private readonly HttpClient _context;
-        public EncomendasController()
-        {
-            HttpClient client = new HttpClient();
+        private IConfiguration _config;
+        
+        public EncomendasController(ILogger<EncomendasController> logger, IConfiguration config)
+        { 
+            
+            _config = config;
+           
 
-            client.BaseAddress = new Uri("http://localhost:5223/api/Encomendas/");
-            _context = client;
+           
         }
+
+        
+            
+
+        
+        
         //string? name = User.Identity.Name;
         //User.Identity.GetUserId();
         // GET: EncomendasController
         public async Task<IActionResult> Index()
         {
             string? name = User.Identity.Name;
+            
+            HttpClient encomenda = new HttpClient();
 
+            encomenda.BaseAddress = new Uri(_config.GetValue<string>("con") + "/Encomendas/");
+            
 
-            return View(await _context.GetFromJsonAsync<List<Encomenda>>("GetByName/" + name));
+            return View(await encomenda.GetFromJsonAsync<List<Encomenda>>("GetByName/" + name));
         }
 
         // GET: EncomendasController/Details/5
         public async Task<IActionResult> Details(int id)
         {
-            var encomenda = await _context.GetFromJsonAsync<Encomenda>("GetBydetail/" + id.ToString());
-            if (id == null || encomenda == null)
+            HttpClient encomenda = new HttpClient();
+
+            encomenda.BaseAddress = new Uri(_config.GetValue<string>("con") + "/Encomendas/");
+
+            var encomendas = await encomenda.GetFromJsonAsync<Encomenda>("GetBydetail/" + id.ToString());
+            if (id == null || encomendas == null)
             {
                 return NotFound();
             }
 
 
 
-            if (encomenda == null)
+            if (encomendas == null)
             {
                 return NotFound();
             }
 
-            return View(encomenda);
+            return View(encomendas);
         }
 
         // GET: EncomendasController/Create
         public async Task<IActionResult> Create()
         {
             string? name = User.Identity.Name;
-            HttpClient clien = new HttpClient();
+            HttpClient utilizador = new HttpClient();
 
-            clien.BaseAddress = new Uri("http://localhost:5223/api/Utilizadores/");
+            utilizador.BaseAddress = new Uri(_config.GetValue<string>("con") + "/Utilizadores/");
 
-            ViewData["Utilizador"] = await clien.GetFromJsonAsync<Utilizador>("GetByNames/" + name);
+
+            ViewData["Utilizador"] = await utilizador.GetFromJsonAsync<Utilizador>("GetByNames/" + name);
             
             return View();
         }
@@ -77,7 +94,11 @@ namespace BotanicaFrontEnd.Controllers
         {
             if (ModelState.IsValid)
             {
-                await _context.PostAsJsonAsync<Encomenda>("", encomenda);
+                HttpClient encomendas = new HttpClient();
+
+                encomendas.BaseAddress = new Uri(_config.GetValue<string>("con") + "/Encomendas/");
+
+                await encomendas.PostAsJsonAsync<Encomenda>("", encomenda);
                 return RedirectToAction(nameof(Index));
             }
             return View(encomenda);
@@ -87,12 +108,12 @@ namespace BotanicaFrontEnd.Controllers
         // GET: EncomendasController/Edit/5
         public async Task<IActionResult> Edit(int id)
         {
-            HttpClient client = new HttpClient();
-            client.BaseAddress = new Uri("http://localhost:5223/api/Encomendas/");
-            //client.BaseAddress = new Uri("https://populacaoapi.azurewebsites.net/api/encomendas");
+            HttpClient encomenda = new HttpClient();
+
+            encomenda.BaseAddress = new Uri(_config.GetValue<string>("con") + "/Encomendas/");
 
 
-            var result = await client.GetFromJsonAsync<Encomenda>("GetBydetail/" + id.ToString());
+            var result = await encomenda.GetFromJsonAsync<Encomenda>("GetBydetail/" + id.ToString());
             return View(result);
         }
 
@@ -103,11 +124,11 @@ namespace BotanicaFrontEnd.Controllers
         {
             try
             {
-                HttpClient client = new HttpClient();
-                client.BaseAddress = new Uri("http://localhost:5223/api/Encomendas/" + id.ToString());
-                //client.BaseAddress = new Uri("https://populacaoapi.azurewebsites.net/api/encomendas");
+                HttpClient encomenda = new HttpClient();
 
-                await client.PutAsJsonAsync<Encomenda>(id.ToString(), collection);
+                encomenda.BaseAddress = new Uri(_config.GetValue<string>("con") + "/Encomendas/");
+
+                await encomenda.PutAsJsonAsync<Encomenda>(id.ToString(), collection);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -119,12 +140,11 @@ namespace BotanicaFrontEnd.Controllers
         // GET: EncomendasController/Delete/5
         public async Task<IActionResult> Delete(int id)
         {
-            HttpClient client = new HttpClient();
-            client.BaseAddress = new Uri("http://localhost:5223/api/Encomendas/");
-            //client.BaseAddress = new Uri("https://populacaoapi.azurewebsites.net/api/encomendas");
+            HttpClient encomenda = new HttpClient();
 
+            encomenda.BaseAddress = new Uri(_config.GetValue<string>("con") + "/Encomendas/");
 
-            var result = await client.GetFromJsonAsync<Encomenda>("GetBydetail/" + id.ToString());
+            var result = await encomenda.GetFromJsonAsync<Encomenda>("GetBydetail/" + id.ToString());
             return View(result);
         }
 
@@ -135,11 +155,12 @@ namespace BotanicaFrontEnd.Controllers
         {
             try
             {
-                HttpClient client = new HttpClient();
+                HttpClient encomenda = new HttpClient();
 
-                client.BaseAddress = new Uri("http://localhost:5223/api/Encomendas/");
-                //client.BaseAddress = new Uri("https://populacaoapi.azurewebsites.net/api/encomendas");
-                await client.DeleteAsync(id.ToString());
+                encomenda.BaseAddress = new Uri(_config.GetValue<string>("con") + "/Encomendas/");
+
+
+                await encomenda.DeleteAsync(id.ToString());
                 return RedirectToAction(nameof(Index));
             }
             catch

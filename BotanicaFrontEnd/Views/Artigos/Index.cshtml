@@ -1,7 +1,9 @@
-﻿@model IEnumerable<ClassBackendBotanica.Artigo>
+﻿@using ClassBackendBotanica;
+@model IEnumerable<ClassBackendBotanica.Artigo>
 
 @{
     ViewData["Title"] = "Index";
+    IEnumerable<Categoria> Categoria = ViewData["categoria"] as IEnumerable<Categoria>;
 }
 
 <h1>Os nossos produtos</h1>
@@ -40,7 +42,7 @@
                 @Html.DisplayFor(modelItem => item.Preco)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.CategoriaId)
+                    @Html.DisplayFor(modelItem => item.Categoria.Nome)
             </td>
             <td>
                 
