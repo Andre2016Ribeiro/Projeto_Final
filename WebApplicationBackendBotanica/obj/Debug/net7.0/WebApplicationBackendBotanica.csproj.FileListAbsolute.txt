@@ -530,3 +530,4 @@ C:\Galileu\Projeto_Final\Projeto_Final\WebApplicationBackendBotanica\bin\Debug\n
 C:\Galileu\Projeto_Final\Projeto_Final\WebApplicationBackendBotanica\bin\Debug\net7.0\BotanicaContext.pdb
 C:\Galileu\Projeto_Final\Projeto_Final\WebApplicationBackendBotanica\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
 C:\Galileu\Projeto_Final\Projeto_Final\WebApplicationBackendBotanica\obj\Debug\net7.0\WebApplicationBackendBotanica.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\andre.ribeiro.ORTOMAIA\source\repos\Andre2016Ribeiro\Projeto_Final\WebApplicationBackendBotanica\obj\Debug\net7.0\WebApplicationBackendBotanica.pdb

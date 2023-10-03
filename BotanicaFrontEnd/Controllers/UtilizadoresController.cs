@@ -8,16 +8,24 @@ namespace BotanicaFrontEnd.Controllers
     [Authorize]
     public class UtilizadoresController : Controller
     {
-        
+        private IConfiguration _config;
+
+        public UtilizadoresController(ILogger<UtilizadoresController> logger, IConfiguration config)
+        {
+
+            _config = config;
+
+
+
+        }
 
         // GET: UtilizadoresController
         public async Task<IActionResult> Index()
         {
             string? name = User.Identity.Name;
             HttpClient client = new HttpClient();
-            client.BaseAddress = new Uri("http://localhost:5223/api/Utilizadores/");
-            //client.BaseAddress = new Uri("https://populacaoapi.azurewebsites.net/api/Utilizadores");
-
+            client.BaseAddress = new Uri(_config.GetValue<string>("con") + "/Utilizadores/");
+           
             var result = await client.GetFromJsonAsync<List<Utilizador>>("GetByName/" + name);
 
             return View(result);
@@ -27,8 +35,8 @@ namespace BotanicaFrontEnd.Controllers
         public async Task<IActionResult> Details(int id)
         {
             HttpClient client = new HttpClient();
-            client.BaseAddress = new Uri("http://localhost:5223/api/Utilizadores/");
-            //client.BaseAddress = new Uri("https://populacaoapi.azurewebsites.net/api/Utilizadores");
+            client.BaseAddress = new Uri(_config.GetValue<string>("con") + "/Utilizadores/");
+            
 
             var result = await client.GetFromJsonAsync<Utilizador>(id.ToString());
 
@@ -51,8 +59,7 @@ namespace BotanicaFrontEnd.Controllers
             try
             {
                 HttpClient client = new HttpClient();
-                client.BaseAddress = new Uri("http://localhost:5223/api/Utilizadores/");
-                //client.BaseAddress = new Uri("https://populacaoapi.azurewebsites.net/api/Utilizadores");
+                client.BaseAddress = new Uri(_config.GetValue<string>("con") + "/Utilizadores/");
 
                 await client.PostAsJsonAsync<Utilizador>("", collection);
                 return RedirectToAction(nameof(Index));
@@ -68,8 +75,7 @@ namespace BotanicaFrontEnd.Controllers
         public async Task<IActionResult> Edit(int id)
         {
             HttpClient client = new HttpClient();
-            client.BaseAddress = new Uri("http://localhost:5223/api/Utilizadores/");
-            //client.BaseAddress = new Uri("https://populacaoapi.azurewebsites.net/api/Utilizadores");
+            client.BaseAddress = new Uri(_config.GetValue<string>("con") + "/Utilizadores/");
 
 
             var result = await client.GetFromJsonAsync<Utilizador>("GetBydetail/" + id.ToString());
@@ -84,8 +90,7 @@ namespace BotanicaFrontEnd.Controllers
             try
             {
                 HttpClient client = new HttpClient();
-                client.BaseAddress = new Uri("http://localhost:5223/api/Utilizadores/");
-                //client.BaseAddress = new Uri("https://populacaoapi.azurewebsites.net/api/Utilizadores");
+                client.BaseAddress = new Uri(_config.GetValue<string>("con") + "/Utilizadores/");
 
                 await client.PutAsJsonAsync<Utilizador>(id.ToString(), collection);
                 return RedirectToAction(nameof(Index));
@@ -100,8 +105,7 @@ namespace BotanicaFrontEnd.Controllers
         public async Task<IActionResult> Delete(int id)
         {
             HttpClient client = new HttpClient();
-            client.BaseAddress = new Uri("http://localhost:5223/api/Utilizadores/");
-            //client.BaseAddress = new Uri("https://populacaoapi.azurewebsites.net/api/Utilizadores");
+            client.BaseAddress = new Uri(_config.GetValue<string>("con") + "/Utilizadores/");
 
 
             var result = await client.GetFromJsonAsync<Utilizador>("GetBydetail/" + id.ToString()); 
@@ -117,8 +121,9 @@ namespace BotanicaFrontEnd.Controllers
             {
                 HttpClient client = new HttpClient();
 
-                client.BaseAddress = new Uri("http://localhost:5223/api/Utilizadores/");
-                //client.BaseAddress = new Uri("https://populacaoapi.azurewebsites.net/api/Utilizadores");
+                HttpClient client = new HttpClient();
+                client.BaseAddress = new Uri(_config.GetValue<string>("con") + "/Utilizadores/");
+
                 await client.DeleteAsync(id.ToString());
                 return RedirectToAction(nameof(Index));
             }

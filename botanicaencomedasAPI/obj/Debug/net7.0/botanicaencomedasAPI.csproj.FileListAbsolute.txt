@@ -532,3 +532,4 @@ C:\Users\andre.ribeiro\Source\Repos\Projeto_Final\botanicaencomedasAPI\bin\Debug
 C:\Users\andre.ribeiro\Source\Repos\Projeto_Final\botanicaencomedasAPI\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
 C:\Users\andre.ribeiro\Source\Repos\Projeto_Final\botanicaencomedasAPI\bin\Debug\net7.0\BotanicaContext.dll
 C:\Users\andre.ribeiro\Source\Repos\Projeto_Final\botanicaencomedasAPI\bin\Debug\net7.0\BotanicaContext.pdb
+C:\Users\andre.ribeiro.ORTOMAIA\source\repos\Andre2016Ribeiro\Projeto_Final\botanicaencomedasAPI\obj\Debug\net7.0\botanicaencomedasAPI.pdb
