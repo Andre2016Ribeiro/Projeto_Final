@@ -119,7 +119,7 @@ namespace BotanicaFrontEnd.Controllers
         {
             try
             {
-                HttpClient client = new HttpClient();
+                
 
                 HttpClient client = new HttpClient();
                 client.BaseAddress = new Uri(_config.GetValue<string>("con") + "/Utilizadores/");

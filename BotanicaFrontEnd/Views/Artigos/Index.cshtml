@@ -42,7 +42,7 @@
                 @Html.DisplayFor(modelItem => item.Preco)
             </td>
             <td>
-                    @Html.DisplayFor(modelItem => item.Categoria.Nome)
+                    @Html.DisplayFor(modelItem => item.CategoriaId, @Categoria.Where(a=>a.Id==item.CategoriaId))
             </td>
             <td>
                 
