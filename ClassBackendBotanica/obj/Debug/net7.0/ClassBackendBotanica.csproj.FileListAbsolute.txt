@@ -31,3 +31,6 @@ C:\Users\andre.ribeiro\Source\Repos\Projeto_Final\ClassBackendBotanica\obj\Debug
 C:\Users\andre.ribeiro\Source\Repos\Projeto_Final\ClassBackendBotanica\obj\Debug\net7.0\ClassBackendBotanica.pdb
 C:\Users\andre.ribeiro\Source\Repos\Projeto_Final\ClassBackendBotanica\obj\Debug\net7.0\ClassBackendBotanica.genruntimeconfig.cache
 C:\Users\andre.ribeiro\Source\Repos\Projeto_Final\ClassBackendBotanica\obj\Debug\net7.0\ref\ClassBackendBotanica.dll
+C:\Users\andre.ribeiro.ORTOMAIA\Source\Repos\Andre2016Ribeiro\Projeto_Final\ClassBackendBotanica\obj\Debug\net7.0\ClassBackendBotanica.dll
+C:\Users\andre.ribeiro.ORTOMAIA\Source\Repos\Andre2016Ribeiro\Projeto_Final\ClassBackendBotanica\obj\Debug\net7.0\refint\ClassBackendBotanica.dll
+C:\Users\andre.ribeiro.ORTOMAIA\Source\Repos\Andre2016Ribeiro\Projeto_Final\ClassBackendBotanica\obj\Debug\net7.0\ClassBackendBotanica.pdb
