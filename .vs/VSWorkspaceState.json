@@ -3,10 +3,11 @@
     "",
     "\\botanicaencomedasAPI",
     "\\BotanicaFrontEnd",
+    "\\BotanicaFrontEnd\\Controllers",
     "\\BotanicaFrontEnd\\Data",
     "\\ClassBackendBotanica",
     "\\WebApplicationBackendBotanica"
   ],
-  "SelectedNode": "\\ClassBackendBotanica\\ClassBackendBotanica.sln",
+  "SelectedNode": "\\BotanicaFrontEnd\\Controllers\\UtilizadoresController.cs",
   "PreviewInSolutionExplorer": false
 }
