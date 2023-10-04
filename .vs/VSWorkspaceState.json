@@ -4,9 +4,11 @@
     "\\botanicaencomedasAPI",
     "\\BotanicaFrontEnd",
     "\\BotanicaFrontEnd\\Data",
+    "\\BotanicaFrontEnd\\Views",
+    "\\BotanicaFrontEnd\\Views\\Utilizadores",
     "\\ClassBackendBotanica",
     "\\WebApplicationBackendBotanica"
   ],
-  "SelectedNode": "\\BotanicaFrontEnd\\Program.cs",
+  "SelectedNode": "\\BotanicaFrontEnd\\Views\\Utilizadores\\Create.cshtml",
   "PreviewInSolutionExplorer": false
 }
