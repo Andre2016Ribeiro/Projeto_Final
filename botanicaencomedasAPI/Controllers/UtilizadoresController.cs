@@ -5,43 +5,46 @@ using BotanicaContext;
 
 namespace botanicaencomedasAPI.Controllers
 {
-    
-        [Route("api/[controller]")]
-        [ApiController]
-        public class UtilizadoresController : ControllerBase
+
+    [Route("api/[controller]")]
+    [ApiController]
+    public class UtilizadoresController : ControllerBase
+    {
+        private readonly WebApplicationBackendBotanicaContext _context;
+
+        public UtilizadoresController(WebApplicationBackendBotanicaContext context)
         {
-            private readonly WebApplicationBackendBotanicaContext _context;
-
-            public UtilizadoresController(WebApplicationBackendBotanicaContext context)
-            {
-                _context = context;
-            }
+            _context = context;
+        }
 
 
 
 
 
 
-            // GET: api/<UtilizadoresController>
-            [HttpGet]
-            public async Task<ActionResult<IEnumerable<Utilizador>>> Get()
+        // GET: api/<UtilizadoresController>
+        [HttpGet("GetByName/{name}")]
+            public async Task<ActionResult<IEnumerable<Utilizador>>> GetByName(string name)
             {
                 if (_context.Utilizador == null)
                 {
                     return NotFound();
                 }
-                return await _context.Utilizador.ToListAsync();
+            var usertolist = _context.Utilizador.Where(x => x.UserName == name)
+                 .ToList();
+            return usertolist;
             }
 
             // GET api/<UtilizadoresController>/5
-            [HttpGet("{id}")]
-            public async Task<ActionResult<Utilizador>> Get(int id)
-            {
+            [HttpGet("GetByNames/{name}")]
+            public async Task<ActionResult<Utilizador>> GetByNames(string name)
+        {
                 if (_context.Utilizador == null)
                 {
                     return NotFound();
                 }
-                var Utilizador = await _context.Utilizador.FindAsync(id);
+                var Utilizador = _context.Utilizador.Where(x => x.UserName == name)
+                 .First(); 
 
                 if (Utilizador == null)
                 {
@@ -50,9 +53,25 @@ namespace botanicaencomedasAPI.Controllers
 
                 return Utilizador;
             }
+        [HttpGet("GetBydetail/{id}")]
+        public async Task<ActionResult<Utilizador>> GetBydetail(int id)
+        {
+            if (_context.Encomenda == null)
+            {
+                return NotFound();
+            }
 
-            // POST api/<UtilizadoresController>
-            [HttpPost]
+            var utilizador = _context.Utilizador.Where(m => m.Id == id).First();
+
+            if (utilizador == null)
+            {
+                return NotFound();
+            }
+
+            return utilizador;
+        }
+        // POST api/<UtilizadoresController>
+        [HttpPost]
             public async Task<ActionResult<Utilizador>> Post(Utilizador Utilizador)
             {
                 if (_context.Utilizador == null)

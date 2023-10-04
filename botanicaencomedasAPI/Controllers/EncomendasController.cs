@@ -11,38 +11,66 @@ namespace botanicaencomedasAPI.Controllers
     public class EncomendasController : ControllerBase
     {
         private readonly WebApplicationBackendBotanicaContext _context;
-
+        
         public EncomendasController(WebApplicationBackendBotanicaContext context)
         {
             _context = context;
         }
+        
 
 
 
 
 
-     
         // GET: api/<EncomendasController>
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<Encomenda>>> Get()
+        [HttpGet("GetByName/{name}")]
+        public async Task<ActionResult<IEnumerable<Encomenda>>> GetByName(string name)
         {
             if (_context.Encomenda == null)
             {
                 return NotFound();
             }
-            return await _context.Encomenda.ToListAsync();
-        }
+            var userid = _context.Utilizador.Where(x => x.UserName == name)
+                     .Select(x => x.Id ).First();
 
+            var listaencomendas = _context.Encomenda.Where(x => x.UtilizadorId == userid)
+                     .ToList();
+
+            
+
+            
+
+            return listaencomendas;
+        }
+        [HttpGet("GetByNameCreate/{name}")]
+        public async Task<ActionResult<Encomenda>> GetByNameCreate(string name)
+        {
+            if (_context.Encomenda == null)
+            {
+                return NotFound();
+            }
+            var userid = _context.Utilizador.Where(x => x.UserName == name)
+                     .Select(x => x.Id).First();
+
+            var listaencomendas = _context.Encomenda.Where(x => x.UtilizadorId == userid)
+                     .First();
+
+
+
+
+
+            return listaencomendas;
+        }
         // GET api/<EncomendasController>/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Encomenda>> Get(int id)
+        [HttpGet("GetBydetail/{id}")]
+        public async Task<ActionResult<Encomenda>> GetBydetail(int id)
         {
             if (_context.Encomenda == null)
             {
                 return NotFound();
             }
             
-            var encomenda = await _context.Encomenda.FindAsync(id);
+            var encomenda = _context.Encomenda.Where(m => m.Id == id).First();
 
             if (encomenda == null)
             {

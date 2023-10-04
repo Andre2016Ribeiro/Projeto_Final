@@ -28,7 +28,10 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
+
+
 app.MapControllers();
+
 app.UseCors(options =>
 {
     //Vou abrir completamente esta app web api para todos os pedidos de todos os outros projetos:

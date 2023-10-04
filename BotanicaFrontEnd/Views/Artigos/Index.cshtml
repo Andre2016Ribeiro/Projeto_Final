@@ -1,18 +1,20 @@
-﻿@model IEnumerable<ClassBackendBotanica.Artigo>
+﻿@using ClassBackendBotanica;
+@model IEnumerable<ClassBackendBotanica.Artigo>
 
 @{
     ViewData["Title"] = "Index";
+    IEnumerable<Categoria> Categoria = ViewData["categoria"] as IEnumerable<Categoria>;
 }
 
-<h1>Index</h1>
+<h1>Os nossos produtos</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    
 </p>
 <table class="table">
     <thead>
         <tr>
-            <th>
+            <th hidden>
                 @Html.DisplayNameFor(model => model.Id)
             </th>
             <th>
@@ -22,7 +24,7 @@
                 @Html.DisplayNameFor(model => model.Preco)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.CategoriaId)
+                <div>Categoria</div>
             </th>
             <th></th>
         </tr>
@@ -30,7 +32,7 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
-            <td>
+            <td hidden>
                 @Html.DisplayFor(modelItem => item.Id)
             </td>
             <td>
@@ -40,12 +42,12 @@
                 @Html.DisplayFor(modelItem => item.Preco)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.CategoriaId)
+                    @Html.DisplayFor(modelItem => item.CategoriaId, @Categoria.Where(a=>a.Id==item.CategoriaId))
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                    @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                
+                    @Html.ActionLink("Detalhes", "Details", new { id=item.Id }) 
+                
             </td>
         </tr>
 }
