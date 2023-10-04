@@ -35,3 +35,17 @@ C:\Users\andre.ribeiro\Source\Repos\Projeto_Final\BotanicaContext\obj\Debug\net7
 C:\Users\andre.ribeiro.ORTOMAIA\Source\Repos\Andre2016Ribeiro\Projeto_Final\BotanicaContext\obj\Debug\net7.0\BotanicaContext.dll
 C:\Users\andre.ribeiro.ORTOMAIA\Source\Repos\Andre2016Ribeiro\Projeto_Final\BotanicaContext\obj\Debug\net7.0\refint\BotanicaContext.dll
 C:\Users\andre.ribeiro.ORTOMAIA\Source\Repos\Andre2016Ribeiro\Projeto_Final\BotanicaContext\obj\Debug\net7.0\BotanicaContext.pdb
+C:\Users\andre.ribeiro.ORTOMAIA\Source\Repos\Andre2016Ribeiro\Projeto_Final\BotanicaContext\bin\Debug\net7.0\BotanicaContext.deps.json
+C:\Users\andre.ribeiro.ORTOMAIA\Source\Repos\Andre2016Ribeiro\Projeto_Final\BotanicaContext\bin\Debug\net7.0\BotanicaContext.runtimeconfig.json
+C:\Users\andre.ribeiro.ORTOMAIA\Source\Repos\Andre2016Ribeiro\Projeto_Final\BotanicaContext\bin\Debug\net7.0\BotanicaContext.dll
+C:\Users\andre.ribeiro.ORTOMAIA\Source\Repos\Andre2016Ribeiro\Projeto_Final\BotanicaContext\bin\Debug\net7.0\BotanicaContext.pdb
+C:\Users\andre.ribeiro.ORTOMAIA\Source\Repos\Andre2016Ribeiro\Projeto_Final\BotanicaContext\bin\Debug\net7.0\ClassBackendBotanica.dll
+C:\Users\andre.ribeiro.ORTOMAIA\Source\Repos\Andre2016Ribeiro\Projeto_Final\BotanicaContext\bin\Debug\net7.0\ClassBackendBotanica.pdb
+C:\Users\andre.ribeiro.ORTOMAIA\Source\Repos\Andre2016Ribeiro\Projeto_Final\BotanicaContext\obj\Debug\net7.0\BotanicaContext.csproj.AssemblyReference.cache
+C:\Users\andre.ribeiro.ORTOMAIA\Source\Repos\Andre2016Ribeiro\Projeto_Final\BotanicaContext\obj\Debug\net7.0\BotanicaContext.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\andre.ribeiro.ORTOMAIA\Source\Repos\Andre2016Ribeiro\Projeto_Final\BotanicaContext\obj\Debug\net7.0\BotanicaContext.AssemblyInfoInputs.cache
+C:\Users\andre.ribeiro.ORTOMAIA\Source\Repos\Andre2016Ribeiro\Projeto_Final\BotanicaContext\obj\Debug\net7.0\BotanicaContext.AssemblyInfo.cs
+C:\Users\andre.ribeiro.ORTOMAIA\Source\Repos\Andre2016Ribeiro\Projeto_Final\BotanicaContext\obj\Debug\net7.0\BotanicaContext.csproj.CoreCompileInputs.cache
+C:\Users\andre.ribeiro.ORTOMAIA\Source\Repos\Andre2016Ribeiro\Projeto_Final\BotanicaContext\obj\Debug\net7.0\BotanicaContext.csproj.CopyComplete
+C:\Users\andre.ribeiro.ORTOMAIA\Source\Repos\Andre2016Ribeiro\Projeto_Final\BotanicaContext\obj\Debug\net7.0\BotanicaContext.genruntimeconfig.cache
+C:\Users\andre.ribeiro.ORTOMAIA\Source\Repos\Andre2016Ribeiro\Projeto_Final\BotanicaContext\obj\Debug\net7.0\ref\BotanicaContext.dll
