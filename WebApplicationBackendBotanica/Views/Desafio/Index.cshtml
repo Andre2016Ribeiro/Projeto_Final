@@ -1,0 +1,62 @@
+﻿@model IEnumerable<WebApplicationBackendBotanica.Models.Desafio>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2 class="text-uppercase text-center">Lista de Respostas</h2>
+
+
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <i class="fa-solid fa-circle-plus"></i> Carregar nova imagem
+</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form method="post" enctype="multipart/form-data" asp-controller="Desafio" asp-action="Upload">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Carregar nova imagem</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label> selecione imagem </label>
+                                <input class="form-control" name="files" multiple="multiple" type="file" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <input class="btn btn-success" type="submit" value="Upload" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Mensagem</th>
+            <th>Autor</th>
+            <th>Modificada</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var data in Model)
+        {
+            <tr>
+                <td>@data.Id</td>
+                <td>@data.Mensagem</td>
+                <td>@data.Autor</td>
+                <td>@data.Modified </td>
+                <td> <a href="/partilha/Delete?blobName=@data.Id" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a></td>
+            </tr>
+        }
+    </tbody>
+</table>

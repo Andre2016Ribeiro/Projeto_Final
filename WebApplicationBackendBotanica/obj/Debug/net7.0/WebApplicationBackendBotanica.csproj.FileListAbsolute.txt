@@ -798,3 +798,8 @@ C:\Users\andre.ribeiro.ORTOMAIA\Source\Repos\Andre2016Ribeiro\Projeto_Final\WebA
 C:\Users\andre.ribeiro.ORTOMAIA\Source\Repos\Andre2016Ribeiro\Projeto_Final\WebApplicationBackendBotanica\obj\Debug\net7.0\WebApplicationBackendBotanica.csproj.CopyComplete
 C:\Users\andre.ribeiro.ORTOMAIA\Source\Repos\Andre2016Ribeiro\Projeto_Final\WebApplicationBackendBotanica\obj\Debug\net7.0\WebApplicationBackendBotanica.genruntimeconfig.cache
 C:\Users\andre.ribeiro.ORTOMAIA\Source\Repos\Andre2016Ribeiro\Projeto_Final\WebApplicationBackendBotanica\obj\Debug\net7.0\ref\WebApplicationBackendBotanica.dll
+C:\Galileu\Projeto_Final\Projeto_Final\WebApplicationBackendBotanica\bin\Debug\net7.0\Azure.Storage.Blobs.dll
+C:\Galileu\Projeto_Final\Projeto_Final\WebApplicationBackendBotanica\bin\Debug\net7.0\Azure.Storage.Common.dll
+C:\Galileu\Projeto_Final\Projeto_Final\WebApplicationBackendBotanica\bin\Debug\net7.0\Azure.Storage.Queues.dll
+C:\Galileu\Projeto_Final\Projeto_Final\WebApplicationBackendBotanica\bin\Debug\net7.0\System.IO.Hashing.dll
+C:\Galileu\Projeto_Final\Projeto_Final\WebApplicationBackendBotanica\bin\Debug\net7.0\Microsoft.WindowsAzure.Storage.dll

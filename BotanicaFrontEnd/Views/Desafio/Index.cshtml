@@ -1,0 +1,18 @@
+﻿
+<h3>@ViewBag.Mensagem</h3>
+<h4>Qual o nome das plantas no carrossel?</h4>
+<br />
+<div>
+    
+    <hr />
+    <form method="post" action="desafio/index">
+        <label class="control-label">Resposta:</label>
+        <input name="mensagem" class="form-control"  />
+        <br />
+        <input type="submit" value="Enviar resposta" />
+
+    </form>
+</div>
+<a asp-action="Index">Tentar nova resposta</a>
+<br />
+<a asp-action="Receber">Ver Mensagens</a>

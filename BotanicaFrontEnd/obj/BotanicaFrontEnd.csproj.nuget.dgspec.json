@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\andre.ribeiro.ORTOMAIA\\Source\\Repos\\Andre2016Ribeiro\\Projeto_Final\\BotanicaFrontEnd\\BotanicaFrontEnd.csproj": {}
+    "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaFrontEnd\\BotanicaFrontEnd.csproj": {}
   },
   "projects": {
-    "C:\\Users\\andre.ribeiro.ORTOMAIA\\Source\\Repos\\Andre2016Ribeiro\\Projeto_Final\\BotanicaFrontEnd\\BotanicaFrontEnd.csproj": {
+    "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaFrontEnd\\BotanicaFrontEnd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\andre.ribeiro.ORTOMAIA\\Source\\Repos\\Andre2016Ribeiro\\Projeto_Final\\BotanicaFrontEnd\\BotanicaFrontEnd.csproj",
+        "projectUniqueName": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaFrontEnd\\BotanicaFrontEnd.csproj",
         "projectName": "BotanicaFrontEnd",
-        "projectPath": "C:\\Users\\andre.ribeiro.ORTOMAIA\\Source\\Repos\\Andre2016Ribeiro\\Projeto_Final\\BotanicaFrontEnd\\BotanicaFrontEnd.csproj",
-        "packagesPath": "C:\\Users\\andre.ribeiro.ORTOMAIA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\andre.ribeiro.ORTOMAIA\\Source\\Repos\\Andre2016Ribeiro\\Projeto_Final\\BotanicaFrontEnd\\obj\\",
+        "projectPath": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaFrontEnd\\BotanicaFrontEnd.csproj",
+        "packagesPath": "C:\\Users\\Claudia\\.nuget\\packages\\",
+        "outputPath": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaFrontEnd\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\andre.ribeiro.ORTOMAIA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Claudia\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,15 +26,16 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/vitorandreribeiro0439/_packaging/EShopOnWebShared/nuget/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\andre.ribeiro.ORTOMAIA\\Source\\Repos\\Andre2016Ribeiro\\Projeto_Final\\ClassBackendBotanica\\ClassBackendBotanica.csproj": {
-                "projectPath": "C:\\Users\\andre.ribeiro.ORTOMAIA\\Source\\Repos\\Andre2016Ribeiro\\Projeto_Final\\ClassBackendBotanica\\ClassBackendBotanica.csproj"
+              "C:\\Galileu\\Projeto_Final\\Projeto_Final\\ClassBackendBotanica\\ClassBackendBotanica.csproj": {
+                "projectPath": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\ClassBackendBotanica\\ClassBackendBotanica.csproj"
               }
             }
           }
@@ -49,6 +50,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Azure.Storage.Blobs": {
+              "target": "Package",
+              "version": "[12.18.0, )"
+            },
+            "Azure.Storage.Queues": {
+              "target": "Package",
+              "version": "[12.16.0, )"
+            },
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.5, )"
@@ -72,6 +81,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[7.0.10, )"
+            },
+            "WindowsAzure.Storage": {
+              "target": "Package",
+              "version": "[9.3.3, )"
             }
           },
           "imports": [
@@ -93,24 +106,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\andre.ribeiro.ORTOMAIA\\Source\\Repos\\Andre2016Ribeiro\\Projeto_Final\\ClassBackendBotanica\\ClassBackendBotanica.csproj": {
+    "C:\\Galileu\\Projeto_Final\\Projeto_Final\\ClassBackendBotanica\\ClassBackendBotanica.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\andre.ribeiro.ORTOMAIA\\Source\\Repos\\Andre2016Ribeiro\\Projeto_Final\\ClassBackendBotanica\\ClassBackendBotanica.csproj",
+        "projectUniqueName": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\ClassBackendBotanica\\ClassBackendBotanica.csproj",
         "projectName": "ClassBackendBotanica",
-        "projectPath": "C:\\Users\\andre.ribeiro.ORTOMAIA\\Source\\Repos\\Andre2016Ribeiro\\Projeto_Final\\ClassBackendBotanica\\ClassBackendBotanica.csproj",
-        "packagesPath": "C:\\Users\\andre.ribeiro.ORTOMAIA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\andre.ribeiro.ORTOMAIA\\Source\\Repos\\Andre2016Ribeiro\\Projeto_Final\\ClassBackendBotanica\\obj\\",
+        "projectPath": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\ClassBackendBotanica\\ClassBackendBotanica.csproj",
+        "packagesPath": "C:\\Users\\Claudia\\.nuget\\packages\\",
+        "outputPath": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\ClassBackendBotanica\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\andre.ribeiro.ORTOMAIA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Claudia\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -119,8 +132,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/vitorandreribeiro0439/_packaging/EShopOnWebShared/nuget/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
@@ -207,7 +220,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

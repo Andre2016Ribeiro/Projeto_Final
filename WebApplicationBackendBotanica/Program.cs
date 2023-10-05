@@ -11,13 +11,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
+using WebApplicationBackendBotanica.MeusServicos;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the containerhttps://dev.azure.com/Computencial/_git/Academia2020A.
 builder.Services.AddControllersWithViews();
-
+builder.Services.AddScoped<MeuServicoAzure>();
 builder.Services.AddDbContext<WebApplicationBackendBotanicaContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("WebApplicationBackendBotanicaContext")));
 

@@ -2,11 +2,11 @@
   "version": 3,
   "targets": {
     "net7.0": {
-      "Azure.Core/1.25.0": {
+      "Azure.Core/1.35.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Bcl.AsyncInterfaces": "1.1.1",
-          "System.Diagnostics.DiagnosticSource": "4.6.0",
+          "System.Diagnostics.DiagnosticSource": "6.0.1",
           "System.Memory.Data": "1.0.2",
           "System.Numerics.Vectors": "4.5.0",
           "System.Text.Encodings.Web": "4.7.2",
@@ -14,12 +14,12 @@
           "System.Threading.Tasks.Extensions": "4.5.4"
         },
         "compile": {
-          "lib/net5.0/Azure.Core.dll": {
+          "lib/net6.0/Azure.Core.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net5.0/Azure.Core.dll": {
+          "lib/net6.0/Azure.Core.dll": {
             "related": ".xml"
           }
         }
@@ -42,6 +42,58 @@
         },
         "runtime": {
           "lib/netstandard2.0/Azure.Identity.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Azure.Storage.Blobs/12.18.0": {
+        "type": "package",
+        "dependencies": {
+          "Azure.Storage.Common": "12.17.0",
+          "System.Text.Json": "4.7.2"
+        },
+        "compile": {
+          "lib/net6.0/Azure.Storage.Blobs.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Azure.Storage.Blobs.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Azure.Storage.Common/12.17.0": {
+        "type": "package",
+        "dependencies": {
+          "Azure.Core": "1.35.0",
+          "System.IO.Hashing": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/Azure.Storage.Common.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Azure.Storage.Common.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Azure.Storage.Queues/12.16.0": {
+        "type": "package",
+        "dependencies": {
+          "Azure.Storage.Common": "12.17.0",
+          "System.Memory.Data": "1.0.2",
+          "System.Text.Json": "4.7.2"
+        },
+        "compile": {
+          "lib/net6.0/Azure.Storage.Queues.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Azure.Storage.Queues.dll": {
             "related": ".xml"
           }
         }
@@ -3086,7 +3138,7 @@
           }
         }
       },
-      "System.Diagnostics.DiagnosticSource/6.0.0": {
+      "System.Diagnostics.DiagnosticSource/6.0.1": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
@@ -3345,6 +3397,22 @@
         },
         "runtime": {
           "lib/netstandard1.3/System.IO.FileSystem.Primitives.dll": {}
+        }
+      },
+      "System.IO.Hashing/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.IO.Hashing.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.IO.Hashing.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
       "System.IO.Pipelines/6.0.3": {
@@ -4410,6 +4478,23 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
+      "WindowsAzure.Storage/9.3.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "10.0.2"
+        },
+        "compile": {
+          "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
       "BotanicaContext/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -4450,22 +4535,26 @@
     }
   },
   "libraries": {
-    "Azure.Core/1.25.0": {
-      "sha512": "X8Dd4sAggS84KScWIjEbFAdt2U1KDolQopTPoHVubG2y3CM54f9l6asVrP5Uy384NWXjsspPYaJgz5xHc+KvTA==",
+    "Azure.Core/1.35.0": {
+      "sha512": "hENcx03Jyuqv05F4RBEPbxz29UrM3Nbhnr6Wl6NQpoU9BCIbL3XLentrxDCTrH54NLS11Exxi/o8MYgT/cnKFA==",
       "type": "package",
-      "path": "azure.core/1.25.0",
+      "path": "azure.core/1.35.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "CHANGELOG.md",
         "README.md",
-        "azure.core.1.25.0.nupkg.sha512",
+        "azure.core.1.35.0.nupkg.sha512",
         "azure.core.nuspec",
         "azureicon.png",
         "lib/net461/Azure.Core.dll",
         "lib/net461/Azure.Core.xml",
+        "lib/net472/Azure.Core.dll",
+        "lib/net472/Azure.Core.xml",
         "lib/net5.0/Azure.Core.dll",
         "lib/net5.0/Azure.Core.xml",
+        "lib/net6.0/Azure.Core.dll",
+        "lib/net6.0/Azure.Core.xml",
         "lib/netcoreapp2.1/Azure.Core.dll",
         "lib/netcoreapp2.1/Azure.Core.xml",
         "lib/netstandard2.0/Azure.Core.dll",
@@ -4486,6 +4575,64 @@
         "azureicon.png",
         "lib/netstandard2.0/Azure.Identity.dll",
         "lib/netstandard2.0/Azure.Identity.xml"
+      ]
+    },
+    "Azure.Storage.Blobs/12.18.0": {
+      "sha512": "IUqHRXnabXCzmmvkzqPK4FuGzLxmKSugDEt5Hm5B/JlJFR+aHDsPW4nCLbG0txThqBSKPqcBBU/oA6c5TaFJgA==",
+      "type": "package",
+      "path": "azure.storage.blobs/12.18.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CHANGELOG.md",
+        "README.md",
+        "azure.storage.blobs.12.18.0.nupkg.sha512",
+        "azure.storage.blobs.nuspec",
+        "azureicon.png",
+        "lib/net6.0/Azure.Storage.Blobs.dll",
+        "lib/net6.0/Azure.Storage.Blobs.xml",
+        "lib/netstandard2.0/Azure.Storage.Blobs.dll",
+        "lib/netstandard2.0/Azure.Storage.Blobs.xml",
+        "lib/netstandard2.1/Azure.Storage.Blobs.dll",
+        "lib/netstandard2.1/Azure.Storage.Blobs.xml"
+      ]
+    },
+    "Azure.Storage.Common/12.17.0": {
+      "sha512": "/h8SpUkxMuQy/MbNFeJQGmhYt3JnYfEiGeDojtNgLNzzhyDnRYgjF3ZKYgjORYQpn0Spr+4+v2MZy+0GNJBLrg==",
+      "type": "package",
+      "path": "azure.storage.common/12.17.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CHANGELOG.md",
+        "README.md",
+        "azure.storage.common.12.17.0.nupkg.sha512",
+        "azure.storage.common.nuspec",
+        "azureicon.png",
+        "lib/net6.0/Azure.Storage.Common.dll",
+        "lib/net6.0/Azure.Storage.Common.xml",
+        "lib/netstandard2.0/Azure.Storage.Common.dll",
+        "lib/netstandard2.0/Azure.Storage.Common.xml"
+      ]
+    },
+    "Azure.Storage.Queues/12.16.0": {
+      "sha512": "ociB+g4P8d4o6K6dsCxz4qVNyGzmTKC5t7wlDLAezbfAp4m41SAUvxcDU0N4Mqxf04GPQeyImSeMFQfDzZHEcQ==",
+      "type": "package",
+      "path": "azure.storage.queues/12.16.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CHANGELOG.md",
+        "README.md",
+        "azure.storage.queues.12.16.0.nupkg.sha512",
+        "azure.storage.queues.nuspec",
+        "azureicon.png",
+        "lib/net6.0/Azure.Storage.Queues.dll",
+        "lib/net6.0/Azure.Storage.Queues.xml",
+        "lib/netstandard2.0/Azure.Storage.Queues.dll",
+        "lib/netstandard2.0/Azure.Storage.Queues.xml",
+        "lib/netstandard2.1/Azure.Storage.Queues.dll",
+        "lib/netstandard2.1/Azure.Storage.Queues.xml"
       ]
     },
     "EntityFramework/6.4.4": {
@@ -9075,10 +9222,10 @@
         "system.diagnostics.debug.nuspec"
       ]
     },
-    "System.Diagnostics.DiagnosticSource/6.0.0": {
-      "sha512": "frQDfv0rl209cKm1lnwTgFPzNigy2EKk1BS3uAvHvlBVKe5cymGyHO+Sj+NLv5VF/AhHsqPIUUwya5oV4CHMUw==",
+    "System.Diagnostics.DiagnosticSource/6.0.1": {
+      "sha512": "KiLYDu2k2J82Q9BJpWiuQqCkFjRBWVq4jDzKKWawVi9KWzyD0XG3cmfX0vqTQlL14Wi9EufJrbL0+KCLTbqWiQ==",
       "type": "package",
-      "path": "system.diagnostics.diagnosticsource/6.0.0",
+      "path": "system.diagnostics.diagnosticsource/6.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -9095,7 +9242,7 @@
         "lib/net6.0/System.Diagnostics.DiagnosticSource.xml",
         "lib/netstandard2.0/System.Diagnostics.DiagnosticSource.dll",
         "lib/netstandard2.0/System.Diagnostics.DiagnosticSource.xml",
-        "system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
+        "system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",
         "system.diagnostics.diagnosticsource.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -9740,6 +9887,29 @@
         "ref/xamarinwatchos10/_._",
         "system.io.filesystem.primitives.4.3.0.nupkg.sha512",
         "system.io.filesystem.primitives.nuspec"
+      ]
+    },
+    "System.IO.Hashing/6.0.0": {
+      "sha512": "Rfm2jYCaUeGysFEZjDe7j1R4x6Z6BzumS/vUT5a1AA/AWJuGX71PoGB0RmpyX3VmrGqVnAwtfMn39OHR8Y/5+g==",
+      "type": "package",
+      "path": "system.io.hashing/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.IO.Hashing.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/System.IO.Hashing.dll",
+        "lib/net461/System.IO.Hashing.xml",
+        "lib/net6.0/System.IO.Hashing.dll",
+        "lib/net6.0/System.IO.Hashing.xml",
+        "lib/netstandard2.0/System.IO.Hashing.dll",
+        "lib/netstandard2.0/System.IO.Hashing.xml",
+        "system.io.hashing.6.0.0.nupkg.sha512",
+        "system.io.hashing.nuspec",
+        "useSharedDesignerContext.txt"
       ]
     },
     "System.IO.Pipelines/6.0.3": {
@@ -12494,6 +12664,30 @@
         "system.xml.xdocument.nuspec"
       ]
     },
+    "WindowsAzure.Storage/9.3.3": {
+      "sha512": "VUV8j6dzkU/7vDgk5k+ob5g7nnch2fNByr0p9aOxMGFGk+tAnTehrZ4qnClF04CVozP1GNN2zrnbsxCmr+iZBg==",
+      "type": "package",
+      "path": "windowsazure.storage/9.3.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Microsoft.WindowsAzure.Storage.dll",
+        "lib/net45/Microsoft.WindowsAzure.Storage.pdb",
+        "lib/net45/Microsoft.WindowsAzure.Storage.xml",
+        "lib/netstandard1.0/Microsoft.WindowsAzure.Storage.dll",
+        "lib/netstandard1.0/Microsoft.WindowsAzure.Storage.pdb",
+        "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll",
+        "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.pdb",
+        "lib/win8/Microsoft.WindowsAzure.Storage.dll",
+        "lib/win8/Microsoft.WindowsAzure.Storage.pdb",
+        "lib/wp8/Microsoft.WindowsAzure.Storage.dll",
+        "lib/wp8/Microsoft.WindowsAzure.Storage.pdb",
+        "lib/wpa/Microsoft.WindowsAzure.Storage.dll",
+        "lib/wpa/Microsoft.WindowsAzure.Storage.pdb",
+        "windowsazure.storage.9.3.3.nupkg.sha512",
+        "windowsazure.storage.nuspec"
+      ]
+    },
     "BotanicaContext/1.0.0": {
       "type": "project",
       "path": "../BotanicaContext/BotanicaContext.csproj",
@@ -12507,32 +12701,36 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "Azure.Storage.Blobs >= 12.18.0",
+      "Azure.Storage.Common >= 12.17.0",
+      "Azure.Storage.Queues >= 12.16.0",
       "BotanicaContext >= 1.0.0",
       "ClassBackendBotanica >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.11",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.11",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.11",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 7.0.10"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 7.0.10",
+      "WindowsAzure.Storage >= 9.3.3"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\andre.ribeiro.ORTOMAIA\\.nuget\\packages\\": {},
+    "C:\\Users\\Claudia\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\andre.ribeiro.ORTOMAIA\\Source\\Repos\\Andre2016Ribeiro\\Projeto_Final\\WebApplicationBackendBotanica\\WebApplicationBackendBotanica.csproj",
+      "projectUniqueName": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\WebApplicationBackendBotanica\\WebApplicationBackendBotanica.csproj",
       "projectName": "WebApplicationBackendBotanica",
-      "projectPath": "C:\\Users\\andre.ribeiro.ORTOMAIA\\Source\\Repos\\Andre2016Ribeiro\\Projeto_Final\\WebApplicationBackendBotanica\\WebApplicationBackendBotanica.csproj",
-      "packagesPath": "C:\\Users\\andre.ribeiro.ORTOMAIA\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\andre.ribeiro.ORTOMAIA\\Source\\Repos\\Andre2016Ribeiro\\Projeto_Final\\WebApplicationBackendBotanica\\obj\\",
+      "projectPath": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\WebApplicationBackendBotanica\\WebApplicationBackendBotanica.csproj",
+      "packagesPath": "C:\\Users\\Claudia\\.nuget\\packages\\",
+      "outputPath": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\WebApplicationBackendBotanica\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\andre.ribeiro.ORTOMAIA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Claudia\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -12541,18 +12739,19 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://pkgs.dev.azure.com/vitorandreribeiro0439/_packaging/EShopOnWebShared/nuget/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\andre.ribeiro.ORTOMAIA\\Source\\Repos\\Andre2016Ribeiro\\Projeto_Final\\BotanicaContext\\BotanicaContext.csproj": {
-              "projectPath": "C:\\Users\\andre.ribeiro.ORTOMAIA\\Source\\Repos\\Andre2016Ribeiro\\Projeto_Final\\BotanicaContext\\BotanicaContext.csproj"
+            "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaContext\\BotanicaContext.csproj": {
+              "projectPath": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaContext\\BotanicaContext.csproj"
             },
-            "C:\\Users\\andre.ribeiro.ORTOMAIA\\Source\\Repos\\Andre2016Ribeiro\\Projeto_Final\\ClassBackendBotanica\\ClassBackendBotanica.csproj": {
-              "projectPath": "C:\\Users\\andre.ribeiro.ORTOMAIA\\Source\\Repos\\Andre2016Ribeiro\\Projeto_Final\\ClassBackendBotanica\\ClassBackendBotanica.csproj"
+            "C:\\Galileu\\Projeto_Final\\Projeto_Final\\ClassBackendBotanica\\ClassBackendBotanica.csproj": {
+              "projectPath": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\ClassBackendBotanica\\ClassBackendBotanica.csproj"
             }
           }
         }
@@ -12567,6 +12766,18 @@
       "net7.0": {
         "targetAlias": "net7.0",
         "dependencies": {
+          "Azure.Storage.Blobs": {
+            "target": "Package",
+            "version": "[12.18.0, )"
+          },
+          "Azure.Storage.Common": {
+            "target": "Package",
+            "version": "[12.17.0, )"
+          },
+          "Azure.Storage.Queues": {
+            "target": "Package",
+            "version": "[12.16.0, )"
+          },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
@@ -12586,6 +12797,10 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[7.0.10, )"
+          },
+          "WindowsAzure.Storage": {
+            "target": "Package",
+            "version": "[9.3.3, )"
           }
         },
         "imports": [
@@ -12607,7 +12822,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
