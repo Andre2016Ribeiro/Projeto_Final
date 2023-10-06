@@ -831,3 +831,11 @@ C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\Azure.S
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\Azure.Storage.Queues.dll
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\System.IO.Hashing.dll
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\Microsoft.WindowsAzure.Storage.dll
+C:\Users\andre.ribeiro.ORTOMAIA\Source\Repos\Andre2016Ribeiro\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\Azure.Storage.Blobs.dll
+C:\Users\andre.ribeiro.ORTOMAIA\Source\Repos\Andre2016Ribeiro\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\Azure.Storage.Common.dll
+C:\Users\andre.ribeiro.ORTOMAIA\Source\Repos\Andre2016Ribeiro\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\Azure.Storage.Queues.dll
+C:\Users\andre.ribeiro.ORTOMAIA\Source\Repos\Andre2016Ribeiro\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\Microsoft.Azure.KeyVault.Core.dll
+C:\Users\andre.ribeiro.ORTOMAIA\Source\Repos\Andre2016Ribeiro\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\Microsoft.Azure.Storage.Blob.dll
+C:\Users\andre.ribeiro.ORTOMAIA\Source\Repos\Andre2016Ribeiro\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\Microsoft.Azure.Storage.Common.dll
+C:\Users\andre.ribeiro.ORTOMAIA\Source\Repos\Andre2016Ribeiro\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\System.IO.Hashing.dll
+C:\Users\andre.ribeiro.ORTOMAIA\Source\Repos\Andre2016Ribeiro\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\Microsoft.WindowsAzure.Storage.dll
