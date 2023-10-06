@@ -88,15 +88,20 @@ namespace WebApplicationBackendBotanica.MeusServicos
                 List<Desafio> fileList = new List<Desafio>();
                 foreach (var blobItem in messages)
                 {
-                    fileList.Add(new Desafio()
-                    {
-                        Contentor = _queueName,
-                        Id = blobItem.MessageId,
-                        Mensagem = blobItem.Body.ToString(),
-                        Autor = blobItem.Body.ToString(),
+                    var a = blobItem.Body.ToString().Split();
+                    string c= a.Last();
+                    
+                fileList.Add(new Desafio()
+                {
+                    
+                    Contentor = _queueName,
+                    Id = blobItem.MessageId,
+                    Mensagem = blobItem.Body.ToString(),
+                     
+                    Autor = c,
 
-                        Modified = DateTime.Parse(blobItem.InsertedOn.ToString()).ToLocalTime().ToString()
-                    });
+                    Modified = DateTime.Parse(blobItem.InsertedOn.ToString()).ToLocalTime().ToString()
+                });
                 }
                 return fileList;
 
@@ -104,39 +109,42 @@ namespace WebApplicationBackendBotanica.MeusServicos
 
                 
         }
-       /* #region OUTRA FORMA DE USAR MÉTODOS ASSÍNCRONOS NUM MÉTODO NÃO ASYNC:
-        public async Task<List<Desafio>> ReceberrMensagemAsync()
-        {
+        
+         public async Task<List<Desafio>> ReceberrMensagemAsync()
+         {
 
-            List<QueueClient> queueClient = new QueueClient(_storageAccountConnectionString, _queueNameRespostas);
+             
+            QueueClient queueClient = new QueueClient(_storageAccountConnectionString, _queueNameRespostas);
 
-            // Create the queue
-            if (queueClient.Exists())
-            {
-                QueueMessage[] resposta = await queueClient.ReceiveMessagesAsync(maxMessages: 1);
 
-                //Se não foi recebida uma mensagem devolvemos "":
-                if (resposta.Count() == 0)
+
+            
+            
+
+                QueueMessage[] messages = await queueClient.ReceiveMessagesAsync(maxMessages: 10);
+                List<Desafio> fileList = new List<Desafio>();
+                foreach (var blobItem in messages)
                 {
-
-                    return "";
-                }
-                else
+                    var a = blobItem.Body.ToString().Split();
+                    string c= a.Last();
+                    
+                fileList.Add(new Desafio()
                 {
-                    return resposta[0].Body.ToString();
+                    
+                    Contentor = _queueName,
+                    Id = blobItem.MessageId,
+                    Mensagem = blobItem.Body.ToString(),
+                     
+                    Autor = c,
 
+                    Modified = DateTime.Parse(blobItem.InsertedOn.ToString()).ToLocalTime().ToString()
+                });
                 }
-            }
-            else
-            {
+                return fileList;
+         }
+         
 
 
-                return "";
-            }
-        }
-        #endregion*/
-
-     
         public async Task<List<partilha>> GetAllBlobFiles()
         {
             try

@@ -1,10 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using BotanicaFrontEnd.MeusServicos;
+using BotanicaFrontEnd.Models;
+using Microsoft.Extensions.Azure;
 
 namespace BotanicaFrontEnd.Controllers
 {
     public class DesafioController : Controller
     {
+        
         private readonly MeuServicoAzure _meuServico;
 
         public DesafioController(MeuServicoAzure meuServico)
@@ -14,7 +17,9 @@ namespace BotanicaFrontEnd.Controllers
 
         public IActionResult Index()
         {
-            
+            string name =User.Identity.Name;
+            var foo = new user();
+            foo.f(name);
 
             return View();
         }

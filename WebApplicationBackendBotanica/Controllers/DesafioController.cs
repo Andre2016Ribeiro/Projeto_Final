@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.JsonPatch.Internal;
+using Microsoft.AspNetCore.Mvc;
 using WebApplicationBackendBotanica.MeusServicos;
 
 namespace WebApplicationBackendBotanica.Controllers
@@ -14,9 +15,10 @@ namespace WebApplicationBackendBotanica.Controllers
 
         public async Task<IActionResult> Index()
         {
-            
 
-            
+            ViewData["Enviadas"] = await _meuServico.ReceberrMensagemAsync();
+
+
 
             return View(await _meuServico.ReceberMensagemAsync());
 

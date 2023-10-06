@@ -4,11 +4,17 @@ using Azure.Storage.Queues.Models;
 using Microsoft.WindowsAzure.Storage.Blob;
 using Microsoft.WindowsAzure.Storage;
 using BotanicaFrontEnd.Models;
+using BotanicaFrontEnd.Controllers;
+using BotanicaFrontEnd.Data;
+using BotanicaFrontEnd.Controllers;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
+
 
 namespace BotanicaFrontEnd.MeusServicos
 {
     
-    public class MeuServicoAzure
+    public class MeuServicoAzure 
     {
         
         //Neste serviço, vou querer aceder ao ficheiro appsettings.json!
@@ -51,68 +57,79 @@ namespace BotanicaFrontEnd.MeusServicos
             return receipt.MessageId;
         }
 
-        
 
-        public async Task<string> ReceberMensagemAsync()
+
+
+
+        public async Task<List<Desafio>> ReceberMensagemAsync()
         {
-            
+
             QueueClient queueClient = new QueueClient(_storageAccountConnectionString, _queueName);
-            
 
 
-            if (queueClient.Exists())
+
+
+
+
+            QueueMessage[] messages = await queueClient.ReceiveMessagesAsync(maxMessages: 10);
+            List<Desafio> fileList = new List<Desafio>();
+            foreach (var blobItem in messages)
             {
-                
-                QueueMessage[] messages = await queueClient.ReceiveMessagesAsync(maxMessages: 1);
-
-                
-
-                if (messages.Count() == 0 )
-                    return "";
-                else
+                var a = blobItem.Body.ToString().Split();
+                string c = a.Last();
+                string b = user.f(nome);
+                fileList.Add(new Desafio()
                 {
-                    
 
-                    return messages[0].Body.ToString();
-                }
+                    Contentor = _queueName,
+                    Id = blobItem.MessageId,
+                    Mensagem = blobItem.Body.ToString(),
+
+                    Autor = c,
+
+                    Modified = DateTime.Parse(blobItem.InsertedOn.ToString()).ToLocalTime().ToString()
+                });
             }
-            else
-                
-                return "";
+            return fileList;
+
+
+
+
         }
-        #region OUTRA FORMA DE USAR MÉTODOS ASSÍNCRONOS NUM MÉTODO NÃO ASYNC:
-        public async Task<string> ReceberrMensagemAsync()
+
+        public async Task<List<Desafio>> ReceberrMensagemAsync()
         {
-            
+
+
             QueueClient queueClient = new QueueClient(_storageAccountConnectionString, _queueNameRespostas);
 
-            // Create the queue
-            if (queueClient.Exists())
-            {
-                QueueMessage[] resposta = await queueClient.ReceiveMessagesAsync(maxMessages: 1);
 
-                //Se não foi recebida uma mensagem devolvemos "":
-                if (resposta.Count() == 0)
-                {
-                    
-                    return "";
-                }
-                else
-                {
-                  return  resposta[0].Body.ToString();
-                     
-                }
-            }
-            else
-            {
-                
 
-                return "";
+
+
+
+            QueueMessage[] messages = await queueClient.ReceiveMessagesAsync(maxMessages: 10);
+            List<Desafio> fileList = new List<Desafio>();
+            foreach (var blobItem in messages)
+            {
+                var a = blobItem.Body.ToString().Split();
+                string c = a.Last();
+
+                fileList.Add(new Desafio()
+                {
+
+                    Contentor = _queueName,
+                    Id = blobItem.MessageId,
+                    Mensagem = blobItem.Body.ToString(),
+
+                    Autor = c,
+
+                    Modified = DateTime.Parse(blobItem.InsertedOn.ToString()).ToLocalTime().ToString()
+                });
             }
+            return fileList;
         }
-        #endregion
 
-       
 
         public async Task UploadBlobAsync(IFormFile files)
         {
