@@ -13,7 +13,16 @@ namespace BotanicaFrontEnd.Models
 
         public user f(string nome)
         {
+
+
             this.nome = nome;
+            return this;
+        }
+
+        public user gu()
+        {
+            this.nome=nome;
+            
             return this;
         }
     }

@@ -77,18 +77,25 @@ namespace BotanicaFrontEnd.MeusServicos
             {
                 var a = blobItem.Body.ToString().Split();
                 string c = a.Last();
-                string b = user.f(nome);
-                fileList.Add(new Desafio()
+                var foo = new user();
+                
+                string b = foo.gu().ToString();
+                if (b == c)
                 {
+                    fileList.Add(new Desafio()
+                    {
 
-                    Contentor = _queueName,
-                    Id = blobItem.MessageId,
-                    Mensagem = blobItem.Body.ToString(),
+                        Contentor = _queueName,
+                        Id = blobItem.MessageId,
+                        Mensagem = blobItem.Body.ToString(),
 
-                    Autor = c,
+                        Autor = c,
 
-                    Modified = DateTime.Parse(blobItem.InsertedOn.ToString()).ToLocalTime().ToString()
-                });
+                        Modified = DateTime.Parse(blobItem.InsertedOn.ToString()).ToLocalTime().ToString()
+                    });
+                }
+                else { }
+                
             }
             return fileList;
 
