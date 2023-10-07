@@ -13,15 +13,20 @@ namespace WebApplicationBackendBotanica.Controllers
     public class EncomendasController : Controller
     {
         private readonly WebApplicationBackendBotanicaContext _context;
-
-        public EncomendasController(WebApplicationBackendBotanicaContext context)
+        private IConfiguration _config;
+        public EncomendasController(WebApplicationBackendBotanicaContext context, ILogger<EncomendasController> logger, IConfiguration config)
         {
             _context = context;
+            _config = config;
         }
 
         // GET: Encomendas
         public async Task<IActionResult> Index()
         {
+            HttpClient encomenda = new HttpClient();
+
+        ViewBag.adress = new Uri(_config.GetValue<string>("con") + "/Encomendas/GetAll/");
+
             var webApplicationBackendBotanicaContext = _context.Encomenda.Include(e => e.Artigo).Include(e => e.Utilizador);
             return View(await webApplicationBackendBotanicaContext.ToListAsync());
         }

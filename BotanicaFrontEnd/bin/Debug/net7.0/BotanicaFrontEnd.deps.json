@@ -11,6 +11,7 @@
           "Azure.Storage.Blobs": "12.18.0",
           "Azure.Storage.Queues": "12.16.0",
           "ClassBackendBotanica": "1.0.0",
+          "Microsoft.AspNet.Providers.Core": "2.0.0",
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "7.0.5",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.5",
           "Microsoft.AspNetCore.Identity.UI": "7.0.5",
@@ -651,6 +652,17 @@
         "resources": {
           "lib/net6.0/zh-Hant/Humanizer.resources.dll": {
             "locale": "zh-Hant"
+          }
+        }
+      },
+      "Microsoft.AspNet.Providers.Core/2.0.0": {
+        "dependencies": {
+          "EntityFramework": "6.4.4"
+        },
+        "runtime": {
+          "lib/net40/System.Web.Providers.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.21122.0"
           }
         }
       },
@@ -2833,6 +2845,13 @@
       "sha512": "sha512-VIXB7HCUC34OoaGnO3HJVtSv2/wljPhjV7eKH4+TFPgQdJj2lvHNKY41Dtg0Bphu7X5UaXFR4zrYYyo+GNOjbA==",
       "path": "humanizer.core.zh-hant/2.14.1",
       "hashPath": "humanizer.core.zh-hant.2.14.1.nupkg.sha512"
+    },
+    "Microsoft.AspNet.Providers.Core/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JMk31PExMANVDc04aSUyIlcL3pkFVyNg/dDn+ZZzmhZ2CBctI90BWQH1L0zXgD61ZWW5r4ybInV362sRKWIC+A==",
+      "path": "microsoft.aspnet.providers.core/2.0.0",
+      "hashPath": "microsoft.aspnet.providers.core.2.0.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Authentication.Abstractions/2.2.0": {
       "type": "package",

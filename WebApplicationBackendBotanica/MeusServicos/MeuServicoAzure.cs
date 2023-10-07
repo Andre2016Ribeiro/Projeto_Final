@@ -13,13 +13,12 @@ namespace WebApplicationBackendBotanica.MeusServicos
 {
     public class MeuServicoAzure
     {
-        //Neste serviço, vou querer aceder ao ficheiro appsettings.json!
-        //Por isso vou pedir à framework MVC Core que me injete o respetivo serviço (que existe sempre) para acesso a esse ficheiro:
+        
         public MeuServicoAzure(IConfiguration config)
         {
             _config = config;
 
-            // Get the name for the queue from appsettings
+           
             _storageAccountConnectionString = _config["Azure:StorageAccountConnectionString"];
             _queueName = _config["Azure:QueueName"];
             _queueNameRespostas = _config["Azure:QueueNameRespostas"]; 
@@ -31,42 +30,25 @@ namespace WebApplicationBackendBotanica.MeusServicos
         private readonly string _queueNameRespostas;
         private readonly string _blobContainerName;
 
-        //Exemplo de acesso ao appsettings para obter a ConnectionString e o nome da Queue:
+        
         public void AcessoConfiguração()
         {
-            //Se tiver no ficheiro appsettings.json:
-            //{
-            //   "chave": "valor"
-            //}
-            //Posso aceder:
+            
             string valor1 = _config["chave"];
 
-            //Se tiver no ficheiro appsettings.json:
-            //{
-            //   "Azure": {
-            //          "chave": "valor"
-            //   }
-            //}
-            //Posso aceder:
+            
             string valor2 = _config["Azure:chave"];
         }
 
         public async Task<string> EnviarMensagemAsync(string message)
         {
-            //install-package Azure.Storage.Queues;
-            //using Azure.Storage.Queues;
-
-            // Instantiate a QueueClient which will be
-            // used to create and manipulate the queue
+           
             QueueClient queueClient = new QueueClient(_storageAccountConnectionString, _queueNameRespostas);
 
-            //NOTA: As 3 linhas acima poderiam ir para o construtor....!!!!!
-
-            // Create the queue
+           
             await queueClient.CreateIfNotExistsAsync();
 
-            // Send the message to the queue
-            // Save the receipt so we can update this message later
+            
             SendReceipt receipt = await queueClient.SendMessageAsync(message);
 
             return receipt.MessageId;
@@ -142,8 +124,51 @@ namespace WebApplicationBackendBotanica.MeusServicos
                 }
                 return fileList;
          }
-         
+        public async Task DeleteMenssagemAsync(string id)
+        {
+            try
+            {
+                QueueClient queueClient = new QueueClient(_storageAccountConnectionString, _queueName);
+                QueueMessage[] messages = await queueClient.ReceiveMessagesAsync(maxMessages: 30);
+                //var messagesToDelete = messages.Where(m => m.MessageId == id).ToList();
+                
+                foreach (var blobItem in messages)
+                {
+                    if (blobItem.MessageId.ToString() == id)
+                    {
+                        await queueClient.DeleteMessageAsync(blobItem.MessageId, blobItem.PopReceipt);
+                    }
+                }   
+            }
+            catch (Exception)
+            {
 
+                throw;
+            }
+        }
+        public async Task DeleteMenssagemAsync1(string id)
+        {
+            try
+            {
+                QueueClient queueClient = new QueueClient(_storageAccountConnectionString, _queueNameRespostas);
+                QueueMessage[] messages = await queueClient.ReceiveMessagesAsync(maxMessages: 30);
+                //var messagesToDelete = messages.Where(m => m.MessageId == id).ToList();
+                
+                foreach (var blobItem in messages)
+                {
+                    if (blobItem.MessageId.ToString() == id)
+                    {
+                        await queueClient.DeleteMessageAsync(blobItem.MessageId, blobItem.PopReceipt);
+                    }
+                    else { }
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
 
         public async Task<List<partilha>> GetAllBlobFiles()
         {

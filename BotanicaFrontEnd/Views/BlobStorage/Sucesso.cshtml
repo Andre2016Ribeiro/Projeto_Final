@@ -1,0 +1,28 @@
+﻿@model IEnumerable<BotanicaFrontEnd.Models.BlobStorage>
+<h3>Sucesso no upload do ficheiro para a Web App</h3>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2 class="text-uppercase text-center">Lista de imagens partilhadas</h2>
+
+
+
+
+
+
+<table>
+    
+    <tbody>
+        @foreach (var data in ViewData["sucesso"]as IEnumerable<BotanicaFrontEnd.Models.BlobStorage>)
+        {
+            <br />
+            <tr>
+
+
+                <td><img src="https://projetofinalandreribeiro.blob.core.windows.net/fotos/@data.FileName" height=200 width=400 /> </td>
+                <td>@data.FileName</td>
+            </tr>
+        }
+    </tbody>
+</table>

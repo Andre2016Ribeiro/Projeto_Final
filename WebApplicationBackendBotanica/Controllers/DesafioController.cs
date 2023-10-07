@@ -26,24 +26,27 @@ namespace WebApplicationBackendBotanica.Controllers
             
         }
 
-        [HttpPost]
-        public async Task<IActionResult> Index(string mensagem)
-        {
-            //Exemplo de texto de teste:
-            string? name = User.Identity.Name;
-           string mensagens = mensagem + "do utilizador" + name;
-            //Enviar uma mensagem:
-            await _meuServico.EnviarMensagemAsync(mensagens);
-            
-            ViewBag.Mensagem = "Foi enviada a Resposta: " + mensagem;
+       
 
-            return View();
+        [HttpGet]
+        public async Task<IActionResult> Update(string Message)
+        {
+            await _meuServico.EnviarMensagemAsync(Message);
+
+            ViewBag.Mensagem = "Foi enviada a Resposta: " + Message;
+            return RedirectToAction("Index", "Desafio");
         }
 
-        public async Task<IActionResult> Receber()
+        public async Task<IActionResult> Delete(string id)
         {
+            await _meuServico.DeleteMenssagemAsync(id);
+            return RedirectToAction("Index", "Desafio");
+        }
 
-            return View();
+        public async Task<IActionResult> Delete1(string id)
+        {
+            await _meuServico.DeleteMenssagemAsync1(id);
+            return RedirectToAction("Index", "Desafio");
         }
     }
 }

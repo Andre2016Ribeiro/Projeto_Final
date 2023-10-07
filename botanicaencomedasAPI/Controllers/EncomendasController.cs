@@ -16,8 +16,16 @@ namespace botanicaencomedasAPI.Controllers
         {
             _context = context;
         }
-        
 
+        [HttpGet("GetAll/")]
+        public async Task<ActionResult<IEnumerable<Encomenda>>> GetAll()
+        {
+            if (_context.Artigo == null)
+            {
+                return NotFound();
+            }
+            return await _context.Encomenda.ToListAsync();
+        }
 
 
 

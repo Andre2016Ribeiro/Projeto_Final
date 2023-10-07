@@ -1,5 +1,6 @@
 using BotanicaFrontEnd.Data;
 using BotanicaFrontEnd.MeusServicos;
+using BotanicaFrontEnd.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 

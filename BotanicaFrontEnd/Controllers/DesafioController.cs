@@ -2,9 +2,11 @@
 using BotanicaFrontEnd.MeusServicos;
 using BotanicaFrontEnd.Models;
 using Microsoft.Extensions.Azure;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BotanicaFrontEnd.Controllers
 {
+    [Authorize]
     public class DesafioController : Controller
     {
         
@@ -17,9 +19,8 @@ namespace BotanicaFrontEnd.Controllers
 
         public IActionResult Index()
         {
-            string name =User.Identity.Name;
-            var foo = new user();
-            foo.f(name);
+           
+            
 
             return View();
         }
@@ -41,43 +42,17 @@ namespace BotanicaFrontEnd.Controllers
         public async Task<IActionResult> Receber()
         {
             string name = User.Identity.Name;
-            var foo = new user();
-            foo.f(name);
+            
 
-            ViewData["Enviadas"] = await _meuServico.ReceberrMensagemAsync();
+            ViewData["Enviadas"] = await _meuServico.ReceberrMensagemAsync(name);
             
             
-            return View(await _meuServico.ReceberMensagemAsync());
+            return View(await _meuServico.ReceberMensagemAsync(name));
 
 
 
         }
 
-        /* public async Task<IActionResult> Receber()
-         {
-             //Receber uma mensagem:
-             string Resposta = await _meuServico.ReceberrMensagemAsync();
-             string userr = Resposta;
-             var userrs = userr.Split(' ');
-             string utilizadorr = userrs.Last();
-             if (utilizadorr == User.Identity.Name)
-                 ViewBag.Resposta = "A sua resposta Está " + Resposta;
-             else
-                 ViewBag.Resposta = "a sua resposta ainda não foi corrigida ";
-
-             string mensagem = await _meuServico.ReceberMensagemAsync();
-             string user = mensagem;
-             var users = user.Split(' ');
-             string utilizador = users.Last();
-             if (utilizador==User.Identity.Name)
-                 ViewBag.Mensagem = "A sua resposta Foi: " + mensagem;
-             else
-                 ViewBag.Mensagem = "Não há mensagens a receber";
-
-             return View();
-
-
-
-         }*/
+        
     }
 }

@@ -44,6 +44,9 @@
             <th>Mensagem</th>
             <th>Autor</th>
             <th>Modificada</th>
+            <th>Apagar</th>
+            <th>resposta Errada</th>
+            <th>resposta Certa</th>
         </tr>
     </thead>
     <tbody>
@@ -54,7 +57,9 @@
                 <td>@data.Mensagem</td>
                 <td>@data.Autor</td>
                 <td>@data.Modified </td>
-                <td> <a href="/partilha/Delete?blobName=@data.Id" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a></td>
+                <td> <a href="/Desafio/Delete?Id=@data.Id" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a></td>
+                <td> <a href="/Desafio/Update?Message=resposta Errada: @data.Mensagem" type="button" class="btn btn-danger">Errado</a></td>
+                <td> <a href="/Desafio/Update?Message=resposta Certa: @data.Mensagem" type="button" class="btn btn-success">Certo</a></td>
             </tr>
         }
     </tbody>
@@ -103,6 +108,7 @@
             <th>Mensagem</th>
             <th>Autor</th>
             <th>Modificada</th>
+            <th>Apagar</th>
         </tr>
     </thead>
     <tbody>
@@ -113,7 +119,7 @@
                 <td>@data.Mensagem</td>
                 <td>@data.Autor</td>
                 <td>@data.Modified </td>
-                <td> <a href="/partilha/Delete?blobName=@data.Id" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a></td>
+                <td> <a href="/Desafio/Delete1?id=@data.Id" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a></td>
             </tr>
         }
     </tbody>

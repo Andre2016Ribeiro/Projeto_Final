@@ -9,6 +9,9 @@ using BotanicaFrontEnd.Data;
 using BotanicaFrontEnd.Controllers;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
+using System.Web.Providers.Entities;
+using System.Security.Claims;
+using Azure;
 
 
 namespace BotanicaFrontEnd.MeusServicos
@@ -17,13 +20,11 @@ namespace BotanicaFrontEnd.MeusServicos
     public class MeuServicoAzure 
     {
         
-        //Neste serviço, vou querer aceder ao ficheiro appsettings.json!
-        //Por isso vou pedir à framework MVC Core que me injete o respetivo serviço (que existe sempre) para acesso a esse ficheiro:
+       
         public MeuServicoAzure(IConfiguration config)
         {
             _config = config;
 
-            // Get the name for the queue from appsettings
             _storageAccountConnectionString = _config["Azure:StorageAccountConnectionString"];
             _queueName = _config["Azure:QueueName"];
             _queueNameRespostas = _config["Azure:QueueNameRespostas"];
@@ -61,25 +62,26 @@ namespace BotanicaFrontEnd.MeusServicos
 
 
 
-        public async Task<List<Desafio>> ReceberMensagemAsync()
+        public async Task<List<Desafio>> ReceberMensagemAsync(string name)
         {
 
             QueueClient queueClient = new QueueClient(_storageAccountConnectionString, _queueName);
 
 
+            
 
 
-
-
-            QueueMessage[] messages = await queueClient.ReceiveMessagesAsync(maxMessages: 10);
+            QueueMessage[] messages = await queueClient.ReceiveMessagesAsync(maxMessages: 20);
             List<Desafio> fileList = new List<Desafio>();
             foreach (var blobItem in messages)
             {
+                
                 var a = blobItem.Body.ToString().Split();
                 string c = a.Last();
-                var foo = new user();
                 
-                string b = foo.gu().ToString();
+               
+                string b = name;
+
                 if (b == c)
                 {
                     fileList.Add(new Desafio()
@@ -104,7 +106,7 @@ namespace BotanicaFrontEnd.MeusServicos
 
         }
 
-        public async Task<List<Desafio>> ReceberrMensagemAsync()
+        public async Task<List<Desafio>> ReceberrMensagemAsync(string name)
         {
 
 
@@ -115,28 +117,68 @@ namespace BotanicaFrontEnd.MeusServicos
 
 
 
-            QueueMessage[] messages = await queueClient.ReceiveMessagesAsync(maxMessages: 10);
+            QueueMessage[] messages = await queueClient.ReceiveMessagesAsync(maxMessages: 20);
             List<Desafio> fileList = new List<Desafio>();
             foreach (var blobItem in messages)
             {
                 var a = blobItem.Body.ToString().Split();
                 string c = a.Last();
 
-                fileList.Add(new Desafio()
+
+                string b = name;
+                if (b == c)
                 {
+                    fileList.Add(new Desafio()
+                    {
 
-                    Contentor = _queueName,
-                    Id = blobItem.MessageId,
-                    Mensagem = blobItem.Body.ToString(),
+                        Contentor = _queueName,
+                        Id = blobItem.MessageId,
+                        Mensagem = blobItem.Body.ToString(),
 
-                    Autor = c,
+                        Autor = c,
 
-                    Modified = DateTime.Parse(blobItem.InsertedOn.ToString()).ToLocalTime().ToString()
-                });
+                        Modified = DateTime.Parse(blobItem.InsertedOn.ToString()).ToLocalTime().ToString()
+                    });
+
+                }
+                else { }
             }
             return fileList;
         }
+        public async Task<List<BlobStorage>> GetAllBlobFiles()
+        {
+            try
+            {
+                CloudStorageAccount cloudStorageAccount = CloudStorageAccount.Parse(_storageAccountConnectionString);
 
+                CloudBlobClient blobClient = cloudStorageAccount.CreateCloudBlobClient();
+                CloudBlobContainer container = blobClient.GetContainerReference(_blobContainerName);
+                CloudBlobDirectory dirb = container.GetDirectoryReference(_blobContainerName);
+
+
+                BlobResultSegment resultSegment = await container.ListBlobsSegmentedAsync(string.Empty,
+                    true, BlobListingDetails.Metadata, 100, null, null, null);
+                List<BlobStorage> fileList = new List<BlobStorage>();
+
+                foreach (var blobItem in resultSegment.Results)
+                {
+
+                    var blob = (CloudBlob)blobItem;
+                    fileList.Add(new BlobStorage()
+                    {
+                        FileName = blob.Name,
+                        FileSize = Math.Round((blob.Properties.Length / 1024f) / 1024f, 2).ToString(),
+                        Modified = DateTime.Parse(blob.Properties.LastModified.ToString()).ToLocalTime().ToString()
+                    });
+                }
+                return fileList;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
 
         public async Task UploadBlobAsync(IFormFile files)
         {
