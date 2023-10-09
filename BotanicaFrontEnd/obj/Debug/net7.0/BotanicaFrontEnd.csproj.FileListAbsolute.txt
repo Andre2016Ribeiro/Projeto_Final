@@ -843,3 +843,4 @@ C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\Microso
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\Microsoft.Azure.Storage.Blob.dll
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\Microsoft.Azure.Storage.Common.dll
 C:\Galileu\Projeto_Final\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\System.Web.Providers.dll
+C:\Users\andre.ribeiro.ORTOMAIA\Source\Repos\Andre2016Ribeiro\Projeto_Final\BotanicaFrontEnd\bin\Debug\net7.0\System.Web.Providers.dll

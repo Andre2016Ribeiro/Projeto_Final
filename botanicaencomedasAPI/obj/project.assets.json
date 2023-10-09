@@ -2386,23 +2386,23 @@
           }
         }
       },
-      "Microsoft.Win32.SystemEvents/6.0.0": {
+      "Microsoft.Win32.SystemEvents/7.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+          "lib/net7.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+          "lib/net7.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         },
         "runtimeTargets": {
-          "runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+          "runtimes/win/lib/net7.0/Microsoft.Win32.SystemEvents.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
@@ -2784,6 +2784,34 @@
             "assetType": "native",
             "rid": "win-x86"
           }
+        }
+      },
+      "Selenium.Firefox.WebDriver/0.27.0": {
+        "type": "package",
+        "build": {
+          "build/Selenium.Firefox.WebDriver.targets": {}
+        }
+      },
+      "Selenium.WebDriver/4.13.1": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1",
+          "System.Drawing.Common": "7.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/WebDriver.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/WebDriver.dll": {}
+        },
+        "build": {
+          "buildTransitive/Selenium.WebDriver.targets": {}
+        }
+      },
+      "Selenium.WebDriver.ChromeDriver/117.0.5938.14900": {
+        "type": "package",
+        "build": {
+          "build/Selenium.WebDriver.ChromeDriver.targets": {}
         }
       },
       "Swashbuckle.AspNetCore/6.5.0": {
@@ -3206,30 +3234,26 @@
           }
         }
       },
-      "System.Drawing.Common/6.0.0": {
+      "System.Drawing.Common/7.0.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Win32.SystemEvents": "6.0.0"
+          "Microsoft.Win32.SystemEvents": "7.0.0"
         },
         "compile": {
-          "lib/net6.0/System.Drawing.Common.dll": {
+          "lib/net7.0/System.Drawing.Common.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/System.Drawing.Common.dll": {
+          "lib/net7.0/System.Drawing.Common.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         },
         "runtimeTargets": {
-          "runtimes/unix/lib/net6.0/System.Drawing.Common.dll": {
-            "assetType": "runtime",
-            "rid": "unix"
-          },
-          "runtimes/win/lib/net6.0/System.Drawing.Common.dll": {
+          "runtimes/win/lib/net7.0/System.Drawing.Common.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
@@ -8135,32 +8159,34 @@
         "version.txt"
       ]
     },
-    "Microsoft.Win32.SystemEvents/6.0.0": {
-      "sha512": "hqTM5628jSsQiv+HGpiq3WKBl2c8v1KZfby2J6Pr7pEPlK9waPdgEO6b8A/+/xn/yZ9ulv8HuqK71ONy2tg67A==",
+    "Microsoft.Win32.SystemEvents/7.0.0": {
+      "sha512": "2nXPrhdAyAzir0gLl8Yy8S5Mnm/uBSQQA7jEsILOS1MTyS7DbmV1NgViMtvV1sfCD1ebITpNwb1NIinKeJgUVQ==",
       "type": "package",
-      "path": "microsoft.win32.systemevents/6.0.0",
+      "path": "microsoft.win32.systemevents/7.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Win32.SystemEvents.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
         "buildTransitive/netcoreapp2.0/Microsoft.Win32.SystemEvents.targets",
-        "buildTransitive/netcoreapp3.1/_._",
-        "lib/net461/Microsoft.Win32.SystemEvents.dll",
-        "lib/net461/Microsoft.Win32.SystemEvents.xml",
+        "lib/net462/Microsoft.Win32.SystemEvents.dll",
+        "lib/net462/Microsoft.Win32.SystemEvents.xml",
         "lib/net6.0/Microsoft.Win32.SystemEvents.dll",
         "lib/net6.0/Microsoft.Win32.SystemEvents.xml",
-        "lib/netcoreapp3.1/Microsoft.Win32.SystemEvents.dll",
-        "lib/netcoreapp3.1/Microsoft.Win32.SystemEvents.xml",
+        "lib/net7.0/Microsoft.Win32.SystemEvents.dll",
+        "lib/net7.0/Microsoft.Win32.SystemEvents.xml",
         "lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll",
         "lib/netstandard2.0/Microsoft.Win32.SystemEvents.xml",
-        "microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+        "microsoft.win32.systemevents.7.0.0.nupkg.sha512",
         "microsoft.win32.systemevents.nuspec",
         "runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll",
         "runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.xml",
-        "runtimes/win/lib/netcoreapp3.1/Microsoft.Win32.SystemEvents.dll",
-        "runtimes/win/lib/netcoreapp3.1/Microsoft.Win32.SystemEvents.xml",
+        "runtimes/win/lib/net7.0/Microsoft.Win32.SystemEvents.dll",
+        "runtimes/win/lib/net7.0/Microsoft.Win32.SystemEvents.xml",
         "useSharedDesignerContext.txt"
       ]
     },
@@ -8628,6 +8654,60 @@
         "runtimes/win-x86/native/sni.dll",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "Selenium.Firefox.WebDriver/0.27.0": {
+      "sha512": "HwCaTaa+snzkLF7ZVaxKSmdttKm+KXT7HOY8c1q8p9E7x05+WHqw5XaZjUGFytVT1+0FkgUoH/u/I+csPLeJAg==",
+      "type": "package",
+      "path": "selenium.firefox.webdriver/0.27.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Selenium.Firefox.WebDriver.targets",
+        "driver/geckodriver.exe",
+        "selenium.firefox.webdriver.0.27.0.nupkg.sha512",
+        "selenium.firefox.webdriver.nuspec"
+      ]
+    },
+    "Selenium.WebDriver/4.13.1": {
+      "sha512": "7asjwKWgLNjIe+NZ9GwiWWshRD9IWQzltZPiWFxF7UH62ymqjD5L0PUsWJlDm4cew1YHhcqcQpGkgi6FsGZaig==",
+      "type": "package",
+      "path": "selenium.webdriver/4.13.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Selenium.WebDriver.targets",
+        "buildTransitive/Selenium.WebDriver.targets",
+        "images/icon.png",
+        "lib/netstandard2.0/WebDriver.dll",
+        "manager/linux/selenium-manager",
+        "manager/macos/selenium-manager",
+        "manager/windows/selenium-manager.exe",
+        "selenium.webdriver.4.13.1.nupkg.sha512",
+        "selenium.webdriver.nuspec"
+      ]
+    },
+    "Selenium.WebDriver.ChromeDriver/117.0.5938.14900": {
+      "sha512": "GbWaptqqeamYcXjqGXyjwDDQihDe8lYoef6GOQTh0TelZl/4cxV6LKWTSxqhf02sz1Inh4DOS787LSCqSjLkkA==",
+      "type": "package",
+      "path": "selenium.webdriver.chromedriver/117.0.5938.14900",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/DefinePropertiesChromeDriver.targets",
+        "build/Selenium.WebDriver.ChromeDriver.targets",
+        "driver/linux64/LICENSE.chromedriver",
+        "driver/linux64/chromedriver",
+        "driver/mac64/LICENSE.chromedriver",
+        "driver/mac64/chromedriver",
+        "driver/mac64arm/LICENSE.chromedriver",
+        "driver/mac64arm/chromedriver",
+        "driver/win32/LICENSE.chromedriver",
+        "driver/win32/chromedriver.exe",
+        "nupkg-icon.png",
+        "selenium.webdriver.chromedriver.117.0.5938.14900.nupkg.sha512",
+        "selenium.webdriver.chromedriver.nuspec"
       ]
     },
     "Swashbuckle.AspNetCore/6.5.0": {
@@ -9654,41 +9734,39 @@
         "system.diagnostics.tracing.nuspec"
       ]
     },
-    "System.Drawing.Common/6.0.0": {
-      "sha512": "NfuoKUiP2nUWwKZN6twGqXioIe1zVD0RIj2t976A+czLHr2nY454RwwXs6JU9Htc6mwqL6Dn/nEL3dpVf2jOhg==",
+    "System.Drawing.Common/7.0.0": {
+      "sha512": "KIX+oBU38pxkKPxvLcLfIkOV5Ien8ReN78wro7OF5/erwcmortzeFx+iBswlh2Vz6gVne0khocQudGwaO1Ey6A==",
       "type": "package",
-      "path": "system.drawing.common/6.0.0",
+      "path": "system.drawing.common/7.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Drawing.Common.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
         "buildTransitive/netcoreapp2.0/System.Drawing.Common.targets",
-        "buildTransitive/netcoreapp3.1/_._",
         "lib/MonoAndroid10/_._",
         "lib/MonoTouch10/_._",
-        "lib/net461/System.Drawing.Common.dll",
-        "lib/net461/System.Drawing.Common.xml",
+        "lib/net462/System.Drawing.Common.dll",
+        "lib/net462/System.Drawing.Common.xml",
         "lib/net6.0/System.Drawing.Common.dll",
         "lib/net6.0/System.Drawing.Common.xml",
-        "lib/netcoreapp3.1/System.Drawing.Common.dll",
-        "lib/netcoreapp3.1/System.Drawing.Common.xml",
+        "lib/net7.0/System.Drawing.Common.dll",
+        "lib/net7.0/System.Drawing.Common.xml",
         "lib/netstandard2.0/System.Drawing.Common.dll",
         "lib/netstandard2.0/System.Drawing.Common.xml",
         "lib/xamarinios10/_._",
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
-        "runtimes/unix/lib/net6.0/System.Drawing.Common.dll",
-        "runtimes/unix/lib/net6.0/System.Drawing.Common.xml",
-        "runtimes/unix/lib/netcoreapp3.1/System.Drawing.Common.dll",
-        "runtimes/unix/lib/netcoreapp3.1/System.Drawing.Common.xml",
         "runtimes/win/lib/net6.0/System.Drawing.Common.dll",
         "runtimes/win/lib/net6.0/System.Drawing.Common.xml",
-        "runtimes/win/lib/netcoreapp3.1/System.Drawing.Common.dll",
-        "runtimes/win/lib/netcoreapp3.1/System.Drawing.Common.xml",
-        "system.drawing.common.6.0.0.nupkg.sha512",
+        "runtimes/win/lib/net7.0/System.Drawing.Common.dll",
+        "runtimes/win/lib/net7.0/System.Drawing.Common.xml",
+        "system.drawing.common.7.0.0.nupkg.sha512",
         "system.drawing.common.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -12969,27 +13047,30 @@
       "Microsoft.AspNetCore.Mvc.Abstractions >= 2.2.0",
       "Microsoft.AspNetCore.Mvc.Core >= 2.2.5",
       "Microsoft.AspNetCore.OpenApi >= 7.0.11",
+      "Selenium.Firefox.WebDriver >= 0.27.0",
+      "Selenium.WebDriver >= 4.13.1",
+      "Selenium.WebDriver.ChromeDriver >= 117.0.5938.14900",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Claudia\\.nuget\\packages\\": {},
+    "C:\\Users\\andre.ribeiro.ORTOMAIA\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\botanicaencomedasAPI\\botanicaencomedasAPI.csproj",
+      "projectUniqueName": "C:\\Users\\andre.ribeiro.ORTOMAIA\\Source\\Repos\\Andre2016Ribeiro\\Projeto_Final\\botanicaencomedasAPI\\botanicaencomedasAPI.csproj",
       "projectName": "botanicaencomedasAPI",
-      "projectPath": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\botanicaencomedasAPI\\botanicaencomedasAPI.csproj",
-      "packagesPath": "C:\\Users\\Claudia\\.nuget\\packages\\",
-      "outputPath": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\botanicaencomedasAPI\\obj\\",
+      "projectPath": "C:\\Users\\andre.ribeiro.ORTOMAIA\\Source\\Repos\\Andre2016Ribeiro\\Projeto_Final\\botanicaencomedasAPI\\botanicaencomedasAPI.csproj",
+      "packagesPath": "C:\\Users\\andre.ribeiro.ORTOMAIA\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\andre.ribeiro.ORTOMAIA\\Source\\Repos\\Andre2016Ribeiro\\Projeto_Final\\botanicaencomedasAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Claudia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\andre.ribeiro.ORTOMAIA\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -12998,19 +13079,18 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://pkgs.dev.azure.com/vitorandreribeiro0439/_packaging/EShopOnWebShared/nuget/v3/index.json": {}
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaContext\\BotanicaContext.csproj": {
-              "projectPath": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\BotanicaContext\\BotanicaContext.csproj"
+            "C:\\Users\\andre.ribeiro.ORTOMAIA\\Source\\Repos\\Andre2016Ribeiro\\Projeto_Final\\BotanicaContext\\BotanicaContext.csproj": {
+              "projectPath": "C:\\Users\\andre.ribeiro.ORTOMAIA\\Source\\Repos\\Andre2016Ribeiro\\Projeto_Final\\BotanicaContext\\BotanicaContext.csproj"
             },
-            "C:\\Galileu\\Projeto_Final\\Projeto_Final\\ClassBackendBotanica\\ClassBackendBotanica.csproj": {
-              "projectPath": "C:\\Galileu\\Projeto_Final\\Projeto_Final\\ClassBackendBotanica\\ClassBackendBotanica.csproj"
+            "C:\\Users\\andre.ribeiro.ORTOMAIA\\Source\\Repos\\Andre2016Ribeiro\\Projeto_Final\\ClassBackendBotanica\\ClassBackendBotanica.csproj": {
+              "projectPath": "C:\\Users\\andre.ribeiro.ORTOMAIA\\Source\\Repos\\Andre2016Ribeiro\\Projeto_Final\\ClassBackendBotanica\\ClassBackendBotanica.csproj"
             }
           }
         }
@@ -13037,6 +13117,18 @@
             "target": "Package",
             "version": "[7.0.11, )"
           },
+          "Selenium.Firefox.WebDriver": {
+            "target": "Package",
+            "version": "[0.27.0, )"
+          },
+          "Selenium.WebDriver": {
+            "target": "Package",
+            "version": "[4.13.1, )"
+          },
+          "Selenium.WebDriver.ChromeDriver": {
+            "target": "Package",
+            "version": "[117.0.5938.14900, )"
+          },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.5.0, )"
@@ -13061,7 +13153,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

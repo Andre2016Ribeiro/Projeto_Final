@@ -1,13 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\botanicaencomedasAPI",
     "\\BotanicaFrontEnd",
     "\\BotanicaFrontEnd\\Controllers",
-    "\\BotanicaFrontEnd\\Data",
-    "\\ClassBackendBotanica",
-    "\\WebApplicationBackendBotanica"
+    "\\ClassBackendBotanica"
   ],
-  "SelectedNode": "\\ClassBackendBotanica\\ClassBackendBotanica.sln",
+  "SelectedNode": "\\BotanicaFrontEnd\\Controllers\\DesafioController.cs",
   "PreviewInSolutionExplorer": false
 }
