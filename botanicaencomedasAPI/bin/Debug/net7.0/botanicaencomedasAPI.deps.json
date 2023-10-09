@@ -13,6 +13,9 @@
           "Microsoft.AspNetCore.Mvc.Abstractions": "2.2.0",
           "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
           "Microsoft.AspNetCore.OpenApi": "7.0.11",
+          "Selenium.Firefox.WebDriver": "0.27.0",
+          "Selenium.WebDriver": "4.13.1",
+          "Selenium.WebDriver.ChromeDriver": "117.0.5938.14900",
           "Swashbuckle.AspNetCore": "6.5.0"
         },
         "runtime": {
@@ -1694,19 +1697,19 @@
           "System.Security.Principal.Windows": "5.0.0"
         }
       },
-      "Microsoft.Win32.SystemEvents/6.0.0": {
+      "Microsoft.Win32.SystemEvents/7.0.0": {
         "runtime": {
-          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
-            "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.0.21.52210"
+          "lib/net7.0/Microsoft.Win32.SystemEvents.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.22.51805"
           }
         },
         "runtimeTargets": {
-          "runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+          "runtimes/win/lib/net7.0/Microsoft.Win32.SystemEvents.dll": {
             "rid": "win",
             "assetType": "runtime",
-            "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.0.21.52210"
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.22.51805"
           }
         }
       },
@@ -1949,6 +1952,20 @@
           }
         }
       },
+      "Selenium.Firefox.WebDriver/0.27.0": {},
+      "Selenium.WebDriver/4.13.1": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1",
+          "System.Drawing.Common": "7.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/WebDriver.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
+          }
+        }
+      },
+      "Selenium.WebDriver.ChromeDriver/117.0.5938.14900": {},
       "Swashbuckle.AspNetCore/6.5.0": {
         "dependencies": {
           "Microsoft.Extensions.ApiDescription.Server": "6.0.5",
@@ -2173,28 +2190,22 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "System.Drawing.Common/6.0.0": {
+      "System.Drawing.Common/7.0.0": {
         "dependencies": {
-          "Microsoft.Win32.SystemEvents": "6.0.0"
+          "Microsoft.Win32.SystemEvents": "7.0.0"
         },
         "runtime": {
-          "lib/net6.0/System.Drawing.Common.dll": {
-            "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.0.21.52210"
+          "lib/net7.0/System.Drawing.Common.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.22.51805"
           }
         },
         "runtimeTargets": {
-          "runtimes/unix/lib/net6.0/System.Drawing.Common.dll": {
-            "rid": "unix",
-            "assetType": "runtime",
-            "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.0.21.52210"
-          },
-          "runtimes/win/lib/net6.0/System.Drawing.Common.dll": {
+          "runtimes/win/lib/net7.0/System.Drawing.Common.dll": {
             "rid": "win",
             "assetType": "runtime",
-            "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.0.21.52210"
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.22.51805"
           }
         }
       },
@@ -2773,7 +2784,7 @@
       },
       "System.Windows.Extensions/6.0.0": {
         "dependencies": {
-          "System.Drawing.Common": "6.0.0"
+          "System.Drawing.Common": "7.0.0"
         },
         "runtime": {
           "lib/net6.0/System.Windows.Extensions.dll": {
@@ -3812,12 +3823,12 @@
       "path": "microsoft.win32.registry/4.7.0",
       "hashPath": "microsoft.win32.registry.4.7.0.nupkg.sha512"
     },
-    "Microsoft.Win32.SystemEvents/6.0.0": {
+    "Microsoft.Win32.SystemEvents/7.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-hqTM5628jSsQiv+HGpiq3WKBl2c8v1KZfby2J6Pr7pEPlK9waPdgEO6b8A/+/xn/yZ9ulv8HuqK71ONy2tg67A==",
-      "path": "microsoft.win32.systemevents/6.0.0",
-      "hashPath": "microsoft.win32.systemevents.6.0.0.nupkg.sha512"
+      "sha512": "sha512-2nXPrhdAyAzir0gLl8Yy8S5Mnm/uBSQQA7jEsILOS1MTyS7DbmV1NgViMtvV1sfCD1ebITpNwb1NIinKeJgUVQ==",
+      "path": "microsoft.win32.systemevents/7.0.0",
+      "hashPath": "microsoft.win32.systemevents.7.0.0.nupkg.sha512"
     },
     "NETStandard.Library/1.6.1": {
       "type": "package",
@@ -4036,6 +4047,27 @@
       "path": "runtime.win-x86.runtime.native.system.data.sqlclient.sni/4.4.0",
       "hashPath": "runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512"
     },
+    "Selenium.Firefox.WebDriver/0.27.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HwCaTaa+snzkLF7ZVaxKSmdttKm+KXT7HOY8c1q8p9E7x05+WHqw5XaZjUGFytVT1+0FkgUoH/u/I+csPLeJAg==",
+      "path": "selenium.firefox.webdriver/0.27.0",
+      "hashPath": "selenium.firefox.webdriver.0.27.0.nupkg.sha512"
+    },
+    "Selenium.WebDriver/4.13.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7asjwKWgLNjIe+NZ9GwiWWshRD9IWQzltZPiWFxF7UH62ymqjD5L0PUsWJlDm4cew1YHhcqcQpGkgi6FsGZaig==",
+      "path": "selenium.webdriver/4.13.1",
+      "hashPath": "selenium.webdriver.4.13.1.nupkg.sha512"
+    },
+    "Selenium.WebDriver.ChromeDriver/117.0.5938.14900": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GbWaptqqeamYcXjqGXyjwDDQihDe8lYoef6GOQTh0TelZl/4cxV6LKWTSxqhf02sz1Inh4DOS787LSCqSjLkkA==",
+      "path": "selenium.webdriver.chromedriver/117.0.5938.14900",
+      "hashPath": "selenium.webdriver.chromedriver.117.0.5938.14900.nupkg.sha512"
+    },
     "Swashbuckle.AspNetCore/6.5.0": {
       "type": "package",
       "serviceable": true,
@@ -4218,12 +4250,12 @@
       "path": "system.diagnostics.tracing/4.3.0",
       "hashPath": "system.diagnostics.tracing.4.3.0.nupkg.sha512"
     },
-    "System.Drawing.Common/6.0.0": {
+    "System.Drawing.Common/7.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-NfuoKUiP2nUWwKZN6twGqXioIe1zVD0RIj2t976A+czLHr2nY454RwwXs6JU9Htc6mwqL6Dn/nEL3dpVf2jOhg==",
-      "path": "system.drawing.common/6.0.0",
-      "hashPath": "system.drawing.common.6.0.0.nupkg.sha512"
+      "sha512": "sha512-KIX+oBU38pxkKPxvLcLfIkOV5Ien8ReN78wro7OF5/erwcmortzeFx+iBswlh2Vz6gVne0khocQudGwaO1Ey6A==",
+      "path": "system.drawing.common/7.0.0",
+      "hashPath": "system.drawing.common.7.0.0.nupkg.sha512"
     },
     "System.Dynamic.Runtime/4.0.11": {
       "type": "package",
