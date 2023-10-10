@@ -15,7 +15,9 @@ env:
  TEMPLATE-FILE: .azure/bicep/webapp.bicep
  SUBSCRIPTION-ID: "1ba34a65-885e-4ab8-8b59-9044b832c162"
  WEBAPP-NAME: WebApplicationBackendBotanica
-
+ WEBAPP-NAME-API: botanicaencomedasAPI
+ WEBAPP-NAME-FRONT: BotanicaEncomendasEnd
+ 
 jobs:
   #Build, test and publish .net web project in repository
   buildandtest:
@@ -36,12 +38,26 @@ jobs:
       run: dotnet test ./ClassBackendBotanica/ClassBackendBotanica.sln --configuration Release
     - name: dotnet publish
       run: dotnet publish ./WebApplicationBackendBotanica/WebApplicationBackendBotanica.csproj -c Release -o ${{env.DOTNET_ROOT}}/WebApplicationBackendBotanica
+    - name: dotnet publish API
+      run: dotnet publish ./botanicaencomedasAPI/botanicaencomedasAPI.csproj -c Release -o ${{env.DOTNET_ROOT}}/botanicaencomedasAPI 
+    - name: dotnet publish Front
+      run: dotnet publish ./BotanicaEncomendasEnd/BotanicaEncomendasEnd.csproj -c Release -o ${{env.DOTNET_ROOT}}/BotanicaEncomendasEnd
     # upload the published website code artifacts
     - name: Upload artifact for deployment job
       uses: actions/upload-artifact@v3
       with:
         name: .net-app
         path: ${{env.DOTNET_ROOT}}/WebApplicationBackendBotanica
+    - name: Upload artifact for deployment job
+      uses: actions/upload-artifact@v3
+      with:  
+        name: .net-app1
+        path: ${{env.DOTNET_ROOT}}/botanicaencomedasAPI
+    - name: Upload artifact for deployment job
+      uses: actions/upload-artifact@v3
+      with:  
+        name: .net-app2
+        path: ${{env.DOTNET_ROOT}}/BotanicaEncomendasEnd
         
     # upload the bicep template as artifacts for next job
     - name: Upload artifact for deployment job
@@ -64,6 +80,16 @@ jobs:
       with:
         name: .net-app
         path: .net-app
+    - name: Download artifact from build job
+      uses: actions/download-artifact@v3
+      with:
+        name: .net-app1
+        path: .net-app1
+    - name: Download artifact from build job
+      uses: actions/download-artifact@v3
+      with:
+        name: .net-app2
+        path: .net-app2
   
     #Download the bicep templates from previous job
     - name: Download artifact from build job
@@ -86,6 +112,22 @@ jobs:
         resourceGroupName: ${{ env.RESOURCE-GROUP }}
         template: bicep-template/webapp.bicep
         parameters: 'webAppName=${{ env.WEBAPP-NAME }} location=${{ env.LOCATION }}'
+        failOnStdErr: false  
+    - name: deploy
+      uses: azure/arm-deploy@v1
+      with:
+        subscriptionId: ${{ env.SUBSCRIPTION-ID }}
+        resourceGroupName: ${{ env.RESOURCE-GROUP }}
+        template: bicep-template/webapp.bicep
+        parameters: 'webAppName=${{ env.WEBAPP-NAME-API }} location=${{ env.LOCATION }}'
+        failOnStdErr: false 
+    - name: deploy
+      uses: azure/arm-deploy@v1
+      with:
+        subscriptionId: ${{ env.SUBSCRIPTION-ID }}
+        resourceGroupName: ${{ env.RESOURCE-GROUP }}
+        template: bicep-template/webapp.bicep
+        parameters: 'webAppName=${{ env.WEBAPP-NAME-FRONT }} location=${{ env.LOCATION }}'
         failOnStdErr: false   
     
     # Publish website to Azure App Service (WebApp)
@@ -94,4 +136,14 @@ jobs:
       with:
         app-name: ${{ env.WEBAPP-NAME  }}
         package: .net-app
+    - name: Publish Website to WebApp
+      uses: Azure/webapps-deploy@v2
+      with:
+        app-name: ${{ env.WEBAPP-NAME-API  }}
+        package: .net-app1
+    - name: Publish Website to WebApp
+      uses: Azure/webapps-deploy@v2
+      with:
+        app-name: ${{ env.WEBAPP-NAME_FRONT  }}
+        package: .net-app2
    
