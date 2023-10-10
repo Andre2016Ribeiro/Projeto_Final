@@ -3,8 +3,9 @@
     "",
     "\\BotanicaFrontEnd",
     "\\BotanicaFrontEnd\\Controllers",
-    "\\ClassBackendBotanica"
+    "\\ClassBackendBotanica",
+    "\\cross-webbrowsers"
   ],
-  "SelectedNode": "\\BotanicaFrontEnd\\Controllers\\DesafioController.cs",
+  "SelectedNode": "\\cross-webbrowsers\\obj",
   "PreviewInSolutionExplorer": false
 }

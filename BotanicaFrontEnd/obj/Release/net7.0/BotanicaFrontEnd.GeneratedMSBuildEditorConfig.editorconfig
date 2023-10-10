@@ -9,113 +9,113 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BotanicaFrontEnd
 build_property.RootNamespace = BotanicaFrontEnd
-build_property.ProjectDir = C:\Users\andre.ribeiro.ORTOMAIA\Source\Repos\Andre2016Ribeiro\Projeto_Final\BotanicaFrontEnd\
+build_property.ProjectDir = C:\Users\andre.ribeiro.ORTOMAIA\source\repos\Andre2016Ribeiro\Projeto_Final\BotanicaFrontEnd\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\andre.ribeiro.ORTOMAIA\Source\Repos\Andre2016Ribeiro\Projeto_Final\BotanicaFrontEnd
+build_property.MSBuildProjectDirectory = C:\Users\andre.ribeiro.ORTOMAIA\source\repos\Andre2016Ribeiro\Projeto_Final\BotanicaFrontEnd
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/andre.ribeiro.ORTOMAIA/Source/Repos/Andre2016Ribeiro/Projeto_Final/BotanicaFrontEnd/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/andre.ribeiro.ORTOMAIA/source/repos/Andre2016Ribeiro/Projeto_Final/BotanicaFrontEnd/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andre.ribeiro.ORTOMAIA/Source/Repos/Andre2016Ribeiro/Projeto_Final/BotanicaFrontEnd/Views/Artigos/Details.cshtml]
+[C:/Users/andre.ribeiro.ORTOMAIA/source/repos/Andre2016Ribeiro/Projeto_Final/BotanicaFrontEnd/Views/Artigos/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aWdvc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andre.ribeiro.ORTOMAIA/Source/Repos/Andre2016Ribeiro/Projeto_Final/BotanicaFrontEnd/Views/Artigos/Index.cshtml]
+[C:/Users/andre.ribeiro.ORTOMAIA/source/repos/Andre2016Ribeiro/Projeto_Final/BotanicaFrontEnd/Views/Artigos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aWdvc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andre.ribeiro.ORTOMAIA/Source/Repos/Andre2016Ribeiro/Projeto_Final/BotanicaFrontEnd/Views/BlobStorage/Index.cshtml]
+[C:/Users/andre.ribeiro.ORTOMAIA/source/repos/Andre2016Ribeiro/Projeto_Final/BotanicaFrontEnd/Views/BlobStorage/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvYlN0b3JhZ2VcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andre.ribeiro.ORTOMAIA/Source/Repos/Andre2016Ribeiro/Projeto_Final/BotanicaFrontEnd/Views/BlobStorage/Sucesso.cshtml]
+[C:/Users/andre.ribeiro.ORTOMAIA/source/repos/Andre2016Ribeiro/Projeto_Final/BotanicaFrontEnd/Views/BlobStorage/Sucesso.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvYlN0b3JhZ2VcU3VjZXNzby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andre.ribeiro.ORTOMAIA/Source/Repos/Andre2016Ribeiro/Projeto_Final/BotanicaFrontEnd/Views/BlobStorage/Upload.cshtml]
+[C:/Users/andre.ribeiro.ORTOMAIA/source/repos/Andre2016Ribeiro/Projeto_Final/BotanicaFrontEnd/Views/BlobStorage/Upload.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvYlN0b3JhZ2VcVXBsb2FkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andre.ribeiro.ORTOMAIA/Source/Repos/Andre2016Ribeiro/Projeto_Final/BotanicaFrontEnd/Views/Desafio/Index.cshtml]
+[C:/Users/andre.ribeiro.ORTOMAIA/source/repos/Andre2016Ribeiro/Projeto_Final/BotanicaFrontEnd/Views/Desafio/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzYWZpb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andre.ribeiro.ORTOMAIA/Source/Repos/Andre2016Ribeiro/Projeto_Final/BotanicaFrontEnd/Views/Desafio/Receber.cshtml]
+[C:/Users/andre.ribeiro.ORTOMAIA/source/repos/Andre2016Ribeiro/Projeto_Final/BotanicaFrontEnd/Views/Desafio/Receber.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzYWZpb1xSZWNlYmVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andre.ribeiro.ORTOMAIA/Source/Repos/Andre2016Ribeiro/Projeto_Final/BotanicaFrontEnd/Views/Encomendas/Create.cshtml]
+[C:/Users/andre.ribeiro.ORTOMAIA/source/repos/Andre2016Ribeiro/Projeto_Final/BotanicaFrontEnd/Views/Encomendas/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5jb21lbmRhc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andre.ribeiro.ORTOMAIA/Source/Repos/Andre2016Ribeiro/Projeto_Final/BotanicaFrontEnd/Views/Encomendas/Delete.cshtml]
+[C:/Users/andre.ribeiro.ORTOMAIA/source/repos/Andre2016Ribeiro/Projeto_Final/BotanicaFrontEnd/Views/Encomendas/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5jb21lbmRhc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andre.ribeiro.ORTOMAIA/Source/Repos/Andre2016Ribeiro/Projeto_Final/BotanicaFrontEnd/Views/Encomendas/Details.cshtml]
+[C:/Users/andre.ribeiro.ORTOMAIA/source/repos/Andre2016Ribeiro/Projeto_Final/BotanicaFrontEnd/Views/Encomendas/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5jb21lbmRhc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andre.ribeiro.ORTOMAIA/Source/Repos/Andre2016Ribeiro/Projeto_Final/BotanicaFrontEnd/Views/Encomendas/Edit.cshtml]
+[C:/Users/andre.ribeiro.ORTOMAIA/source/repos/Andre2016Ribeiro/Projeto_Final/BotanicaFrontEnd/Views/Encomendas/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5jb21lbmRhc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andre.ribeiro.ORTOMAIA/Source/Repos/Andre2016Ribeiro/Projeto_Final/BotanicaFrontEnd/Views/Encomendas/Index.cshtml]
+[C:/Users/andre.ribeiro.ORTOMAIA/source/repos/Andre2016Ribeiro/Projeto_Final/BotanicaFrontEnd/Views/Encomendas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5jb21lbmRhc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andre.ribeiro.ORTOMAIA/Source/Repos/Andre2016Ribeiro/Projeto_Final/BotanicaFrontEnd/Views/Home/Index.cshtml]
+[C:/Users/andre.ribeiro.ORTOMAIA/source/repos/Andre2016Ribeiro/Projeto_Final/BotanicaFrontEnd/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andre.ribeiro.ORTOMAIA/Source/Repos/Andre2016Ribeiro/Projeto_Final/BotanicaFrontEnd/Views/Home/Privacy.cshtml]
+[C:/Users/andre.ribeiro.ORTOMAIA/source/repos/Andre2016Ribeiro/Projeto_Final/BotanicaFrontEnd/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andre.ribeiro.ORTOMAIA/Source/Repos/Andre2016Ribeiro/Projeto_Final/BotanicaFrontEnd/Views/Shared/Error.cshtml]
+[C:/Users/andre.ribeiro.ORTOMAIA/source/repos/Andre2016Ribeiro/Projeto_Final/BotanicaFrontEnd/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andre.ribeiro.ORTOMAIA/Source/Repos/Andre2016Ribeiro/Projeto_Final/BotanicaFrontEnd/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/andre.ribeiro.ORTOMAIA/source/repos/Andre2016Ribeiro/Projeto_Final/BotanicaFrontEnd/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andre.ribeiro.ORTOMAIA/Source/Repos/Andre2016Ribeiro/Projeto_Final/BotanicaFrontEnd/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/andre.ribeiro.ORTOMAIA/source/repos/Andre2016Ribeiro/Projeto_Final/BotanicaFrontEnd/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andre.ribeiro.ORTOMAIA/Source/Repos/Andre2016Ribeiro/Projeto_Final/BotanicaFrontEnd/Views/Utilizadores/Create.cshtml]
+[C:/Users/andre.ribeiro.ORTOMAIA/source/repos/Andre2016Ribeiro/Projeto_Final/BotanicaFrontEnd/Views/Utilizadores/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGl6YWRvcmVzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andre.ribeiro.ORTOMAIA/Source/Repos/Andre2016Ribeiro/Projeto_Final/BotanicaFrontEnd/Views/Utilizadores/Delete.cshtml]
+[C:/Users/andre.ribeiro.ORTOMAIA/source/repos/Andre2016Ribeiro/Projeto_Final/BotanicaFrontEnd/Views/Utilizadores/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGl6YWRvcmVzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andre.ribeiro.ORTOMAIA/Source/Repos/Andre2016Ribeiro/Projeto_Final/BotanicaFrontEnd/Views/Utilizadores/Edit.cshtml]
+[C:/Users/andre.ribeiro.ORTOMAIA/source/repos/Andre2016Ribeiro/Projeto_Final/BotanicaFrontEnd/Views/Utilizadores/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGl6YWRvcmVzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andre.ribeiro.ORTOMAIA/Source/Repos/Andre2016Ribeiro/Projeto_Final/BotanicaFrontEnd/Views/Utilizadores/Index.cshtml]
+[C:/Users/andre.ribeiro.ORTOMAIA/source/repos/Andre2016Ribeiro/Projeto_Final/BotanicaFrontEnd/Views/Utilizadores/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGl6YWRvcmVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andre.ribeiro.ORTOMAIA/Source/Repos/Andre2016Ribeiro/Projeto_Final/BotanicaFrontEnd/Views/_ViewImports.cshtml]
+[C:/Users/andre.ribeiro.ORTOMAIA/source/repos/Andre2016Ribeiro/Projeto_Final/BotanicaFrontEnd/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andre.ribeiro.ORTOMAIA/Source/Repos/Andre2016Ribeiro/Projeto_Final/BotanicaFrontEnd/Views/_ViewStart.cshtml]
+[C:/Users/andre.ribeiro.ORTOMAIA/source/repos/Andre2016Ribeiro/Projeto_Final/BotanicaFrontEnd/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andre.ribeiro.ORTOMAIA/Source/Repos/Andre2016Ribeiro/Projeto_Final/BotanicaFrontEnd/Views/Shared/_Layout.cshtml]
+[C:/Users/andre.ribeiro.ORTOMAIA/source/repos/Andre2016Ribeiro/Projeto_Final/BotanicaFrontEnd/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-qdrjl042d4
 
-[C:/Users/andre.ribeiro.ORTOMAIA/Source/Repos/Andre2016Ribeiro/Projeto_Final/BotanicaFrontEnd/Views/Shared/_Layout_copia.cshtml]
+[C:/Users/andre.ribeiro.ORTOMAIA/source/repos/Andre2016Ribeiro/Projeto_Final/BotanicaFrontEnd/Views/Shared/_Layout_copia.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRfY29waWEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ez0sayok4b
