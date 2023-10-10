@@ -16,7 +16,7 @@ env:
  SUBSCRIPTION-ID: "1ba34a65-885e-4ab8-8b59-9044b832c162"
  WEBAPP-NAME: WebApplicationBackendBotanica
  WEBAPP-NAME-API: botanicaencomedasAPI
- WEBAPP-NAME-FRONT: BotanicaEncomendasEnd
+ WEBAPP-NAME-FRONT: BotanicaFrontEnd
  
 jobs:
   #Build, test and publish .net web project in repository
@@ -41,7 +41,7 @@ jobs:
     - name: dotnet publish API
       run: dotnet publish ./botanicaencomedasAPI/botanicaencomedasAPI.csproj -c Release -o ${{env.DOTNET_ROOT}}/botanicaencomedasAPI 
     - name: dotnet publish Front
-      run: dotnet publish ./BotanicaEncomendasEnd/BotanicaEncomendasEnd.csproj -c Release -o ${{env.DOTNET_ROOT}}/BotanicaEncomendasEnd
+      run: dotnet publish ./BotanicaFrontEnd/BotanicaFrontEnd.csproj -c Release -o ${{env.DOTNET_ROOT}}/BotanicaFrontEnd
     # upload the published website code artifacts
     - name: Upload artifact for deployment job
       uses: actions/upload-artifact@v3
@@ -57,7 +57,7 @@ jobs:
       uses: actions/upload-artifact@v3
       with:  
         name: .net-app2
-        path: ${{env.DOTNET_ROOT}}/BotanicaEncomendasEnd
+        path: ${{env.DOTNET_ROOT}}/BotanicaFrontEnd
         
     # upload the bicep template as artifacts for next job
     - name: Upload artifact for deployment job
