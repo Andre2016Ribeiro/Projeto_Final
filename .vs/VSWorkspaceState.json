@@ -1,11 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\BotanicaFrontEnd",
-    "\\BotanicaFrontEnd\\Controllers",
     "\\ClassBackendBotanica",
-    "\\cross-webbrowsers"
+    "\\WebApplicationBackendBotanica"
   ],
-  "SelectedNode": "\\cross-webbrowsers\\obj",
+  "SelectedNode": "\\ClassBackendBotanica\\ClassBackendBotanica.sln",
   "PreviewInSolutionExplorer": false
 }
